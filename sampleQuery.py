@@ -3,7 +3,13 @@ import pandas as pd
 import csv
 from typing import List
 import time
-API_KEY = 'bf72aeb621a9e8af0e18bedc1e00c8c1aa17a02c14bd22a770bd98f6bb7ece86'
+
+# replace API with from VT
+# AJ - API KEY
+# API_KEY = 'bf72aeb621a9e8af0e18bedc1e00c8c1aa17a02c14bd22a770bd98f6bb7ece86'
+
+# Edihe API KEY
+API_KEY = '94ea76985c5d2d8c8f56804d762285b085a75833c0f48ce06d787333b8a86c19'
 
 API_SECRET = 'aaa9121164520836db909b63715d334d7642175f320dd435'
 
@@ -41,10 +47,15 @@ def get_sample_data(hash_vals: List[str]):
 
     # Save all results after loop
     df = pd.DataFrame(results)
-    df.to_json("aj.json", orient="records", indent=2)
+
+    # 1. CREATE A JSON FILE
+    df.to_json("edihe.json", orient="records", indent=2)
     print(f"Fetched sample data for {hash_vals}")
 
 print("Sample Query.")
-hash_values = read_hash_file("./output/aj.csv")
+
+
+# 2. create a new file with your name in the output folder
+hash_values = read_hash_file("./output/edihe.csv")
 print(f"{len(hash_values)} hashes found")
 get_sample_data(hash_values)
