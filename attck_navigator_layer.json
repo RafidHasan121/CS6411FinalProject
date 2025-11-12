@@ -1,0 +1,407 @@
+{
+    "name": "Combined Malware Analysis (by Frequency)",
+    "description": "ATT&CK techniques observed across analyzed samples. Score = Total Count.",
+    "versions": {
+        "attack": "14",
+        "navigator": "4.9.1"
+    },
+    "domain": "enterprise-attack",
+    "techniques": [
+        {
+            "techniqueID": "T1082",
+            "color": "#ff6666",
+            "comment": "Count: 13. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|RecordBreaker|TrickBot|Unknown",
+            "score": 13
+        },
+        {
+            "techniqueID": "T1083",
+            "color": "#ff6666",
+            "comment": "Count: 13. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|RecordBreaker|TrickBot|Unknown",
+            "score": 13
+        },
+        {
+            "techniqueID": "T1027",
+            "color": "#ff6666",
+            "comment": "Count: 11. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|RecordBreaker|TrickBot|Unknown",
+            "score": 11
+        },
+        {
+            "techniqueID": "T1010",
+            "color": "#ffcc66",
+            "comment": "Count: 9. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|TrickBot|Unknown",
+            "score": 9
+        },
+        {
+            "techniqueID": "T1518.001",
+            "color": "#ffcc66",
+            "comment": "Count: 9. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|RecordBreaker|TrickBot|Unknown",
+            "score": 9
+        },
+        {
+            "techniqueID": "T1036",
+            "color": "#ffcc66",
+            "comment": "Count: 8. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|TrickBot|Unknown",
+            "score": 8
+        },
+        {
+            "techniqueID": "T1012",
+            "color": "#ffcc66",
+            "comment": "Count: 8. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|TrickBot|Unknown",
+            "score": 8
+        },
+        {
+            "techniqueID": "T1497",
+            "color": "#ffcc66",
+            "comment": "Count: 8. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|TrickBot|Unknown",
+            "score": 8
+        },
+        {
+            "techniqueID": "T1071",
+            "color": "#ffcc66",
+            "comment": "Count: 8. Observed in families: AgentTesla|ISFB|RecordBreaker|TrickBot|Unknown",
+            "score": 8
+        },
+        {
+            "techniqueID": "T1095",
+            "color": "#ffcc66",
+            "comment": "Count: 7. Observed in families: AgentTesla|ISFB|RecordBreaker|TrickBot|Unknown",
+            "score": 7
+        },
+        {
+            "techniqueID": "T1018",
+            "color": "#ffcc66",
+            "comment": "Count: 7. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|TrickBot|Unknown",
+            "score": 7
+        },
+        {
+            "techniqueID": "T1057",
+            "color": "#ffcc66",
+            "comment": "Count: 7. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|TrickBot|Unknown",
+            "score": 7
+        },
+        {
+            "techniqueID": "T1129",
+            "color": "#ffcc66",
+            "comment": "Count: 7. Observed in families: AgentTesla|ISFB|Unknown",
+            "score": 7
+        },
+        {
+            "techniqueID": "T1055",
+            "color": "#ffcc66",
+            "comment": "Count: 7. Observed in families: AgentTesla|ISFB|KeyloggerGeneric|TrickBot|Unknown",
+            "score": 7
+        },
+        {
+            "techniqueID": "T1059",
+            "color": "#ffcc66",
+            "comment": "Count: 6. Observed in families: AgentTesla|ISFB|RecordBreaker|Unknown",
+            "score": 6
+        },
+        {
+            "techniqueID": "T1027.002",
+            "color": "#ffcc66",
+            "comment": "Count: 6. Observed in families: ISFB|KeyloggerGeneric|RecordBreaker|TrickBot|Unknown",
+            "score": 6
+        },
+        {
+            "techniqueID": "T1112",
+            "color": "#ffcc66",
+            "comment": "Count: 5. Observed in families: AgentTesla|ISFB|Unknown",
+            "score": 5
+        },
+        {
+            "techniqueID": "T1005",
+            "color": "#ffcc66",
+            "comment": "Count: 5. Observed in families: AgentTesla|ISFB|TrickBot",
+            "score": 5
+        },
+        {
+            "techniqueID": "T1003",
+            "color": "#ffcc66",
+            "comment": "Count: 5. Observed in families: AgentTesla|ISFB|TrickBot",
+            "score": 5
+        },
+        {
+            "techniqueID": "T1562.001",
+            "color": "#ffcc66",
+            "comment": "Count: 5. Observed in families: AgentTesla|KeyloggerGeneric|TrickBot|Unknown",
+            "score": 5
+        },
+        {
+            "techniqueID": "T1016",
+            "color": "#ffcc66",
+            "comment": "Count: 5. Observed in families: AgentTesla|ISFB|TrickBot",
+            "score": 5
+        },
+        {
+            "techniqueID": "T1056",
+            "color": "#ffcc66",
+            "comment": "Count: 5. Observed in families: ISFB|KeyloggerGeneric|TrickBot|Unknown",
+            "score": 5
+        },
+        {
+            "techniqueID": "T1114",
+            "color": "#ffff66",
+            "comment": "Count: 4. Observed in families: AgentTesla|ISFB",
+            "score": 4
+        },
+        {
+            "techniqueID": "T1573",
+            "color": "#ffff66",
+            "comment": "Count: 4. Observed in families: AgentTesla|RecordBreaker|TrickBot",
+            "score": 4
+        },
+        {
+            "techniqueID": "T1547.001",
+            "color": "#ffff66",
+            "comment": "Count: 4. Observed in families: AgentTesla|KeyloggerGeneric|Unknown",
+            "score": 4
+        },
+        {
+            "techniqueID": "T1047",
+            "color": "#ffff66",
+            "comment": "Count: 4. Observed in families: AgentTesla|ISFB",
+            "score": 4
+        },
+        {
+            "techniqueID": "T1064",
+            "color": "#ffff66",
+            "comment": "Count: 3. Observed in families: KeyloggerGeneric|RecordBreaker|Unknown",
+            "score": 3
+        },
+        {
+            "techniqueID": "T1222",
+            "color": "#ffff66",
+            "comment": "Count: 3. Observed in families: AgentTesla|Unknown",
+            "score": 3
+        },
+        {
+            "techniqueID": "T1497.001",
+            "color": "#ffff66",
+            "comment": "Count: 3. Observed in families: TrickBot|Unknown",
+            "score": 3
+        },
+        {
+            "techniqueID": "T1614",
+            "color": "#ffff66",
+            "comment": "Count: 3. Observed in families: ISFB|Unknown",
+            "score": 3
+        },
+        {
+            "techniqueID": "T1574.002",
+            "color": "#ffff66",
+            "comment": "Count: 3. Observed in families: KeyloggerGeneric|TrickBot|Unknown",
+            "score": 3
+        },
+        {
+            "techniqueID": "T1106",
+            "color": "#ffff66",
+            "comment": "Count: 3. Observed in families: TrickBot|Unknown",
+            "score": 3
+        },
+        {
+            "techniqueID": "T1105",
+            "color": "#ffff66",
+            "comment": "Count: 3. Observed in families: ISFB|TrickBot",
+            "score": 3
+        },
+        {
+            "techniqueID": "T1214",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1542.003",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB|TrickBot",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1529",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: AgentTesla|Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1571",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: AgentTesla|Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1547.009",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: AgentTesla|Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1564.001",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB|RecordBreaker",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1620",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: KeyloggerGeneric|Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1552.002",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: AgentTesla",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1218.011",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: TrickBot|Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1115",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: AgentTesla|Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1063",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1014",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1179",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1143",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1134",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: AgentTesla|Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1125",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: AgentTesla|Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1045",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1053",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: KeyloggerGeneric|Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1119",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1056.001",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1185",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1081",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1070.006",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: KeyloggerGeneric|Unknown",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1070.004",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1056.004",
+            "color": "#ffff66",
+            "comment": "Count: 2. Observed in families: ISFB",
+            "score": 2
+        },
+        {
+            "techniqueID": "T1213",
+            "color": "#ffff66",
+            "comment": "Count: 1. Observed in families: Unknown",
+            "score": 1
+        },
+        {
+            "techniqueID": "T1090",
+            "color": "#ffff66",
+            "comment": "Count: 1. Observed in families: ISFB",
+            "score": 1
+        },
+        {
+            "techniqueID": "T1564",
+            "color": "#ffff66",
+            "comment": "Count: 1. Observed in families: ISFB",
+            "score": 1
+        },
+        {
+            "techniqueID": "T1543.002",
+            "color": "#ffff66",
+            "comment": "Count: 1. Observed in families: RecordBreaker",
+            "score": 1
+        },
+        {
+            "techniqueID": "T1542",
+            "color": "#ffff66",
+            "comment": "Count: 1. Observed in families: ISFB",
+            "score": 1
+        },
+        {
+            "techniqueID": "T1539",
+            "color": "#ffff66",
+            "comment": "Count: 1. Observed in families: ISFB",
+            "score": 1
+        },
+        {
+            "techniqueID": "T1496",
+            "color": "#ffff66",
+            "comment": "Count: 1. Observed in families: ISFB",
+            "score": 1
+        },
+        {
+            "techniqueID": "T1622",
+            "color": "#ffff66",
+            "comment": "Count: 1. Observed in families: Unknown",
+            "score": 1
+        }
+    ]
+}
