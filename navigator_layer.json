@@ -1,0 +1,977 @@
+{
+  "version": "4.5",
+  "name": "Generated Layer Output",
+  "description": "Auto-generated layer from scanned JSON outputs (technique IDs extracted by regex).",
+  "domain": "enterprise-attack",
+  "techniques": [
+    {
+      "techniqueID": "T1082",
+      "score": 292,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 246,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1129",
+      "score": 211,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1071",
+      "score": 169,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027",
+      "score": 166,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 103,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1497",
+      "score": 99,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1055",
+      "score": 98,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1012",
+      "score": 85,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1036",
+      "score": 85,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1112",
+      "score": 82,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027.002",
+      "score": 77,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1518.001",
+      "score": 77,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1497.001",
+      "score": 61,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059",
+      "score": 59,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1562.001",
+      "score": 47,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1010",
+      "score": 46,
+      "comment": "Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects file access requests to the the Windows Data Protection API Master keys by an uncommon application.\nThis can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::masterkey\" function\n | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 46,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1005",
+      "score": 45,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1064",
+      "score": 44,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1573",
+      "score": 42,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1095",
+      "score": 41,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1222",
+      "score": 35,
+      "comment": "Detects modification of the registry settings used for Internet Explorer and other Windows components that use these settings. An attacker can abuse this registry key to add a domain to the trusted sites Zone or insert JavaScript for persistence | Detects programs that connect to uncommon destination ports | Detects modification of the registry settings used for Internet Explorer and other Windows components that use these settings. An attacker can abuse this registry key to add a domain to the trusted sites Zone or insert javascript for persistence",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1003",
+      "score": 33,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1018",
+      "score": 31,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027.005",
+      "score": 30,
+      "comment": "Detects programs that connect to uncommon destination ports | Detects a network connection initiated by \"Regsvr32.exe\"",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1056.001",
+      "score": 30,
+      "comment": "Detects modification of the registry settings used for Internet Explorer and other Windows components that use these settings. An attacker can abuse this registry key to add a domain to the trusted sites Zone or insert JavaScript for persistence | Detects programs that connect to uncommon destination ports | Detects modification of the registry settings used for Internet Explorer and other Windows components that use these settings. An attacker can abuse this registry key to add a domain to the trusted sites Zone or insert javascript for persistence",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1134",
+      "score": 29,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1045",
+      "score": 27,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1574.002",
+      "score": 27,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1555",
+      "score": 27,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1106",
+      "score": 26,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1070.006",
+      "score": 26,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1047",
+      "score": 25,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 25,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1564.003",
+      "score": 24,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1119",
+      "score": 24,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1081",
+      "score": 24,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1060",
+      "score": 24,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1056",
+      "score": 23,
+      "comment": "Detects unusual processes accessing desktop.ini, which can be leveraged to alter how Explorer displays a folder's content (i.e. renaming files) without changing them on disk.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1016",
+      "score": 23,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1564.001",
+      "score": 22,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1063",
+      "score": 22,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1614",
+      "score": 21,
+      "comment": "Detects unusual processes accessing desktop.ini, which can be leveraged to alter how Explorer displays a folder's content (i.e. renaming files) without changing them on disk.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1115",
+      "score": 21,
+      "comment": "Detects modification of autostart extensibility point (ASEP) in registry. | Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Detects modification of autostart extensibility point (ASEP) in registry. | Detects the creation of an executable by another executable | Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.\nThe data may also be sent to an alternate network location from the main command and control server.\n | Detects modification of autostart extensibility point (ASEP) in registry. | Detects the creation of an executable by another executable",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1114",
+      "score": 20,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1529",
+      "score": 19,
+      "comment": "Detects modification of autostart extensibility point (ASEP) in registry. | Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Detects modification of autostart extensibility point (ASEP) in registry. | Detects the creation of an executable by another executable | Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.\nThe data may also be sent to an alternate network location from the main command and control server.\n | Detects modification of autostart extensibility point (ASEP) in registry. | Detects the creation of an executable by another executable",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1620",
+      "score": 18,
+      "comment": "Detects the execution of a Windows system binary that is usually located in the system folder from an uncommon location.\n | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1070",
+      "score": 18,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1547.009",
+      "score": 18,
+      "comment": "Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects file access requests to the the Windows Data Protection API Master keys by an uncommon application.\nThis can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::masterkey\" function\n | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027.009",
+      "score": 17,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1571",
+      "score": 17,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1569.002",
+      "score": 16,
+      "comment": "Detects programs that connect to uncommon destination ports | Detects a network connection initiated by \"Regsvr32.exe\"",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1050",
+      "score": 16,
+      "comment": "Detects programs that connect to uncommon destination ports | Detects a network connection initiated by \"Regsvr32.exe\"",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1143",
+      "score": 16,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "score": 16,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1552",
+      "score": 16,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1552.001",
+      "score": 16,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1014",
+      "score": 15,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1218.010",
+      "score": 14,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1543.003",
+      "score": 14,
+      "comment": "Detects programs that connect to uncommon destination ports | Detects a network connection initiated by \"Regsvr32.exe\"",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1539",
+      "score": 14,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1218.011",
+      "score": 14,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1140",
+      "score": 14,
+      "comment": "Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects file access requests to the the Windows Data Protection API Master keys by an uncommon application.\nThis can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::masterkey\" function\n | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1053",
+      "score": 13,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1518",
+      "score": 12,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1564",
+      "score": 12,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1562",
+      "score": 12,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1198",
+      "score": 12,
+      "comment": "Detects the execution of a Windows system binary that is usually located in the system folder from an uncommon location.\n | Detects DNS query requests to Devtunnels domains. Attackers can abuse that feature to establish a reverse shell or persistence on a machine.\n | Detects network connections to Devtunnels domains initiated by a process on a system. Attackers can abuse that feature to establish a reverse shell or persistence on a machine.\n | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1555.003",
+      "score": 12,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1548",
+      "score": 11,
+      "comment": "Detects unusual processes accessing desktop.ini, which can be leveraged to alter how Explorer displays a folder's content (i.e. renaming files) without changing them on disk.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1125",
+      "score": 11,
+      "comment": "Detects modification of autostart extensibility point (ASEP) in registry. | Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Detects modification of autostart extensibility point (ASEP) in registry. | Detects the creation of an executable by another executable | Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.\nThe data may also be sent to an alternate network location from the main command and control server.\n | Detects modification of autostart extensibility point (ASEP) in registry. | Detects the creation of an executable by another executable",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1614.001",
+      "score": 11,
+      "comment": "Adversaries may abuse msiexec.exe to proxy execution of malicious payloads.\nMsiexec.exe is the command-line utility for the Windows Installer and is thus commonly associated with executing installation packages (.msi)\n | Detects potential COM object hijacking leveraging the COM Search Order",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1096",
+      "score": 10,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1107",
+      "score": 10,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1185",
+      "score": 9,
+      "comment": "Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects file access requests to the the Windows Data Protection API Master keys by an uncommon application.\nThis can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::masterkey\" function\n | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1113",
+      "score": 9,
+      "comment": "Detects modification of the registry settings used for Internet Explorer and other Windows components that use these settings. An attacker can abuse this registry key to add a domain to the trusted sites Zone or insert JavaScript for persistence | Detects programs that connect to uncommon destination ports | Detects modification of the registry settings used for Internet Explorer and other Windows components that use these settings. An attacker can abuse this registry key to add a domain to the trusted sites Zone or insert javascript for persistence",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1553.005",
+      "score": 8,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1622",
+      "score": 8,
+      "comment": "Detects programs that connect to uncommon destination ports | Detects a network connection initiated by \"Regsvr32.exe\"",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "score": 8,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1542.003",
+      "score": 8,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1214",
+      "score": 8,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1056.004",
+      "score": 8,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects Set-Alias or New-Alias cmdlet usage. Which can be use as a mean to obfuscate PowerShell scripts | Dot net compiler compiles file from suspicious location | Detects uncommon processes creating remote threads | Detects uncommon target processes for remote thread creation",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1547",
+      "score": 8,
+      "comment": "Detects unusual processes accessing desktop.ini, which can be leveraged to alter how Explorer displays a folder's content (i.e. renaming files) without changing them on disk.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1590",
+      "score": 8,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1213",
+      "score": 7,
+      "comment": "Detects use of executionpolicy option to set insecure policies | Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects the creation of an executable by another executable",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1033",
+      "score": 7,
+      "comment": "Detects use of executionpolicy option to set insecure policies | Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects the creation of an executable by another executable",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1007",
+      "score": 6,
+      "comment": "Detects programs that connect to uncommon destination ports | Detects a network connection initiated by \"Regsvr32.exe\"",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1542",
+      "score": 6,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1496",
+      "score": 6,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1203",
+      "score": 6,
+      "comment": "Detects Wscript/Cscript executing a file with an uncommon (i.e. non-script) extension | Detects a suspicious process spawning from one of the Microsoft Office suite products (Word, Excel, PowerPoint, Publisher, Visio, etc.) | Detects a suspicious script execution in temporary folders or folders accessible by environment variables | Detects a suspicious script executions from temporary folder | Detects suspicious child processes of the Microsoft OneNote application. This may indicate an attempt to execute malicious embedded objects from a .one file.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1120",
+      "score": 6,
+      "comment": "Detects use of executionpolicy option to set insecure policies | Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects the creation of an executable by another executable",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 4,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1543.002",
+      "score": 4,
+      "comment": "Detects the Setting of Windows Defender Exclusions",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1179",
+      "score": 4,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects Set-Alias or New-Alias cmdlet usage. Which can be use as a mean to obfuscate PowerShell scripts | Dot net compiler compiles file from suspicious location | Detects uncommon processes creating remote threads | Detects uncommon target processes for remote thread creation",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1074",
+      "score": 4,
+      "comment": "Detects unusual processes accessing desktop.ini, which can be leveraged to alter how Explorer displays a folder's content (i.e. renaming files) without changing them on disk.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1091",
+      "score": 4,
+      "comment": "Detects use of executionpolicy option to set insecure policies | Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects the creation of an executable by another executable",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1552.002",
+      "score": 4,
+      "comment": "Detects modification of autostart extensibility point (ASEP) in registry. | Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Detects modification of autostart extensibility point (ASEP) in registry. | Detects the creation of an executable by another executable | Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.\nThe data may also be sent to an alternate network location from the main command and control server.\n | Detects modification of autostart extensibility point (ASEP) in registry. | Detects the creation of an executable by another executable",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1217",
+      "score": 4,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1134.001",
+      "score": 4,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1087",
+      "score": 4,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1497.002",
+      "score": 4,
+      "comment": "Detects suspicious processes based on name and location that access the windows credential manager and vault.\nWhich can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::cred\" function\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1574.001",
+      "score": 3,
+      "comment": "Adversaries may abuse msiexec.exe to proxy execution of malicious payloads.\nMsiexec.exe is the command-line utility for the Windows Installer and is thus commonly associated with executing installation packages (.msi)\n | Detects potential COM object hijacking leveraging the COM Search Order",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1023",
+      "score": 3,
+      "comment": "Drops script at startup location | Detects when a file with a suspicious extension is created in the startup folder | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Detects when a file with a suspicious extension is created in the startup folder | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Detects external IP address lookups by non-browser processes via services such as \"api.ipify.org\". This could be indicative of potential post compromise internet test activity. | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects when a file with a suspicious extension is created in the startup folder | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Drops script at startup location | Detects when a file with a suspicious extension is created in the startup folder | Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.\nThe data may also be sent to an alternate network location from the main command and control server.\n | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Detects the creation of an ADS (Alternate Data Stream) that contains an executable by looking at a non-empty Imphash | Detects windows utilities loading an unsigned or untrusted DLL.\nAdversaries often abuse those programs to proxy execution of malicious code.\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1135",
+      "score": 3,
+      "comment": "Drops script at startup location | Detects when a file with a suspicious extension is created in the startup folder | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Detects when a file with a suspicious extension is created in the startup folder | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Detects external IP address lookups by non-browser processes via services such as \"api.ipify.org\". This could be indicative of potential post compromise internet test activity. | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects when a file with a suspicious extension is created in the startup folder | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Drops script at startup location | Detects when a file with a suspicious extension is created in the startup folder | Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.\nThe data may also be sent to an alternate network location from the main command and control server.\n | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Detects the creation of an ADS (Alternate Data Stream) that contains an executable by looking at a non-empty Imphash | Detects windows utilities loading an unsigned or untrusted DLL.\nAdversaries often abuse those programs to proxy execution of malicious code.\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1562.009",
+      "score": 3,
+      "comment": "Drops script at startup location | Detects when a file with a suspicious extension is created in the startup folder | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Detects when a file with a suspicious extension is created in the startup folder | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Detects external IP address lookups by non-browser processes via services such as \"api.ipify.org\". This could be indicative of potential post compromise internet test activity. | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects when a file with a suspicious extension is created in the startup folder | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Drops script at startup location | Detects when a file with a suspicious extension is created in the startup folder | Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.\nThe data may also be sent to an alternate network location from the main command and control server.\n | A General detection for files being created in the Windows startup directory. This could be an indicator of persistence. | Detects the creation of an ADS (Alternate Data Stream) that contains an executable by looking at a non-empty Imphash | Detects windows utilities loading an unsigned or untrusted DLL.\nAdversaries often abuse those programs to proxy execution of malicious code.\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1086",
+      "score": 3,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1564.004",
+      "score": 2,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects the creation of an executable by another executable",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1090",
+      "score": 2,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects Set-Alias or New-Alias cmdlet usage. Which can be use as a mean to obfuscate PowerShell scripts | Dot net compiler compiles file from suspicious location | Detects uncommon processes creating remote threads | Detects uncommon target processes for remote thread creation",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 2,
+      "comment": "Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Detects a script interpreter wscript/cscript opening a network connection to a non-local network. Adversaries may use script to download malicious payloads. | Detects changing the PowerShell script execution policy to a potentially insecure level using the \"-ExecutionPolicy\" flag. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects modification of autostart extensibility point (ASEP) in registry. | Detects usage of \"Reflection.Assembly\" load functions to dynamically load assemblies in memory | Detects potentially suspicious keywords that could indicate the use of a PowerShell exploitation framework | Detects suspicious powershell invocations from interpreters or unusual programs | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Get the processes that are running on the local computer. | Detects a script interpreter wscript/cscript opening a network connection to a non-local network. Adversaries may use script to download malicious payloads.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1486",
+      "score": 2,
+      "comment": "Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Detects a script interpreter wscript/cscript opening a network connection to a non-local network. Adversaries may use script to download malicious payloads. | Detects changing the PowerShell script execution policy to a potentially insecure level using the \"-ExecutionPolicy\" flag. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects modification of autostart extensibility point (ASEP) in registry. | Detects usage of \"Reflection.Assembly\" load functions to dynamically load assemblies in memory | Detects potentially suspicious keywords that could indicate the use of a PowerShell exploitation framework | Detects suspicious powershell invocations from interpreters or unusual programs | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Get the processes that are running on the local computer. | Detects a script interpreter wscript/cscript opening a network connection to a non-local network. Adversaries may use script to download malicious payloads.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1485",
+      "score": 2,
+      "comment": "Detects suspicious new RUN key element pointing to an executable in a suspicious folder | Detects a script interpreter wscript/cscript opening a network connection to a non-local network. Adversaries may use script to download malicious payloads. | Detects changing the PowerShell script execution policy to a potentially insecure level using the \"-ExecutionPolicy\" flag. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects modification of autostart extensibility point (ASEP) in registry. | Detects usage of \"Reflection.Assembly\" load functions to dynamically load assemblies in memory | Detects potentially suspicious keywords that could indicate the use of a PowerShell exploitation framework | Detects suspicious powershell invocations from interpreters or unusual programs | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Get the processes that are running on the local computer. | Detects a script interpreter wscript/cscript opening a network connection to a non-local network. Adversaries may use script to download malicious payloads.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1202",
+      "score": 2,
+      "comment": "Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects file access requests to the the Windows Data Protection API Master keys by an uncommon application.\nThis can be a sign of credential stealing. Example case would be usage of mimikatz \"dpapi::masterkey\" function\n | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects execution of \"aspnet_compiler.exe\" which can be abused to compile and execute C# code. | Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1089",
+      "score": 2,
+      "comment": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects a suspicious script executions from temporary folder | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent. | Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process. | Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets | Detects modifications to the Windows Defender configuration settings using PowerShell to add exclusions | Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1055.004",
+      "score": 2,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1065",
+      "score": 2,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1073",
+      "score": 2,
+      "comment": "Detects use of Set-ExecutionPolicy to set insecure policies | The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers | Detects modification of autostart extensibility point (ASEP) in registry.",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#ff0000"
+    ],
+    "minValue": 0,
+    "maxValue": 100
+  },
+  "legendItems": [],
+  "showTacticRowBackground": true,
+  "tacticRowBackground": "#e0e0e0",
+  "selectTechniquesAcrossTactics": true,
+  "sorting": 0,
+  "viewMode": 0,
+  "hideDisabled": false,
+  "techniqueLayout": "side",
+  "filters": {
+    "platforms": [],
+    "stages": []
+  },
+  "metadata": [
+    {
+      "name": "Author",
+      "value": "Alieu Samateh"
+    },
+    {
+      "name": "Generated",
+      "value": ""
+    },
+    {
+      "name": "Generated At"
+    }
+  ]
+}

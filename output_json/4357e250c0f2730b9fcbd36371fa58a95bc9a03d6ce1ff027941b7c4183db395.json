@@ -1,0 +1,1564 @@
+{
+  "data": {
+    "mitre_attack_techniques": [
+      {
+        "id": "T1562.001",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Creates guard pages, often used to prevent reverse engineering and debugging",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "92"
+          }
+        ]
+      },
+      {
+        "id": "T1497",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Contains medium sleeps (>= 30s)",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "1884"
+          }
+        ]
+      },
+      {
+        "id": "T1497",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Contains long sleeps (>= 3 min)",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "226"
+          }
+        ]
+      },
+      {
+        "id": "T1497",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "May sleep (evasive loops) to hinder dynamic analysis",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "307"
+          }
+        ]
+      },
+      {
+        "id": "T1082",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Queries the cryptographic machine GUID",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "285"
+          }
+        ]
+      },
+      {
+        "id": "T1082",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Reads software policies",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "509"
+          }
+        ]
+      },
+      {
+        "id": "T1064",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Executes commands using a shell command-line interpreter",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "2075"
+          }
+        ]
+      },
+      {
+        "id": "T1543.002",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Executes the \"systemctl\" command used for controlling the systemd system and service manager",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "4032"
+          }
+        ]
+      },
+      {
+        "id": "T1564.001",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Creates hidden files, links and/or directories",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "4044"
+          }
+        ]
+      },
+      {
+        "id": "T1518.001",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Uses the \"uname\" system call to query kernel version information (possible evasion)",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "4049"
+          }
+        ]
+      }
+    ],
+    "text_highlighted": [
+      ""
+    ],
+    "registry_keys_opened": [
+      "HKEY_CURRENT_USER\\Control Panel\\International",
+      "HKEY_CURRENT_USER\\Software\\Classes\\Local Settings",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\.NETFramework",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Fusion",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\Layers",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SessionInfo\\1",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SessionInfo\\1\\KnownFolders",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders",
+      "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\Windows\\Explorer",
+      "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft",
+      "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Ole",
+      "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Ole\\FeatureDevelopmentProperties",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\AppModel\\Lookaside\\Packages",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32\\IL\\19ab8d57\\178f9e58\\21",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32\\IL\\3f50fe4f\\6f6eef09\\1a",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32\\IL\\424bd4d8\\4444e1e8\\28",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32\\IL\\7950e2c5\\21d3ab3e\\1b",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32\\NI\\181938c6\\7950e2c5",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32\\NI\\181938c6\\7950e2c5\\c",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32\\NI\\30bc7c4f\\3f50fe4f",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32\\NI\\30bc7c4f\\3f50fe4f\\b",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32\\NI\\65850ae9\\587f6024",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32\\index6c",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\7za.exe",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\unarchiver.exe",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\.NETFramework\\Policy\\APTCA",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\.NETFramework\\Policy\\Standards",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\.NETFramework\\Security\\Policy\\Extensions\\NamedPermissionSets\\Internet",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\.NETFramework\\Security\\Policy\\Extensions\\NamedPermissionSets\\LocalIntranet",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\.NETFramework\\policy\\AppPatch\\v4.0.30319.00000",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\.NETFramework\\policy\\AppPatch\\v4.0.30319.00000\\mscorwks.dll",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\.NETFramework\\policy\\standards\\v2.0.50727",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\.NETFramework\\policy\\v4.0",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Cryptography\\Defaults\\Provider Types\\Type 024",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Cryptography\\Defaults\\Provider\\Microsoft Enhanced RSA and AES Cryptographic Provider",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Fusion",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\OLE",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\OLEAUT",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FolderDescriptions\\{352481E8-33BE-4251-BA85-6007CAEDCF9D}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FolderDescriptions\\{352481E8-33BE-4251-BA85-6007CAEDCF9D}\\PropertyBag",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FolderDescriptions\\{3EB685DB-65F9-4CF6-A03A-E3EF65729F3D}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FolderDescriptions\\{3EB685DB-65F9-4CF6-A03A-E3EF65729F3D}\\PropertyBag",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FolderDescriptions\\{5E6C858F-0E22-4760-9AFE-EA3317B67173}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FolderDescriptions\\{5E6C858F-0E22-4760-9AFE-EA3317B67173}\\PropertyBag",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Policies\\Microsoft\\WindowsStore",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\MUI\\UILanguages\\en-US",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Nls\\CustomLocale",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Segment Heap",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Policies\\Microsoft\\Cryptography\\Configuration",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Cryptography",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Fusion",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Fusion\\GACChangeNotification\\Default",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Fusion\\NativeImagesIndex\\v2.0.50727_32",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Fusion\\PublisherPolicy\\Default",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Ole",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Ole\\FeatureDevelopmentProperties",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\Disable8And16BitMitigation",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\unarchiver.exe",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Wow64\\x86",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Wow64\\x86\\xtajit",
+      "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Cryptography",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\.NETFramework",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\.NETFramework\\NGen\\Policy\\v2.0",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\.NETFramework\\Policy\\",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\.NETFramework\\Policy\\AppPatch",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\.NETFramework\\Security\\Policy\\Extensions\\NamedPermissionSets",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\.NETFramework\\v2.0.50727\\Security\\Policy",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Cryptography\\DESHashSessionKeyBackward",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Cryptography\\Offload",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\LanguageOverlay\\OverlayPackages\\en-US",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\OLE\\Tracing",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Rpc",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\StrongName",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList\\S-1-5-21-1015118539-3749460369-599379286-1001",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Windows",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FolderDescriptions",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\KnownFolderSettings",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\SideBySide",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\SideBySide\\AssemblyStorageRoots",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Policies\\Microsoft\\MUI\\Settings",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Policies\\Microsoft\\Windows NT\\Rpc",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Policies\\Microsoft\\Windows\\Display",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Policies\\Microsoft\\Windows\\Explorer",
+      "HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Policies\\Microsoft\\Windows\\Safer\\CodeIdentifiers",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\ComputerName\\ActiveComputerName",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\FileSystem\\",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Lsa",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Lsa\\FipsAlgorithmPolicy",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\MUI\\Settings\\LanguageConfiguration",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\MUI\\UILanguages",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\MUI\\UILanguages\\PendingDelete",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\NLS\\Language",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Nls\\CustomLocale",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Nls\\ExtendedLocale",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Nls\\Sorting\\Ids",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Nls\\Sorting\\Versions",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\SafeBoot\\Option",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager\\AppCertDlls",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Srp\\GP\\DLL",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Terminal Server",
+      "HKEY_LOCAL_MACHINE\\System\\Setup"
+    ],
+    "files_written": [
+      "C:\\Users\\user\\AppData\\Local\\Temp\\i4430jvz.5vk",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\i4430jvz.5vk\\xihFPMWXQcGkZ.dll",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\unarchiver.log",
+      "C:\\Users\\user\\AppData\\Roaming",
+      "\\Device\\ConDrv\\\\Connect",
+      "/root/.cache/dconf/user",
+      "/var/log/syslog.1.gz"
+    ],
+    "command_executions": [
+      "dbus-launch --autolaunch=a39eb3ed78b7401fb6809ed0c562a5b1 --binary-syntax --close-stderr",
+      "/bin/sh -e -u -c \"export GIO_LAUNCHED_DESKTOP_FILE_PID=$$; exec \\\"$@\\\"\" sh engrampa /tmp/e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395",
+      "engrampa /tmp/e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395",
+      "7z l -slt -bd -y -- /tmp/e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395",
+      "/usr/lib/p7zip/7z l -slt -bd -y -- /tmp/e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395",
+      "/bin/gzip",
+      "sh -c \"\\n\\t\\tinvoke-rc.d --quiet cups restart > /dev/null\\n\" logrotate_script \"/var/log/cups/*log \"",
+      "invoke-rc.d --quiet cups restart",
+      "/sbin/runlevel",
+      "systemctl --quiet is-enabled cups.service",
+      "ls /etc/rc[S2345].d/S[0-9][0-9]cups",
+      "systemctl --quiet is-active cups.service",
+      "sh -c /usr/lib/rsyslog/rsyslog-rotate logrotate_script /var/log/syslog",
+      "/usr/lib/rsyslog/rsyslog-rotate",
+      "systemctl kill -s HUP rsyslog.service",
+      "dpkg --print-architecture"
+    ],
+    "tags": [
+      "DETECT_DEBUG_ENVIRONMENT",
+      "LONG_SLEEPS",
+      "SETS_PROCESS_NAME"
+    ],
+    "verdicts": [
+      "CLEAN"
+    ],
+    "files_opened": [
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\CLR_v2.0_32\\UsageLogs\\unarchiver.exe.log",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\i4430jvz.5vk\\",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\i4430jvz.5vk\\xihFPMWXQcGkZ.dll",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\unarchiver.log",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\CLR Security Config\\v2.0.50727.312\\security.config",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\CLR Security Config\\v2.0.50727.312\\security.config.cch",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\CLR Security Config\\v2.0.50727.312\\security.config.cch.7740.4694593",
+      "C:\\Users\\user\\Desktop\\e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395.zip",
+      "C:\\Windows\\AppPatch\\sysmain.sdb",
+      "C:\\Windows\\Globalization\\Sorting\\sortdefault.nls",
+      "C:\\Windows\\Microsoft.NET\\Framework\\",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v1.0.3705\\clr.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v1.0.3705\\mscorwks.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v1.1.4322\\clr.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v1.1.4322\\mscorwks.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\CONFIG\\machine.config",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\clr.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\enterprisesec.config",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\enterprisesec.config.cch",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\enterprisesec.config.cch.7740.4694546",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\machine.config",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\security.config",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\security.config.cch",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\security.config.cch.7740.4694546",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\mscorjit.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\mscorwks.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\clr.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\mscoreei.dll",
+      "C:\\Windows\\SysWOW64\\",
+      "C:\\Windows\\SysWOW64\\7z.dll",
+      "C:\\Windows\\SysWOW64\\ADVAPI32.dll",
+      "C:\\Windows\\SysWOW64\\CRYPTBASE.dll",
+      "C:\\Windows\\SysWOW64\\CRYPTSP.dll",
+      "C:\\Windows\\SysWOW64\\Codecs\\",
+      "C:\\Windows\\SysWOW64\\FLTLIB.DLL",
+      "C:\\Windows\\SysWOW64\\Formats\\",
+      "C:\\Windows\\SysWOW64\\GDI32.dll",
+      "C:\\Windows\\SysWOW64\\IMM32.DLL",
+      "C:\\Windows\\SysWOW64\\KERNEL32.dll",
+      "C:\\Windows\\SysWOW64\\KERNELBASE.dll",
+      "C:\\Windows\\SysWOW64\\MSCOREE.DLL",
+      "C:\\Windows\\SysWOW64\\RPCRT4.dll",
+      "C:\\Windows\\SysWOW64\\SHLWAPI.dll",
+      "C:\\Windows\\SysWOW64\\SspiCli.dll",
+      "C:\\Windows\\SysWOW64\\USER32.dll",
+      "C:\\Windows\\SysWOW64\\VERSION.dll",
+      "C:\\Windows\\SysWOW64\\apphelp.dll",
+      "C:\\Windows\\SysWOW64\\bcrypt.dll",
+      "C:\\Windows\\SysWOW64\\bcryptPrimitives.dll",
+      "C:\\Windows\\SysWOW64\\cfgmgr32.dll",
+      "C:\\Windows\\SysWOW64\\combase.dll",
+      "C:\\Windows\\SysWOW64\\en-US\\tzres.dll.mui",
+      "C:\\Windows\\SysWOW64\\gdi32full.dll",
+      "C:\\Windows\\SysWOW64\\kernel.appcore.dll",
+      "C:\\Windows\\SysWOW64\\l_intl.nls",
+      "C:\\Windows\\SysWOW64\\msvcp_win.dll",
+      "C:\\Windows\\SysWOW64\\msvcrt.dll",
+      "C:\\Windows\\SysWOW64\\ntdll.dll",
+      "C:\\Windows\\SysWOW64\\ole32.dll",
+      "C:\\Windows\\SysWOW64\\oleaut32.dll",
+      "C:\\Windows\\SysWOW64\\powrprof.dll",
+      "C:\\Windows\\SysWOW64\\profapi.dll",
+      "C:\\Windows\\SysWOW64\\rsaenh.dll",
+      "C:\\Windows\\SysWOW64\\sechost.dll",
+      "C:\\Windows\\SysWOW64\\shcore.dll",
+      "C:\\Windows\\SysWOW64\\shell32.dll",
+      "C:\\Windows\\SysWOW64\\tzres.dll",
+      "C:\\Windows\\SysWOW64\\ucrtbase.dll",
+      "C:\\Windows\\SysWOW64\\unarchiver.exe",
+      "C:\\Windows\\SysWOW64\\unarchiver.exe.config",
+      "C:\\Windows\\SysWOW64\\win32u.dll",
+      "C:\\Windows\\SysWOW64\\windows.storage.dll",
+      "C:\\Windows\\System32\\7za.exe",
+      "C:\\Windows\\WinSxS\\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9445_none_d08c58b4442ba54f",
+      "C:\\Windows\\WinSxS\\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9445_none_d08c58b4442ba54f\\",
+      "C:\\Windows\\WinSxS\\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9445_none_d08c58b4442ba54f\\MSVCR80.dll",
+      "C:\\Windows\\assembly\\GAC_32\\mscorlib\\2.0.0.0__b77a5c561934e089\\",
+      "C:\\Windows\\assembly\\GAC_32\\mscorlib\\2.0.0.0__b77a5c561934e089\\sortkey.nlp",
+      "C:\\Windows\\assembly\\GAC_32\\mscorlib\\2.0.0.0__b77a5c561934e089\\sorttbls.nlp",
+      "C:\\Windows\\assembly\\GAC_MSIL\\System\\2.0.0.0__b77a5c561934e089\\",
+      "C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System\\52cfeb9aedd3786f3082b1f75214480c\\System.ni.dll",
+      "C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\index6c.dat",
+      "C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\mscorlib\\88c070ebedc734e5a9868fad1dc130ef\\mscorlib.ni.dll",
+      "C:\\Windows\\assembly\\pubpol66.dat",
+      "C:\\Windows\\system32\\IMM32.DLL",
+      "C:\\Windows\\system32\\en-US\\conhost.exe.mui",
+      "C:\\Windows\\system32\\uxtheme.dll",
+      "\\Device\\ConDrv\\Server",
+      "\\Device\\ConDrv\\\\Input",
+      "\\Device\\ConDrv\\\\Reference",
+      "\\Device\\KsecDD",
+      "\\pipe",
+      "\\pipe\\",
+      "\\pipe\\NULL",
+      "/dev/urandom",
+      "/etc/",
+      "/etc/dconf/profile/user",
+      "/etc/dpkg/dpkg.cfg",
+      "/etc/dpkg/dpkg.cfg.d",
+      "/etc/dpkg/dpkg.cfg.d/pkg-config-hook-config",
+      "/etc/fonts/conf.avail",
+      "/etc/fonts/conf.avail/10-antialias.conf",
+      "/etc/fonts/conf.avail/10-autohint.conf",
+      "/etc/fonts/conf.avail/10-hinting-full.conf",
+      "/etc/fonts/conf.avail/10-hinting-medium.conf",
+      "/etc/fonts/conf.avail/10-hinting-none.conf",
+      "/etc/fonts/conf.avail/10-hinting-slight.conf",
+      "/etc/fonts/conf.avail/10-no-sub-pixel.conf",
+      "/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf",
+      "/etc/fonts/conf.avail/10-sub-pixel-bgr.conf",
+      "/etc/fonts/conf.avail/10-sub-pixel-rgb.conf",
+      "/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf",
+      "/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf",
+      "/etc/fonts/conf.avail/10-unhinted.conf",
+      "/etc/fonts/conf.avail/11-lcdfilter-default.conf",
+      "/etc/fonts/conf.avail/11-lcdfilter-legacy.conf",
+      "/etc/fonts/conf.avail/11-lcdfilter-light.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-vera.conf",
+      "/etc/fonts/conf.avail/25-unhint-nonlatin.conf",
+      "/etc/fonts/conf.avail/30-0-google-crosextra-carlito-fontconfig.conf",
+      "/etc/fonts/conf.avail/30-cjk-aliases.conf",
+      "/etc/fonts/conf.avail/30-droid-noto-mono.conf",
+      "/etc/fonts/conf.avail/30-droid-noto.conf",
+      "/etc/fonts/conf.avail/30-metric-aliases.conf",
+      "/etc/fonts/conf.avail/40-nonlatin.conf",
+      "/etc/fonts/conf.avail/45-generic.conf",
+      "/etc/fonts/conf.avail/45-latin.conf",
+      "/etc/fonts/conf.avail/49-sansserif.conf",
+      "/etc/fonts/conf.avail/50-user.conf",
+      "/etc/fonts/conf.avail/51-local.conf",
+      "/etc/fonts/conf.avail/53-monospace-lcd-filter.conf",
+      "/etc/fonts/conf.avail/56-language-selector-ar.conf",
+      "/etc/fonts/conf.avail/57-dejavu-sans-mono.conf",
+      "/etc/fonts/conf.avail/57-dejavu-sans.conf",
+      "/etc/fonts/conf.avail/57-dejavu-serif.conf",
+      "/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf",
+      "/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf",
+      "/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf",
+      "/etc/fonts/conf.avail/59-lohit-devanagari.conf",
+      "/etc/fonts/conf.avail/60-generic.conf",
+      "/etc/fonts/conf.avail/60-latin.conf",
+      "/etc/fonts/conf.avail/62-google-crosextra-carlito-fontconfig.conf",
+      "/etc/fonts/conf.avail/64-language-selector-prefer.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-beng-extra.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-deva-extra.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-gubbi.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-gujr-extra.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-guru-extra.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-orya-extra.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-pagul.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-telu-extra.conf",
+      "/etc/fonts/conf.avail/65-0-smc-meera.conf",
+      "/etc/fonts/conf.avail/65-0-smc-rachana.conf",
+      "/etc/fonts/conf.avail/65-droid-sans-fallback.conf",
+      "/etc/fonts/conf.avail/65-fonts-persian.conf",
+      "/etc/fonts/conf.avail/65-khmer.conf",
+      "/etc/fonts/conf.avail/65-nonlatin.conf",
+      "/etc/fonts/conf.avail/66-lohit-assamese.conf",
+      "/etc/fonts/conf.avail/66-lohit-bengali.conf",
+      "/etc/fonts/conf.avail/66-lohit-devanagari.conf",
+      "/etc/fonts/conf.avail/66-lohit-gujarati.conf",
+      "/etc/fonts/conf.avail/66-lohit-gurmukhi.conf",
+      "/etc/fonts/conf.avail/66-lohit-kannada.conf",
+      "/etc/fonts/conf.avail/66-lohit-odia.conf",
+      "/etc/fonts/conf.avail/66-lohit-tamil-classical.conf",
+      "/etc/fonts/conf.avail/66-lohit-tamil.conf",
+      "/etc/fonts/conf.avail/66-lohit-telugu.conf",
+      "/etc/fonts/conf.avail/67-fonts-smc-manjari.conf",
+      "/etc/fonts/conf.avail/67-lohit-malayalam.conf",
+      "/etc/fonts/conf.avail/67-smc-anjalioldlipi.conf",
+      "/etc/fonts/conf.avail/67-smc-chilanka.conf",
+      "/etc/fonts/conf.avail/67-smc-dyuthi.conf",
+      "/etc/fonts/conf.avail/67-smc-karumbi.conf",
+      "/etc/fonts/conf.avail/67-smc-keraleeyam.conf",
+      "/etc/fonts/conf.avail/67-smc-raghumalayalamsans.conf",
+      "/etc/fonts/conf.avail/67-smc-suruma.conf",
+      "/etc/fonts/conf.avail/67-smc-uroob.conf",
+      "/etc/fonts/conf.avail/69-language-selector-ja.conf",
+      "/etc/fonts/conf.avail/69-language-selector-zh-cn.conf",
+      "/etc/fonts/conf.avail/69-language-selector-zh-hk.conf",
+      "/etc/fonts/conf.avail/69-language-selector-zh-mo.conf",
+      "/etc/fonts/conf.avail/69-language-selector-zh-sg.conf",
+      "/etc/fonts/conf.avail/69-language-selector-zh-tw.conf",
+      "/etc/fonts/conf.avail/69-unifont.conf",
+      "/etc/fonts/conf.avail/70-force-bitmaps.conf",
+      "/etc/fonts/conf.avail/70-no-bitmaps.conf",
+      "/etc/fonts/conf.avail/70-yes-bitmaps.conf",
+      "/etc/fonts/conf.avail/80-delicious.conf",
+      "/etc/fonts/conf.avail/90-synthetic.conf",
+      "/etc/fonts/conf.avail/99-language-selector-zh.conf",
+      "/etc/fonts/conf.d",
+      "/etc/fonts/conf.d/65-khmer.conf",
+      "/etc/fonts/fonts.conf",
+      "/etc/gnome/defaults.list",
+      "/etc/gtk-3.0/settings.ini",
+      "/etc/locale.alias",
+      "/etc/machine-id",
+      "/etc/rc2.d/",
+      "/etc/rc3.d/",
+      "/etc/rc4.d/",
+      "/etc/rc5.d/",
+      "/etc/rcS.d/",
+      "/etc/systemd/system.attached/cups.service.d",
+      "/etc/systemd/system.control/cups.service.d",
+      "/etc/systemd/system/cups.service.d",
+      "/etc/xdg/mimeapps.list",
+      "/lib/systemd/tls/avx512_1/libc.so.6",
+      "/lib/systemd/tls/avx512_1/x86_64/libc.so.6",
+      "/lib/systemd/tls/haswell/avx512_1/libc.so.6",
+      "/lib/systemd/tls/haswell/avx512_1/x86_64/libc.so.6",
+      "/lib/systemd/tls/haswell/libc.so.6",
+      "/lib/systemd/tls/haswell/x86_64/libc.so.6",
+      "/proc/1/environ",
+      "/proc/1/sched",
+      "/proc/3331/stat",
+      "/proc/3332/stat",
+      "/proc/3334/stat",
+      "/proc/3339/stat",
+      "/proc/3387/fd",
+      "/proc/3390/fd",
+      "/proc/3393/fd",
+      "/proc/cmdline",
+      "/proc/filesystems",
+      "/proc/self/fd",
+      "/proc/self/stat",
+      "/proc/sys/kernel/osrelease",
+      "/root/.Xdefaults-buffalo",
+      "/root/.cache/dconf/profile",
+      "/root/.cache/dconf/user",
+      "/root/.config/dconf/user",
+      "/root/.config/ibus/bus/a39eb3ed78b7401fb6809ed0c562a5b1-unix-0",
+      "/root/.config/mimeapps.list",
+      "/root/.fonts/.uuid",
+      "/root/.icons/DMZ-White/cursors/col-resize",
+      "/root/.icons/DMZ-White/cursors/h_double_arrow",
+      "/root/.icons/DMZ-White/cursors/text",
+      "/root/.icons/DMZ-White/cursors/xterm",
+      "/root/.icons/DMZ-White/index.theme",
+      "/root/.icons/cursors/col-resize",
+      "/root/.icons/cursors/h_double_arrow",
+      "/root/.icons/cursors/text",
+      "/root/.icons/cursors/xterm",
+      "/root/.icons/default/cursors/col-resize",
+      "/root/.icons/default/cursors/h_double_arrow",
+      "/root/.icons/default/cursors/text",
+      "/root/.icons/default/cursors/xterm",
+      "/root/.icons/default/index.theme",
+      "/root/.icons/index.theme",
+      "/root/.local/share/applications",
+      "/root/.local/share/applications/defaults.list",
+      "/root/.local/share/applications/mimeapps.list",
+      "/root/.local/share/applications/mimeinfo.cache",
+      "/root/.local/share/fonts/.uuid",
+      "/root/.local/share/glib-2.0/schemas/gschemas.compiled",
+      "/root/.local/share/mime//aliases",
+      "/root/.local/share/mime//generic-icons",
+      "/root/.local/share/mime//icons",
+      "/root/.local/share/mime//subclasses",
+      "/root/.local/share/mime/aliases",
+      "/root/.local/share/mime/application/octet-stream.xml",
+      "/root/.local/share/mime/generic-icons",
+      "/root/.local/share/mime/icons",
+      "/root/.local/share/mime/subclasses",
+      "/root/.local/share/recently-used.xbel",
+      "/run/dconf/user/0",
+      "/run/systemd/container",
+      "/run/systemd/system.attached/cups.service.d",
+      "/run/systemd/system.control/cups.service.d",
+      "/run/systemd/system/cups.service.d",
+      "/run/systemd/transient/cups.service.d",
+      "/run/user/1000/gdm/Xauthority",
+      "/run/utmp",
+      "/sys/devices/system/cpu",
+      "/sys/firmware/efi/efivars/SystemdOptions-8cf2644b-4b0b-428f-9387-6d876050dc67",
+      "/tmp",
+      "/tmp/e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395",
+      "/usr/bin/7z",
+      "/usr/lib/locale/C.UTF-8/LC_CTYPE",
+      "/usr/lib/p7zip/7z.so",
+      "/usr/lib/p7zip/Codecs",
+      "/usr/lib/p7zip/Formats",
+      "/usr/lib/rsyslog/rsyslog-rotate",
+      "/usr/lib/systemd/system/cups.service.d",
+      "/usr/lib/x86_64-linux-gnu/charset.alias",
+      "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache",
+      "/usr/lib/x86_64-linux-gnu/gio/modules",
+      "/usr/lib/x86_64-linux-gnu/gio/modules/giomodule.cache",
+      "/usr/local/lib/systemd/system/cups.service.d"
+    ],
+    "signature_matches": [
+      {
+        "id": "628",
+        "description": "Sample drops PE files which have not been started, ",
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "236",
+        "description": "Creates temporary files",
+        "match_data": [
+          "C:\\Users\\user\\AppData\\Local\\Temp\\unarchiver.log"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "509",
+        "description": "Reads software policies",
+        "match_data": [
+          "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\Windows\\Safer\\CodeIdentifiers"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO",
+        "refs": [
+          {
+            "ref": "#registry_keys_opened",
+            "value": "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\Windows\\Safer\\CodeIdentifiers"
+          }
+        ]
+      },
+      {
+        "id": "171",
+        "description": "Parts of this applications are using the .NET runtime (Probably coded in C#)",
+        "match_data": [
+          "C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\mscorlib\\88c070ebedc734e5a9868fad1dc130ef\\mscorlib.ni.dll",
+          "C:\\Windows\\assembly\\GAC_32\\mscorlib\\2.0.0.0__b77a5c561934e089\\sorttbls.nlp",
+          "C:\\Windows\\assembly\\GAC_32\\mscorlib\\2.0.0.0__b77a5c561934e089\\sortkey.nlp"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "285",
+        "description": "Queries the cryptographic machine GUID",
+        "match_data": [
+          "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography MachineGuid"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "715",
+        "description": "Classification label",
+        "match_data": [
+          "clean2.winZIP@4/2@0/0"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "381",
+        "description": "Disables application error messsages (SetErrorMode)",
+        "match_data": [
+          "NOOPENFILEERRORBOX"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "229",
+        "description": "Spawns processes",
+        "match_data": [
+          "C:\\Windows\\SysWOW64\\unarchiver.exe C:\\Windows\\SysWOW64\\unarchiver.exe\" \"C:\\Users\\user\\Desktop\\e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395.zip",
+          "C:\\Windows\\SysWOW64\\7za.exe C:\\Windows\\System32\\7za.exe\" x -pinfected -y -o\"C:\\Users\\user\\AppData\\Local\\Temp\\i4430jvz.5vk\" \"C:\\Users\\user\\Desktop\\e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c418",
+          "C:\\Windows\\System32\\conhost.exe C:\\Windows\\system32\\conhost.exe 0xffffffff -ForceV1"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "116",
+        "description": "Found dropped PE file which has not been started or loaded",
+        "match_data": [
+          "C:\\Users\\user\\AppData\\Local\\Temp\\i4430jvz.5vk\\xihFPMWXQcGkZ.dll"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "115",
+        "description": "Drops PE files",
+        "match_data": [
+          "C:\\Users\\user\\AppData\\Local\\Temp\\i4430jvz.5vk\\xihFPMWXQcGkZ.dll"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "307",
+        "description": "May sleep (evasive loops) to hinder dynamic analysis",
+        "match_data": [
+          "-922337203685477s >= -30000s"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "95",
+        "description": "Creates mutexes",
+        "match_data": [
+          "\\Sessions\\1\\BaseNamedObjects\\Local\\SM0:7972:120:WilError_01"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "1318",
+        "description": "Creates a process in suspended mode (likely to inject code)",
+        "match_data": [
+          "C:\\Windows\\SysWOW64\\7za.exe C:\\Windows\\System32\\7za.exe\" x -pinfected -y -o\"C:\\Users\\user\\AppData\\Local\\Temp\\i4430jvz.5vk\" \"C:\\Users\\user\\Desktop\\e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c418"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "1884",
+        "description": "Contains medium sleeps (>= 30s)",
+        "match_data": [
+          "delay time: 922337203685477"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "92",
+        "description": "Creates guard pages, often used to prevent reverse engineering and debugging",
+        "match_data": [
+          "page read and write | page guard"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "226",
+        "description": "Contains long sleeps (>= 3 min)",
+        "match_data": [
+          "delay time: 922337203685477"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "510",
+        "description": "Uses new MSVCR Dlls",
+        "match_data": [
+          "C:\\Windows\\WinSxS\\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9445_none_d08c58b4442ba54f\\MSVCR80.dll"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "4049",
+        "description": "Uses the \"uname\" system call to query kernel version information (possible evasion)",
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "2075",
+        "description": "Executes commands using a shell command-line interpreter",
+        "match_data": [
+          "sh -c \"\\n\\t\\tinvoke-rc.d --quiet cups restart > /dev/null\\n\" logrotate_script \"/var/log/cups/*log \"",
+          "sh -c /usr/lib/rsyslog/rsyslog-rotate logrotate_script /var/log/syslog"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "4032",
+        "description": "Executes the \"systemctl\" command used for controlling the systemd system and service manager",
+        "match_data": [
+          "/usr/bin/systemctl -> systemctl --quiet is-enabled cups.service",
+          "/usr/bin/systemctl -> systemctl --quiet is-active cups.service",
+          "/usr/bin/systemctl -> systemctl kill -s HUP rsyslog.service"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "715",
+        "description": "Classification label",
+        "match_data": [
+          "clean2.lin@0/2@0/0"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "4044",
+        "description": "Creates hidden files and/or directories",
+        "match_data": [
+          "/root/.cache"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      }
+    ],
+    "memory_dumps": [
+      {
+        "file_name": "00000000.00000002.988415619.0000000000DBC000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "16384",
+        "base_address": "14401536",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988787165.000000000154F000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "22343680",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988722810.000000000138B000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "147456",
+        "base_address": "20492288",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989316482.000000000588D000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "12288",
+        "base_address": "92852224",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988592807.0000000001302000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "19931136",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989113759.000000000357E000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "20480",
+        "base_address": "56090624",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985470433.00000000016F0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "12288",
+        "base_address": "24051712",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988623369.0000000001350000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "36864",
+        "base_address": "20250624",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985452590.00000000016BE000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "8192",
+        "base_address": "23846912",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988545173.00000000012E0000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "19791872",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989179548.0000000003593000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "56176640",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989205052.000000000359D000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "24576",
+        "base_address": "56217600",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988831786.0000000001570000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "12288",
+        "base_address": "22478848",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988868795.0000000001790000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "16384",
+        "base_address": "24707072",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989050578.000000000356A000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "12288",
+        "base_address": "56008704",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985409279.000000000154E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "8192",
+        "base_address": "22339584",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988533336.00000000012DA000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "19767296",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988957296.0000000003200000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "16384",
+        "base_address": "52428800",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989023961.0000000003563000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "24576",
+        "base_address": "55980032",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989290921.000000000578E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "91807744",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988860215.000000000177F000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "24637440",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989166120.000000000358F000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "12288",
+        "base_address": "56160256",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988525283.00000000012D2000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "19734528",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988795253.0000000001550000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "65536",
+        "base_address": "22347776",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985417651.0000000001570000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "24576",
+        "base_address": "22478848",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985307126.0000000000FC0000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "16515072",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988437754.00000000010F6000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "17784832",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988385258.0000000000D30000.00000004.00000020.00040000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "13828096",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989149943.0000000003589000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "16384",
+        "base_address": "56135680",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000003.913444373.0000000001780000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "28672",
+        "base_address": "24641536",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.989230831.0000000004551000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "72683520",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989138987.0000000003584000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "16384",
+        "base_address": "56115200",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985293894.0000000000FB0000.00000004.00000020.00040000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "16449536",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000003.985134408.00000000011EF000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "18804736",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.988568314.00000000012EA000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "19832832",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988515735.00000000012C0000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "19660800",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988696764.000000000137B000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "36864",
+        "base_address": "20426752",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985583565.00000000031B0000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "8192",
+        "base_address": "52101120",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988462411.000000000113E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "18079744",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985568719.0000000001A0E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "8192",
+        "base_address": "27320320",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985525798.0000000001718000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "57344",
+        "base_address": "24215552",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000000.914618697.0000000001160000.00000004.00000400.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "18219008",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000001.00000002.985560763.000000000190F000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "26275840",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985504391.0000000001710000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "24576",
+        "base_address": "24182784",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988646172.000000000135B000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "122880",
+        "base_address": "20295680",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000000.914864632.0000000001160000.00000004.00000400.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "18219008",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000000.00000002.988557268.00000000012E2000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "19800064",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988977458.0000000003551000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "49152",
+        "base_address": "55906304",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988582343.00000000012EC000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "19841024",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989251770.000000000564E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "90497024",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989360991.00000000059CE000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "94167040",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988498542.00000000011C0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "24576",
+        "base_address": "18612224",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000003.984968730.00000000032B0000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "307200",
+        "base_address": "53149696",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000001.00000000.914737844.0000000001160000.00000004.00000400.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "18219008",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000000.00000002.988945268.00000000031CD000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "12288",
+        "base_address": "52219904",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989394932.0000000005B0E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "95477760",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988886949.0000000002F7E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "49799168",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988906129.0000000003040000.00000040.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "50593792",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989277284.000000000574D000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "12288",
+        "base_address": "91541504",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989187676.0000000003596000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "24576",
+        "base_address": "56188928",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985436032.000000000167E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "8192",
+        "base_address": "23584768",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988477635.000000000117E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "18341888",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988933465.000000000318E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "51961856",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988448284.00000000010FB000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "20480",
+        "base_address": "17805312",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985357267.000000000113C000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "16384",
+        "base_address": "18071552",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988850197.000000000167E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "23584768",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985377934.0000000001170000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "18284544",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988401564.0000000000D40000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "13893632",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985391524.000000000150E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "8192",
+        "base_address": "22077440",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988603478.0000000001317000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "20017152",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989405593.000000007FBE0000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "2143158272",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989378284.0000000005A0E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "94429184",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988923609.000000000314F000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "51703808",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989327158.00000000058CE000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "93118464",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988825800.0000000001560000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "22413312",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985482412.00000000016F5000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "40960",
+        "base_address": "24072192",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989071646.000000000356E000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "56025088",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.989086863.0000000003570000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "49152",
+        "base_address": "56033280",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.988610508.000000000131B000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "20033536",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000003.913463461.0000000001780000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "32768",
+        "base_address": "24641536",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.988488494.00000000011BE000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "18604032",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.985323640.000000000103D000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "12288",
+        "base_address": "17027072",
+        "stage": "MEM_STAGE_EXIT"
+      }
+    ],
+    "files_dropped": [
+      {
+        "path": "C:\\Users\\user\\AppData\\Local\\Temp\\i4430jvz.5vk\\xihFPMWXQcGkZ.dll",
+        "sha256": "6ff79609f3233c7e4c3e94a7fd1395a114d0a74651e0b29ca4f6d0948d330c40",
+        "type": "PE_EXE"
+      },
+      {
+        "path": "C:\\Users\\user\\AppData\\Local\\Temp\\unarchiver.log",
+        "sha256": "968412537af2537dd0c1ccaa29a1b1caa8bdab21b2f8e04679f0c0bd94a0661e",
+        "type": "TEXT"
+      },
+      {
+        "path": "/var/log/syslog.1.gz",
+        "sha256": "dcea80f26f6bc901bfdbf22b969aff9f725f734fedf91ffcdbc3c19b70c24560",
+        "type": "GZIP"
+      }
+    ],
+    "verdict_confidence": 2,
+    "processes_tree": [
+      {
+        "process_id": "7740",
+        "name": "C:\\Windows\\SysWOW64\\unarchiver.exe\" \"C:\\Users\\user\\Desktop\\e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395.zip",
+        "children": [
+          {
+            "process_id": "7892",
+            "name": "C:\\Windows\\SysWOW64\\7za.exe C:\\Windows\\System32\\7za.exe\" x -pinfected -y -o\"C:\\Users\\user\\AppData\\Local\\Temp\\i4430jvz.5vk\" \"C:\\Users\\user\\Desktop\\e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395.zip",
+            "children": [
+              {
+                "process_id": "7972",
+                "name": "C:\\Windows\\System32\\conhost.exe C:\\Windows\\system32\\conhost.exe 0xffffffff -ForceV1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "process_id": "3385",
+        "name": "/usr/bin/exo-open exo-open /tmp/e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395",
+        "children": [
+          {
+            "process_id": "3387",
+            "name": "/usr/bin/dbus-launch dbus-launch --autolaunch=a39eb3ed78b7401fb6809ed0c562a5b1 --binary-syntax --close-stderr"
+          },
+          {
+            "process_id": "3389",
+            "name": "/usr/bin/exo-open n/a"
+          }
+        ]
+      },
+      {
+        "process_id": "3390",
+        "name": "/usr/bin/engrampa engrampa /tmp/e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395",
+        "children": [
+          {
+            "process_id": "3393",
+            "name": "/usr/bin/dbus-launch dbus-launch --autolaunch=a39eb3ed78b7401fb6809ed0c562a5b1 --binary-syntax --close-stderr"
+          },
+          {
+            "process_id": "3403",
+            "name": "/usr/lib/p7zip/7z l -slt -bd -y -- /tmp/e250c0f2730b9fcbd36371fa58a95bc9a03d6ce1ff027941b7c4183db395"
+          }
+        ]
+      },
+      {
+        "process_id": "3327",
+        "name": "/bin/gzip"
+      },
+      {
+        "process_id": "3328",
+        "name": "/bin/gzip"
+      },
+      {
+        "process_id": "3329",
+        "name": "/bin/sh sh -c \"\\n\\t\\tinvoke-rc.d --quiet cups restart > /dev/null\\n\" logrotate_script \"/var/log/cups/*log \"",
+        "children": [
+          {
+            "process_id": "3330",
+            "name": "/usr/sbin/invoke-rc.d invoke-rc.d --quiet cups restart",
+            "children": [
+              {
+                "process_id": "3331",
+                "name": "/sbin/runlevel"
+              },
+              {
+                "process_id": "3332",
+                "name": "/usr/bin/systemctl systemctl --quiet is-enabled cups.service"
+              },
+              {
+                "process_id": "3333",
+                "name": "/usr/bin/ls ls /etc/rc[S2345].d/S[0-9][0-9]cups"
+              },
+              {
+                "process_id": "3334",
+                "name": "/usr/bin/systemctl systemctl --quiet is-active cups.service"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "process_id": "3335",
+        "name": "/bin/gzip"
+      },
+      {
+        "process_id": "3337",
+        "name": "/bin/sh sh -c /usr/lib/rsyslog/rsyslog-rotate logrotate_script /var/log/syslog",
+        "children": [
+          {
+            "process_id": "3338",
+            "name": "/usr/lib/rsyslog/rsyslog-rotate",
+            "children": [
+              {
+                "process_id": "3339",
+                "name": "/usr/bin/systemctl systemctl kill -s HUP rsyslog.service"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "process_id": "3472",
+        "name": "/bin/dpkg dpkg --print-architecture"
+      }
+    ],
+    "attack_techniques": {
+      "T1562.001": [
+        {
+          "severity": "INFO",
+          "description": "Creates guard pages, often used to prevent reverse engineering and debugging",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "92"
+            }
+          ]
+        }
+      ],
+      "T1497": [
+        {
+          "severity": "INFO",
+          "description": "Contains medium sleeps (>= 30s)",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "1884"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "Contains long sleeps (>= 3 min)",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "226"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "May sleep (evasive loops) to hinder dynamic analysis",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "307"
+            }
+          ]
+        }
+      ],
+      "T1082": [
+        {
+          "severity": "INFO",
+          "description": "Queries the cryptographic machine GUID",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "285"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "Reads software policies",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "509"
+            }
+          ]
+        }
+      ],
+      "T1064": [
+        {
+          "severity": "INFO",
+          "description": "Executes commands using a shell command-line interpreter",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "2075"
+            }
+          ]
+        }
+      ],
+      "T1543.002": [
+        {
+          "severity": "INFO",
+          "description": "Executes the \"systemctl\" command used for controlling the systemd system and service manager",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "4032"
+            }
+          ]
+        }
+      ],
+      "T1564.001": [
+        {
+          "severity": "INFO",
+          "description": "Creates hidden files, links and/or directories",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "4044"
+            }
+          ]
+        }
+      ],
+      "T1518.001": [
+        {
+          "severity": "INFO",
+          "description": "Uses the \"uname\" system call to query kernel version information (possible evasion)",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "4049"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -7,7 +7,7 @@ import pandas as pd
 # CONFIGURATION
 # -------------------------------
 # Directory containing VirusTotal JSON reports
-input_dir = "vt_reports/"
+input_dir = "output_json/"
 output_csv = "malware_behavior_data.csv"
 
 # Helper: Safely extract nested JSON fields

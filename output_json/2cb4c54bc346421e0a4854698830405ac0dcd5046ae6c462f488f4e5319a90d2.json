@@ -1,0 +1,1608 @@
+{
+  "data": {
+    "processes_created": [
+      "\"C:\\Users\\<USER>\\Desktop\\executable.exe\"",
+      "${SamplePath}\\2cb4c54bc346421e0a4854698830405ac0dcd5046ae6c462f488f4e5319a90d2.exe",
+      "%SAMPLEPATH%\\crb123.exe",
+      "2cb4c54bc346421e0a4854698830405ac0dcd5046ae6c462f488f4e5319a90d2-2022-11-16-13-02-19.exe"
+    ],
+    "signature_matches": [
+      {
+        "id": "0",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "parse PE header",
+        "description": "load-code/pe",
+        "authors": [
+          "moritz.raabe@mandiant.com"
+        ],
+        "match_data": [
+          "IMAGE_NT_SIGNATURE (PE)",
+          "mnemonic: cmp",
+          "IMAGE_DOS_SIGNATURE (MZ)"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: parse PE header\n    namespace: load-code/pe\n    authors:\n      - moritz.raabe@mandiant.com\n    scopes:\n      static: function\n      dynamic: unsupported  # requires mnemonic, operand[1].offset features\n    att&ck:\n      - Execution::Shared Modules [T1129]\n    examples:\n      - 9324D1A8AE37A36AE560C37448C9705A:0x403DD0\n  features:\n    - and:\n      - os: windows\n      - and:\n        - mnemonic: cmp\n        - or:\n          - number: 0x4550 = IMAGE_NT_SIGNATURE (PE)\n          - and:\n            - number: 0x50\n            - number: 0x45\n        - or:\n          - number: 0x5A4D = IMAGE_DOS_SIGNATURE (MZ)\n          - and:\n            - number: 0x4D\n            - number: 0x5A\n        - optional:\n          - and:\n            - operand[1].offset: 0x3C = IMAGE_DOS_HEADER.e_lfanew\n            - or:\n              - and:\n                - arch: i386\n                - operand[1].offset: 0x50 = IMAGE_NT_HEADERS.OptionalHeader.SizeOfImage\n                - operand[1].offset: 0x34 = IMAGE_NT_HEADERS.OptionalHeader.ImageBase\n              - and:\n                - arch: amd64\n                - operand[1].offset: 0x50 = IMAGE_NT_HEADERS64.OptionalHeader.SizeOfImage\n                - operand[1].offset: 0x30 = IMAGE_NT_HEADERS64.OptionalHeader.ImageBase\n          - basic block:\n            - and:\n              - operand[1].offset: 0x3C = IMAGE_DOS_HEADER.e_lfanew\n              - 3 or more:\n                - operand[1].offset: 0x4 = IMAGE_NT_HEADERS.FileHeader.Machine\n                - operand[1].offset: 0x6 = IMAGE_NT_HEADERS.FileHeader.NumberOfSections\n                - operand[1].offset: 0x14 = IMAGE_NT_HEADERS.FileHeader.SizeOfOptionalHeader\n                - operand[1].offset: 0x16 = IMAGE_NT_HEADERS.FileHeader.Characteristics\n                - operand[1].offset: 0x28 = IMAGE_NT_HEADERS.OptionalHeader.AddressOfEntryPoint  # for 32 and 64 bit\n                - or:\n                  - and:\n                    - arch: i386\n                    - operand[1].offset: 0x34 = IMAGE_NT_HEADERS.OptionalHeader.ImageBase\n                    - operand[1].offset: 0x50 = IMAGE_NT_HEADERS.OptionalHeader.SizeOfImage\n                  - and:\n                    - arch: amd64\n                    - operand[1].offset: 0x30 = IMAGE_NT_HEADERS.OptionalHeader.ImageBase\n                    - operand[1].offset: 0x50 = IMAGE_NT_HEADERS64.OptionalHeader.SizeOfImage\n"
+      },
+      {
+        "id": "1",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "allocate or change RWX memory",
+        "description": "host-interaction/process/inject",
+        "authors": [
+          "@mr-tz",
+          "mehunhoff@google.com"
+        ],
+        "match_data": [
+          "PAGE_EXECUTE_READWRITE",
+          "api: VirtualAlloc",
+          "mnemonic: lea"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: allocate or change RWX memory\n    namespace: host-interaction/process/inject\n    authors:\n      - \"@mr-tz\"\n      - mehunhoff@google.com\n    scopes:\n      static: basic block\n      dynamic: call\n    mbc:\n      - Memory::Allocate Memory [C0007]\n    examples:\n      - Practical Malware Analysis Lab 03-03.exe_:0x4010EA\n      # ntdll\n      - 563653399B82CD443F120ECEFF836EA3678D4CF11D9B351BB737573C2D856299:0x140001ABA\n  features:\n    - or:\n      - basic block:\n        - and:\n          - or:\n            - match: allocate memory\n            - match: change memory protection\n          - or:\n            - number: 0x40 = PAGE_EXECUTE_READWRITE\n            # lea     r9d, [rcx+40h]  ; flProtect\n            # call    cs:VirtualAlloc\n            - instruction:\n              - mnemonic: lea\n              - offset: 0x40 = PAGE_EXECUTE_READWRITE\n      - call:\n        - and:\n          - or:\n            - match: allocate memory\n            - match: change memory protection\n          - number: 0x40 = PAGE_EXECUTE_READWRITE\n"
+      },
+      {
+        "id": "5",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "read file on Windows",
+        "description": "host-interaction/file-system/read",
+        "authors": [
+          "moritz.raabe@mandiant.com",
+          "anushka.virgaonkar@mandiant.com"
+        ],
+        "match_data": [
+          "api: CreateFile",
+          "api: ReadFile",
+          "create or open file"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: read file on Windows\n    namespace: host-interaction/file-system/read\n    authors:\n      - moritz.raabe@mandiant.com\n      - anushka.virgaonkar@mandiant.com\n    scopes:\n      static: function\n      dynamic: span of calls\n    mbc:\n      - File System::Read File [C0051]\n    examples:\n      - BFB9B5391A13D0AFD787E87AB90F14F5:0x1314567B\n  features:\n    - or:\n      - and:\n        - os: windows\n        - optional:\n          - and:\n            - number: 0x80000000 = GENERIC_READ\n            - match: create or open file\n        - or:\n          - api: kernel32.ReadFile\n          - api: ReadFileEx\n          - api: NtReadFile\n          - api: ZwReadFile\n          - api: LZRead\n          - api: _read\n          - api: fread\n      - api: System.IO.File::ReadAllBytes\n      - api: System.IO.File::ReadAllBytesAsync\n      - api: System.IO.File::ReadAllLines\n      - api: System.IO.File::ReadAllLinesAsync\n      - api: System.IO.File::ReadAllText\n      - api: System.IO.File::ReadAllTextAsync\n      - api: System.IO.File::ReadLines\n"
+      },
+      {
+        "id": "6",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "hash data using murmur3",
+        "description": "data-manipulation/hashing/murmur",
+        "authors": [
+          "william.ballenthin@mandiant.com"
+        ],
+        "match_data": [
+          "mnemonic: shr"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: hash data using murmur3\n    namespace: data-manipulation/hashing/murmur\n    authors:\n      - william.ballenthin@mandiant.com\n    scopes:\n      static: function\n      dynamic: unsupported  # requires characteristic, mnemonic features\n    mbc:\n      - Data::Non-Cryptographic Hash::MurmurHash [C0030.001]\n    references:\n      - https://github.com/aappleby/smhasher/blob/master/src/MurmurHash3.cpp\n    examples:\n      - c66172b12971a329f8d5ff01665f204b:0x404A18\n  features:\n    - or:\n      - and:\n        - number: 0x85ebca6b = 32-bit finalization mix constant 1\n        - number: 0xc2b2ae35 = 32-bit finalization mix constant 2\n      - and:\n        - number: 0xff51afd7ed558ccd = 64-bit finalization mix constant 1\n        - number: 0xc4ceb9fe1a85ec53 = 64-bit finalization mix constant 2\n      - and:\n        - number: 0xcc9e2d51 = c1 32-bit hash\n        - number: 0x1b873593 = c2 32-bit hash\n      - and:\n        - number: 0x239b961b = 32-bit c1 for 128-bit hash\n        - number: 0xab0e9789 = 32-bit c2 for 128-bit hash\n        - number: 0x38b34ae5 = 32-bit c3 for 128-bit hash\n        - number: 0xa1e38b93 = 32-bit c4 for 128-bit hash\n      - and:\n        - number: 0x87c37b91114253d5 = 64-bit c1 for 128-bit hash\n        - number: 0x4cf5ad432745937f = 64-bit c2 for 128-bit hash\n      - basic block:\n        - and:\n          - description: 'hash >> 16; hash >> 13; hash >> 16'\n          - count(mnemonic(shr)): 3\n          - instruction:\n            - mnemonic: shr\n            - number: 16\n          - instruction:\n            - mnemonic: shr\n            - number: 13\n          - optional:\n            - count(characteristic(nzxor)): 3 or more\n      - and:\n        # Group this two blocks under an `and` as on their own they are not\n        # unique enough and would cause false positives\n        - instruction:\n          - description: k ROL r1\n          - mnemonic: rol\n          - number: 15 = r1\n        - instruction:\n          - description: hash ROL r2\n          - mnemonic: rol\n          - number: 13 = r2\n",
+        "refs": [
+          {
+            "ref": "https://github.com/aappleby/smhasher/blob/master/src/MurmurHash3.cpp"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "reference Base64 string",
+        "description": "data-manipulation/encoding/base64",
+        "authors": [
+          "moritz.raabe@mandiant.com"
+        ],
+        "match_data": [
+          "regex: /ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: reference Base64 string\n    namespace: data-manipulation/encoding/base64\n    authors:\n      - moritz.raabe@mandiant.com\n    scopes:\n      static: file\n      dynamic: file\n    att&ck:\n      - Defense Evasion::Obfuscated Files or Information [T1027]\n    mbc:\n      - Data::Encode Data::Base64 [C0026.001]\n      - Data::Check String [C0019]\n    examples:\n      - BFB9B5391A13D0AFD787E87AB90F14F5\n      - 074072B261FC27B65C72671F13510C05\n      - 5DB2D2BE20D59AA0BE6709A6850F1775\n  features:\n    - string: /ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\n"
+      },
+      {
+        "id": "10",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "encode data using XOR",
+        "description": "data-manipulation/encoding/xor",
+        "authors": [
+          "moritz.raabe@mandiant.com"
+        ],
+        "match_data": [
+          "nzxor",
+          "tight loop"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: encode data using XOR\n    namespace: data-manipulation/encoding/xor\n    authors:\n      - moritz.raabe@mandiant.com\n    scopes:\n      static: basic block\n      dynamic: unsupported  # requires characteristic, Not features\n    att&ck:\n      - Defense Evasion::Obfuscated Files or Information [T1027]\n    mbc:\n      - Defense Evasion::Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]\n      - Data::Encode Data::XOR [C0026.002]\n    examples:\n      - 2D3EDC218A90F03089CC01715A9F047F:0x403D7E\n  features:\n    - and:\n      - characteristic: tight loop\n      - characteristic: nzxor\n      - not:\n        - description: filter for potential false positives\n        - or:\n          - or:\n            - description: unsigned bitwise negation operation (~i)\n            - number: 0xFFFFFFFF = bitwise negation for unsigned 32 bits\n            - number: 0xFFFFFFFFFFFFFFFF = bitwise negation for unsigned 64 bits\n          - or:\n            - description: signed bitwise negation operation (~i)\n            - number: 0x0FFFFFFF = bitwise negation for signed 32 bits\n            - number: 0x0FFFFFFFFFFFFFFF = bitwise negation for signed 64 bits\n          - or:\n            - description: Magic constants used in the implementation of strings functions.\n            # such as `strlen` and `strcat` in the Windows standard library:\n            # (((i - 0x81010101) ^ ~i) & 0x81010100)\n            ## 32 bits\n            - number: 0x7EFEFEFF = optimized string constant for 32 bits\n            - number: 0x81010101 = -0x81010101 = 0x7EFEFEFF\n            - number: 0x81010100 = 0x81010100 = ~0x7EFEFEFF\n            ## 64 bits\n            - number: 0x7EFEFEFEFEFEFEFF = optimized string constant for 64 bits\n            - number: 0x8101010101010101 = -0x8101010101010101 = 0x7EFEFEFEFEFEFEFF\n            - number: 0x8101010101010100 = 0x8101010101010100 = ~0x7EFEFEFEFEFEFEFF\n"
+      },
+      {
+        "id": "11",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "execute shellcode via indirect call",
+        "description": "load-code/shellcode",
+        "authors": [
+          "ronnie.salomonsen@mandiant.com"
+        ],
+        "match_data": [
+          "allocate or change RWX memory",
+          "api: VirtualAlloc",
+          "mnemonic: lea"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: execute shellcode via indirect call\n    namespace: load-code/shellcode\n    authors:\n      - ronnie.salomonsen@mandiant.com\n    scopes:\n      static: function\n      dynamic: unsupported  # requires characteristic features\n    mbc:\n      - Memory::Allocate Memory [C0007]\n  features:\n    - and:\n      - match: allocate or change RWX memory\n      - or:\n        - characteristic: indirect call\n        - characteristic: cross section flow\n"
+      },
+      {
+        "id": "12",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "hash data using murmur2",
+        "description": "data-manipulation/hashing/murmur",
+        "authors": [
+          "william.ballenthin@mandiant.com"
+        ],
+        "match_data": [
+          "mnemonic: imul",
+          "32-bit mixing constant m"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: hash data using murmur2\n    namespace: data-manipulation/hashing/murmur\n    authors:\n      - william.ballenthin@mandiant.com\n    scopes:\n      static: instruction\n      dynamic: unsupported  # requires mnemonic features\n    references:\n      - https://github.com/abrandoned/murmur2/blob/master/MurmurHash2.c\n  features:\n    - and:\n      - mnemonic: imul\n      - or:\n        - number: 0xc6a4a7935bd1e995 = 64-bit mixing constant m\n        - number: 0x5bd1e995 = 32-bit mixing constant m\n",
+        "refs": [
+          {
+            "ref": "https://github.com/abrandoned/murmur2/blob/master/MurmurHash2.c"
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "terminate process",
+        "description": "host-interaction/process/terminate",
+        "authors": [
+          "moritz.raabe@mandiant.com",
+          "michael.hunhoff@mandiant.com",
+          "anushka.virgaonkar@mandiant.com"
+        ],
+        "match_data": [
+          "api: TerminateProcess"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: terminate process\n    namespace: host-interaction/process/terminate\n    authors:\n      - moritz.raabe@mandiant.com\n      - michael.hunhoff@mandiant.com\n      - anushka.virgaonkar@mandiant.com\n    scopes:\n      static: function\n      dynamic: span of calls\n    mbc:\n      - Process::Terminate Process [C0018]\n    examples:\n      - C91887D861D9BD4A5872249B641BC9F9:0x401A77\n      - 9B7CCAA2AE6A5B96E3110EBCBC4311F6:0x10010307\n  features:\n    - or:\n      - api: System.Diagnostics.Process::Kill\n      - api: System.Diagnostics.Process::WaitForExit\n      - api: System.Diagnostics.Process::WaitForExitAsync\n      - api: System.Environment::Exit\n      - api: System.Windows.Forms.Application::Exit\n      - api: exit\n      - api: Exit\n      - and:\n        - os: linux\n        - api: exit_group\n      - and:\n        - optional:\n          - match: open process\n        - or:\n          - api: kernel32.TerminateProcess\n          - api: ntdll.NtTerminateProcess\n          - api: kernel32.ExitProcess\n"
+      },
+      {
+        "id": "14",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "enumerate PE sections",
+        "description": "load-code/pe",
+        "authors": [
+          "@Ana06",
+          "@mr-tz"
+        ],
+        "match_data": [
+          "mnemonic: movzx"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: enumerate PE sections\n    namespace: load-code/pe\n    authors:\n      - \"@Ana06\"\n      - \"@mr-tz\"\n    scopes:\n      static: function\n      dynamic: unsupported  # requires offset, operand[1].offset, characteristic, mnemonic, basicblock features\n    mbc:\n      - Discovery::Code Discovery::Enumerate PE Sections [B0046.001]\n    references:\n      - https://0x00sec.org/t/reflective-dll-injection/3080\n      - https://www.ired.team/offensive-security/code-injection-process-injection/reflective-dll-injection\n    examples:\n      - E4C33AC3638EEF68311F8AC0D72483C7:0x401510\n  features:\n    - and:\n      - os: windows\n      # there should be some complexity to functions like this\n      - count(basic blocks): 3 or more\n      - optional:\n        - offset: 0x3C = IMAGE_DOS_HEADER.e_lfanew\n      - instruction:\n        - or:\n          - mnemonic: mov\n          - mnemonic: movzx\n        - operand[1].offset: 0x6 = IMAGE_NT_HEADERS.FileHeader.NumberOfSections\n      - basic block:\n        - or:\n          - and:\n            - description: IMAGE_FIRST_SECTION(nt_header)\n            - instruction:\n              - or:\n                - mnemonic: add\n                - mnemonic: mov\n                - mnemonic: movzx\n              - operand[1].offset: 0x14 = IMAGE_NT_HEADERS.FileHeader.SizeOfOptionalHeader\n            - operand[1].offset: 0x18 = FileHeader.SizeOfOptionalHeader\n          - and:\n            - description: (DWORD)dll_raw + dos_header->e_lfanew + sizeof(IMAGE_NT_HEADERS) + sizeof(IMAGE_SECTION_HEADER) * i\n            - number: 0x28 = sizeof(IMAGE_SECTION_HEADER)\n            - or:\n              - and:\n                - arch: i386\n                - operand[1].offset: 0xF8 = sizeof(IMAGE_NT_HEADERS32)\n              - and:\n                - arch: amd64\n                - operand[1].offset: 0x108 = sizeof(IMAGE_NT_HEADERS64)\n      - 2 or more:\n        - operand[1].offset: 0xC = IMAGE_SECTION_HEADER.VirtualAddress\n        - operand[1].offset: 0x14 = IMAGE_SECTION_HEADER.PointerToRawData\n        - operand[1].offset: 0x10 = IMAGE_SECTION_HEADER.SizeOfRawData\n        # there's also offset 0x8 = IMAGE_SECTION_HEADER.Misc.PhysicalAddress, but it's likely too common\n      - not:\n        # non-zeroing XOR was observed in FPs\n        - characteristic: nzxor\n",
+        "refs": [
+          {
+            "ref": "https://0x00sec.org/t/reflective-dll-injection/3080"
+          },
+          {
+            "ref": "https://www.ired.team/offensive-security/code-injection-process-injection/reflective-dll-injection"
+          }
+        ]
+      },
+      {
+        "id": "15",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "get file attributes",
+        "description": "host-interaction/file-system/meta",
+        "authors": [
+          "michael.hunhoff@mandiant.com",
+          "anushka.virgaonkar@mandiant.com"
+        ],
+        "match_data": [
+          "api: GetFileAttributes"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: get file attributes\n    namespace: host-interaction/file-system/meta\n    authors:\n      - michael.hunhoff@mandiant.com\n      - anushka.virgaonkar@mandiant.com\n    scopes:\n      static: basic block\n      dynamic: call\n    mbc:\n      - File System::Get File Attributes [C0049]\n    examples:\n      - 03B236B23B1EC37C663527C1F53AF3FE:0x180019824\n      - B5F85C26D7AA5A1FB4AF5821B6B5AB9B:0x4028B6\n      - B5F85C26D7AA5A1FB4AF5821B6B5AB9B:0x4029E0\n  features:\n    - or:\n      - api: kernel32.GetFileAttributes\n      - api: ZwQueryDirectoryFile\n      - api: ZwQueryInformationFile\n      - api: NtQueryDirectoryFile\n      - api: NtQueryInformationFile\n      - api: System.IO.File::GetAttributes\n      - api: System.IO.File::GetCreationTime\n      - api: System.IO.File::GetCreationTimeUtc\n      - api: System.IO.File::GetLastAccessTime\n      - api: System.IO.File::GetLastAccessTimeUtc\n      - api: System.IO.File::GetLastWriteTime\n      - api: System.IO.File::GetLastWriteTimeUtc\n      - property/read: System.IO.FileSystemInfo::Attributes\n      - api: stat\n      - api: fstat\n      - api: lstat\n      - api: fstatat\n"
+      },
+      {
+        "id": "16",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "get system information on Windows",
+        "description": "host-interaction/os/info",
+        "authors": [
+          "moritz.raabe@mandiant.com",
+          "joakim@intezer.com"
+        ],
+        "match_data": [
+          "api: GetSystemInfo",
+          "api: GetNativeSystemInfo"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: get system information on Windows\n    namespace: host-interaction/os/info\n    authors:\n      - moritz.raabe@mandiant.com\n      - joakim@intezer.com\n    scopes:\n      static: function\n      dynamic: span of calls\n    att&ck:\n      - Discovery::System Information Discovery [T1082]\n    examples:\n      - 563653399B82CD443F120ECEFF836EA3678D4CF11D9B351BB737573C2D856299:0x140002280\n  features:\n    - and:\n      - os: windows\n      - or:\n        - api: kernel32.GetSystemInfo\n        - api: kernel32.GetNativeSystemInfo\n        - api: NtQuerySystemInformation\n        - api: NtQuerySystemInformationEx\n        - api: ntdll.RtlGetNativeSystemInformation\n        - api: ZwQuerySystemInformation\n        - api: ZwQuerySystemInformationEx\n"
+      },
+      {
+        "id": "17",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "hash data with MD5",
+        "description": "data-manipulation/hashing/md5",
+        "authors": [
+          "moritz.raabe@mandiant.com",
+          "anushka.virgaonkar@mandiant.com",
+          "michael.hunhoff@mandiant.com"
+        ],
+        "match_data": [
+          "D, also used in SHA1, RIPEMD-128, RIPEMD-160, RIPEMD-256, and RIPEMD-320",
+          "C, also used in SHA1, RIPEMD-128, RIPEMD-160, RIPEMD-256, and RIPEMD-320",
+          "A, also used in SHA1, RIPEMD-128, RIPEMD-160, RIPEMD-256, and RIPEMD-320"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: hash data with MD5\n    namespace: data-manipulation/hashing/md5\n    authors:\n      - moritz.raabe@mandiant.com\n      - anushka.virgaonkar@mandiant.com\n      - michael.hunhoff@mandiant.com\n    scopes:\n      static: function\n      dynamic: span of calls\n    mbc:\n      - Cryptography::Cryptographic Hash::MD5 [C0029.001]\n    references:\n      - https://github.com/rwfpl/rewolf-x86-virtualizer/blob/master/src/test_app/main.cpp\n    examples:\n      - Practical Malware Analysis Lab 05-01.dll_:0x100108ED\n  features:\n    - or:\n      - and:\n        - description: magic initialization constants from MD4 and MD5\n        - number: 0x67452301 = A, also used in SHA1, RIPEMD-128, RIPEMD-160, RIPEMD-256, and RIPEMD-320\n        - number: 0xefcdab89 = B, also used in SHA1, RIPEMD-128, RIPEMD-160, RIPEMD-256, and RIPEMD-320\n        - number: 0x98badcfe = C, also used in SHA1, RIPEMD-128, RIPEMD-160, RIPEMD-256, and RIPEMD-320\n        - number: 0x10325476 = D, also used in SHA1, RIPEMD-128, RIPEMD-160, RIPEMD-256, and RIPEMD-320\n        - not:\n          - number: 0xc3d2e1f0 = likely SHA1 but also used in RIPEMD-160 and RIPEMD-320\n        - optional:\n          - description: specific compilation from https://github.com/rwfpl/rewolf-x86-virtualizer/blob/master/src/test_app/main.cpp\n          - and:\n            - offset: -0x28955B88\n            - offset: -0x173848AA\n      - basic block:\n        - and:\n          - number: 0x8003 = CALG_MD5\n          - api: advapi32.CryptCreateHash\n      - call:\n        - and:\n          - number: 0x8003 = CALG_MD5\n          - api: advapi32.CryptCreateHash\n      - and:\n        - format: dotnet\n        - or:\n          - api: System.Security.Cryptography.MD5::Create\n          - api: System.Security.Cryptography.MD5CryptoServiceProvider::ctor\n        - optional:\n          - api: System.Security.Cryptography.HashAlgorithm::ComputeHash\n",
+        "refs": [
+          {
+            "ref": "https://github.com/rwfpl/rewolf-x86-virtualizer/blob/master/src/test_app/main.cpp"
+          }
+        ]
+      },
+      {
+        "id": "18",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "encrypt data using AES via x86 extensions",
+        "description": "data-manipulation/encryption/aes",
+        "authors": [
+          "moritz.raabe@mandiant.com"
+        ],
+        "match_data": [
+          "mnemonic: aesenc"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: encrypt data using AES via x86 extensions\n    namespace: data-manipulation/encryption/aes\n    authors:\n      - moritz.raabe@mandiant.com\n    scopes:\n      static: function\n      dynamic: unsupported  # requires mnemonic features\n    att&ck:\n      - Defense Evasion::Obfuscated Files or Information [T1027]\n    mbc:\n      - Defense Evasion::Obfuscated Files or Information::Encryption-Standard Algorithm [E1027.m05]\n      - Cryptography::Encrypt Data::AES [C0027.001]\n  features:\n    - or:\n      - mnemonic: aesenc = Perform One Round of an AES Encryption Flow\n      - mnemonic: vaesenc\n      - mnemonic: aesenclast = Perform Last Round of an AES Encryption Flow\n      - mnemonic: vaesenclast\n      - mnemonic: aesimc = Perform the AES InvMixColumn Transformation\n      - mnemonic: vaesimc\n      - mnemonic: aeskeygenassist = AES Round Key Generation Assist\n      - mnemonic: vaeskeygenassist\n"
+      },
+      {
+        "id": "19",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "compiled with Go",
+        "description": "compiler/go",
+        "authors": [
+          "michael.hunhoff@mandiant.com"
+        ],
+        "match_data": [
+          "substring: runtime.gcWork",
+          "substring: runtime.main",
+          "substring: main.main"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: compiled with Go\n    namespace: compiler/go\n    authors:\n      - michael.hunhoff@mandiant.com\n    scopes:\n      static: file\n      dynamic: file\n    examples:\n      - 49a34cfbeed733c24392c9217ef46bb6\n  features:\n    - or:\n      - string: /^Go build ID:/\n      - substring: \"go.buildid\"\n      - string: /^Go buildinf:/\n      - string: /\\bgo1\\.\\d/\n      - substring: \"runtime.main\"\n      - substring: \"main.main\"\n      - substring: \"runtime.gcWork\"\n"
+      },
+      {
+        "id": "20",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "print debug messages",
+        "description": "host-interaction/log/debug/write-event",
+        "authors": [
+          "michael.hunhoff@mandiant.com"
+        ],
+        "match_data": [
+          "api: OutputDebugString"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: print debug messages\n    namespace: host-interaction/log/debug/write-event\n    authors:\n      - michael.hunhoff@mandiant.com\n    scopes:\n      static: function\n      dynamic: call\n    examples:\n      - 493167E85E45363D09495D0841C30648:0x401000\n  features:\n    - or:\n      - api: DbgPrint\n      - api: kernel32.OutputDebugString\n      - and:\n        - os: android\n        - api: __android_log_print\n"
+      },
+      {
+        "id": "22",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "create thread",
+        "description": "host-interaction/thread/create",
+        "authors": [
+          "moritz.raabe@mandiant.com",
+          "michael.hunhoff@mandiant.com",
+          "joakim@intezer.com",
+          "anushka.virgaonkar@mandiant.com"
+        ],
+        "match_data": [
+          "api: _beginthread"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: create thread\n    namespace: host-interaction/thread/create\n    authors:\n      - moritz.raabe@mandiant.com\n      - michael.hunhoff@mandiant.com\n      - joakim@intezer.com\n      - anushka.virgaonkar@mandiant.com\n    scopes:\n      static: basic block\n      dynamic: span of calls\n    mbc:\n      - Process::Create Thread [C0038]\n    examples:\n      - 946A99F36A46D335DEC080D9A4371940:0x10001DA0\n      - B5F85C26D7AA5A1FB4AF5821B6B5AB9B:0x408020\n  features:\n    - or:\n      - and:\n        - os: windows\n        - or:\n          - api: kernel32.CreateThread\n          - api: _beginthread\n          - api: _beginthreadex\n          - api: PsCreateSystemThread\n          - api: SHCreateThread\n          - api: SHCreateThreadWithHandle\n          - api: kernel32.CreateRemoteThread\n          - api: kernel32.CreateRemoteThreadEx\n          - api: RtlCreateUserThread\n          - api: ntdll.NtCreateThread\n          - api: ntdll.NtCreateThreadEx\n          - api: ntdll.ZwCreateThread\n          - api: ntdll.ZwCreateThreadEx\n      - and:\n        - or:\n          - os: linux\n          - os: android\n        - api: pthread_create\n      - and:\n        - api: System.Threading.Thread::Start\n        - optional:\n          - api: System.Threading.Thread::ctor\n"
+      },
+      {
+        "id": "23",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "resolve function by parsing PE exports",
+        "description": "load-code/pe",
+        "authors": [
+          "sara-rn"
+        ],
+        "match_data": [
+          "mnemonic: movzx",
+          "loop"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: resolve function by parsing PE exports\n    namespace: load-code/pe\n    authors:\n      - sara-rn\n    scopes:\n      static: function\n      dynamic: unsupported  # requires characteristic, offset, mnemonic features\n    examples:\n      - 73CE04892E5F39EC82B00C02FC04C70F:0x406BA1\n  features:\n    - and:\n      - os: windows\n      - or:\n        - characteristic: loop\n        - mnemonic: movzx\n      - and:\n        - offset: 0x3C = IMAGE_DOS_HEADER.PE.e_lfanew\n        - or:\n          - and:\n            - arch: i386\n            - offset: 0x78 = offset to IMAGE_DATA_DIRECTORY[IMAGE_DIRECTORY_ENTRY_EXPORT]\n          - and:\n            - arch: amd64\n            - offset: 0x88 = offset to IMAGE_DATA_DIRECTORY[IMAGE_DIRECTORY_ENTRY_EXPORT]\n        - 3 or more:\n          - offset: 0x14 = IMAGE_EXPORT_DIRECTORY.NumberOfFunctions\n          - offset: 0x24 = IMAGE_EXPORT_DIRECTORY.AddressOfNameOrdinals\n          - offset: 0x20 = IMAGE_EXPORT_DIRECTORY.AddressOfNames\n          - offset: 0x18 = IMAGE_EXPORT_DIRECTORY.NumberOfNames\n          - offset: 0x1C = IMAGE_EXPORT_DIRECTORY.AddressOfFunctions\n      - optional:\n        - or:\n          - api: LoadLibrary\n          - api: strcmp\n"
+      },
+      {
+        "id": "24",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "access PEB ldr_data",
+        "description": "linking/runtime-linking",
+        "authors": [
+          "moritz.raabe@mandiant.com"
+        ],
+        "match_data": [
+          "PEB access",
+          "gs access"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: access PEB ldr_data\n    namespace: linking/runtime-linking\n    authors:\n      - moritz.raabe@mandiant.com\n    scopes:\n      static: basic block\n      dynamic: unsupported  # requires offset features\n    att&ck:\n      - Execution::Shared Modules [T1129]\n    references:\n      - https://www.geoffchappell.com/studies/windows/km/ntoskrnl/inc/api/ntpsapi_x/peb_ldr_data.htm\n      - https://github.com/d35ha/CallObfuscator/blob/5834aff9ff4511f1408ae4ce80b79737af4ae77b/ShellCode/shell_x64.asm#L8\n    examples:\n      - 3FDFB2D522E7DEECAAAF2F87420F7E75:0x4117B7\n  features:\n    - or:\n      - and:\n        - arch: i386\n        - description: x32\n\n        - match: PEB access\n\n        # x86 Windows uses fs:0 to access the TIB which contains SEH information at offset 0\n        # checking for fs:0 and a (possibly unrelated) number or offset often results in false positives\n\n        - offset: 0x0C = PEB.LDR_DATA\n\n        - or:\n          - description: resolve a module list\n          - offset: 0x0C = PEB.LDR_DATA.InLoadOrderModuleList\n          - offset: 0x14 = PEB.LDR_DATA.InMemoryOrderModuleList\n          - offset: 0x1C = PEB.LDR_DATA.InInitializationOrderModuleList\n\n      - and:\n        - arch: amd64\n        - description: x64\n\n        - match: PEB access\n\n        - offset: 0x18 = PEB.LDR_DATA\n\n        - or:\n          - description: resolve a module list\n          - offset: 0x10 = PEB.LDR_DATA.InLoadOrderModuleList\n          - offset: 0x20 = PEB.LDR_DATA.InMemoryOrderModuleList\n          - offset: 0x30 = PEB.LDR_DATA.InInitializationOrderModuleList\n",
+        "refs": [
+          {
+            "ref": "https://www.geoffchappell.com/studies/windows/km/ntoskrnl/inc/api/ntpsapi_x/peb_ldr_data.htm"
+          },
+          {
+            "ref": "https://github.com/d35ha/CallObfuscator/blob/5834aff9ff4511f1408ae4ce80b79737af4ae77b/ShellCode/shell_x64.asm#L8"
+          }
+        ]
+      },
+      {
+        "id": "25",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "encode data using Base64",
+        "description": "data-manipulation/encoding/base64",
+        "authors": [
+          "moritz.raabe@mandiant.com",
+          "anushka.virgaonkar@mandiant.com",
+          "michael.hunhoff@mandiant.com"
+        ],
+        "match_data": [
+          "modulo 64",
+          "contain loop",
+          "mnemonic: shl"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: encode data using Base64\n    namespace: data-manipulation/encoding/base64\n    authors:\n      - moritz.raabe@mandiant.com\n      - anushka.virgaonkar@mandiant.com\n      - michael.hunhoff@mandiant.com\n    scopes:\n      static: function\n      dynamic: unsupported\n    att&ck:\n      - Defense Evasion::Obfuscated Files or Information [T1027]\n    mbc:\n      - Defense Evasion::Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]\n      - Data::Encode Data::Base64 [C0026.001]\n    examples:\n      - BFB9B5391A13D0AFD787E87AB90F14F5:0x1314889C\n      - 074072B261FC27B65C72671F13510C05:0x100049B2\n      - 5DB2D2BE20D59AA0BE6709A6850F1775:0x18001CC30\n      - 08AC667C65D36D6542917655571E61C8:0x406EAA\n  features:\n    - or:\n      - and:\n        - mnemonic: shl\n        - mnemonic: shr\n        - number: 0x3F = modulo 64\n        - or:\n          - number: 0x3D = '='\n          - number: 0x3D3D = '=='\n        - match: contain loop\n        - optional:\n          - number: 2\n          - number: 3\n          - number: 4\n          - number: 6\n          - number: 0xF\n          - string: \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\"\n      - api: System.Convert::ToBase64String\n      - api: System.Convert::ToBase64CharArray\n      - api: System.Convert::TryToBase64Chars\n"
+      },
+      {
+        "id": "26",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "check if file exists",
+        "description": "host-interaction/file-system/exists",
+        "authors": [
+          "moritz.raabe@mandiant.com",
+          "michael.hunhoff@mandiant.com"
+        ],
+        "match_data": [
+          "INVALID_FILE_ATTRIBUTES",
+          "mnemonic: cmp",
+          "api: GetFileAttributes"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: check if file exists\n    namespace: host-interaction/file-system/exists\n    authors:\n      - moritz.raabe@mandiant.com\n      - michael.hunhoff@mandiant.com\n    scopes:\n      static: function\n      dynamic: call\n    att&ck:\n      - Discovery::File and Directory Discovery [T1083]\n    mbc:\n      - Discovery::File and Directory Discovery [E1083]\n    examples:\n      - 31600AD0D1A7EA615690DF111AE36C73:0x401284\n  features:\n    - or:\n      - basic block:\n        - and:\n          - api: kernel32.GetFileAttributes\n          - instruction:\n            - mnemonic: cmp\n            - number: 0xFFFFFFFF = INVALID_FILE_ATTRIBUTES\n      - basic block:\n        - and:\n          - api: kernel32.GetLastError\n          - instruction:\n            - mnemonic: cmp\n            - number: 2 = ERROR_FILE_NOT_FOUND\n      - api: shlwapi.PathFileExists\n      - api: System.IO.File::Exists\n      - property/read: System.IO.FileSystemInfo::Exists\n"
+      },
+      {
+        "id": "27",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "contain a thread local storage (.tls) section",
+        "description": "executable/pe/section/tls",
+        "authors": [
+          "michael.hunhoff@mandiant.com"
+        ],
+        "match_data": [
+          "section: .tls"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: contain a thread local storage (.tls) section\n    namespace: executable/pe/section/tls\n    authors:\n      - michael.hunhoff@mandiant.com\n    scopes:\n      static: file\n      dynamic: file\n    examples:\n      - Practical Malware Analysis Lab 16-02.exe_\n  features:\n    - section: .tls\n"
+      },
+      {
+        "id": "30",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "get thread local storage value",
+        "description": "host-interaction/process",
+        "authors": [
+          "michael.hunhoff@mandiant.com"
+        ],
+        "match_data": [
+          "api: TlsGetValue"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: get thread local storage value\n    namespace: host-interaction/process\n    authors:\n      - michael.hunhoff@mandiant.com\n    scopes:\n      static: function\n      dynamic: call\n  features:\n    - and:\n      - api: kernel32.TlsGetValue\n"
+      },
+      {
+        "id": "31",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "encrypt data using RC4 PRGA",
+        "description": "data-manipulation/encryption/rc4",
+        "authors": [
+          "moritz.raabe@mandiant.com"
+        ],
+        "match_data": [
+          "contain loop",
+          "loop"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: encrypt data using RC4 PRGA\n    namespace: data-manipulation/encryption/rc4\n    authors:\n      - moritz.raabe@mandiant.com\n    scopes:\n      static: function\n      dynamic: unsupported  # requires characteristic, mnemonic, basicblock features\n    att&ck:\n      - Defense Evasion::Obfuscated Files or Information [T1027]\n    mbc:\n      - Cryptography::Encrypt Data::RC4 [C0027.009]\n      - Cryptography::Generate Pseudo-random Sequence::RC4 PRGA [C0021.004]\n    examples:\n      - 34404A3FB9804977C6AB86CB991FB130:0x403DB0\n      - 34404A3FB9804977C6AB86CB991FB130:0x403E50\n      - 9324D1A8AE37A36AE560C37448C9705A:0x4049F0\n      - 73CE04892E5F39EC82B00C02FC04C70F:0x4064C6\n  features:\n    - and:\n      # TODO: maybe add characteristic for nzxor reg size\n      - count(characteristic(nzxor)): 1\n      - or:\n        - match: calculate modulo 256 via x86 assembly\n        # compiler may do this via zero-extended mov from 8-bit register\n        - count(mnemonic(movzx)): 4 or more\n      # should not call (many) functions\n      - count(characteristic(calls from)): (0, 4)\n      # should not be too simple or too complex (50 is picked by intuition)\n      - count(basic blocks): (4, 50)\n      - match: contain loop\n      - optional:\n        - or:\n          - number: 0xFF\n          - number: 0x100\n"
+      },
+      {
+        "id": "32",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "write file on Windows",
+        "description": "host-interaction/file-system/write",
+        "authors": [
+          "william.ballenthin@mandiant.com",
+          "anushka.virgaonkar@mandiant.com"
+        ],
+        "match_data": [
+          "FILE_WRITE_DATA",
+          "api: WriteFile",
+          "api: fwrite"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: write file on Windows\n    namespace: host-interaction/file-system/write\n    authors:\n      - william.ballenthin@mandiant.com\n      - anushka.virgaonkar@mandiant.com\n    scopes:\n      static: function\n      dynamic: call\n    mbc:\n      - File System::Writes File [C0052]\n    examples:\n      - Practical Malware Analysis Lab 01-04.exe_:0x4011FC\n      # ntdll\n      - 563653399B82CD443F120ECEFF836EA3678D4CF11D9B351BB737573C2D856299:0x1400025C4\n  features:\n    - or:\n      - and:\n        - os: windows\n        - optional:\n          - basic block:\n            - or:\n              - number: 0x40000000 = GENERIC_WRITE\n              - number: 0x2 = FILE_WRITE_DATA\n              - match: create or open file\n          - call:\n            - or:\n              - number: 0x40000000 = GENERIC_WRITE\n              - number: 0x2 = FILE_WRITE_DATA\n              - match: create or open file\n        - or:\n          - api: kernel32.WriteFile\n          - api: kernel32.WriteFileEx\n          - api: NtWriteFile\n          - api: ZwWriteFile\n          - api: _fwrite\n          - api: fwrite\n      - api: System.IO.File::WriteAllBytes\n      - api: System.IO.File::WriteAllBytesAsync\n      - api: System.IO.File::WriteAllLines\n      - api: System.IO.File::WriteAllLinesAsync\n      - api: System.IO.File::WriteAllText\n      - api: System.IO.File::WriteAllTextAsync\n      - api: System.IO.File::AppendAllLines\n      - api: System.IO.File::AppendAllLinesAsync\n      - api: System.IO.File::AppendAllText\n      - api: System.IO.File::AppendAllTextAsync\n      - api: System.IO.File::AppendText\n      - api: System.IO.FileInfo::AppendText\n"
+      },
+      {
+        "id": "33",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "query environment variable",
+        "description": "host-interaction/environment-variable",
+        "authors": [
+          "michael.hunhoff@mandiant.com",
+          "@_re_fox"
+        ],
+        "match_data": [
+          "api: GetEnvironmentVariable"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: query environment variable\n    namespace: host-interaction/environment-variable\n    authors:\n      - michael.hunhoff@mandiant.com\n      - \"@_re_fox\"\n    scopes:\n      static: function\n      dynamic: call\n    att&ck:\n      - Discovery::System Information Discovery [T1082]\n    mbc:\n      - Discovery::System Information Discovery [E1082]\n    examples:\n      - Practical Malware Analysis Lab 14-02.exe_:0x401880\n      - 0761142efbda6c4b1e801223de723578:0x65483490\n  features:\n    - or:\n      - api: kernel32.GetEnvironmentVariable\n      - api: kernel32.GetEnvironmentStrings\n      - api: kernel32.ExpandEnvironmentStrings\n      - api: msvcr90.getenv\n      - api: msvcrt.getenv\n      - api: System.Environment::GetEnvironmentVariable\n      - api: System.Environment::GetEnvironmentVariables\n      - api: System.Environment::ExpandEnvironmentVariables\n"
+      },
+      {
+        "id": "34",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "reference anti-VM strings targeting VirtualBox",
+        "description": "anti-analysis/anti-vm/vm-detection",
+        "authors": [
+          "michael.hunhoff@mandiant.com"
+        ],
+        "match_data": [
+          "regex: /VBOX/i"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: reference anti-VM strings targeting VirtualBox\n    namespace: anti-analysis/anti-vm/vm-detection\n    authors:\n      - michael.hunhoff@mandiant.com\n    scopes:\n      static: file\n      dynamic: file\n    att&ck:\n      - Defense Evasion::Virtualization/Sandbox Evasion::System Checks [T1497.001]\n    mbc:\n      - Anti-Behavioral Analysis::Virtual Machine Detection [B0009]\n    references:\n      - https://github.com/LordNoteworthy/al-khaser/blob/master/al-khaser/AntiVM/VirtualBox.cpp\n    examples:\n      - al-khaser_x86.exe_\n  features:\n    - or:\n      - string: /VBOX/i\n      - string: /VEN_VBOX/i\n      - string: /VirtualBox/i\n      - string: /06/23/99/i\n      - string: /HARDWARE\\\\ACPI\\\\DSDT\\\\VBOX__/i\n      - string: /HARDWARE\\\\ACPI\\\\FADT\\\\VBOX__/i\n      - string: /HARDWARE\\\\ACPI\\\\RSDT\\\\VBOX__/i\n      - string: /SOFTWARE\\\\Oracle\\\\VirtualBox Guest Additions/i\n      - string: /SYSTEM\\\\(ControlSet\\d{3}|CurrentControlSet)\\\\Services\\\\VBoxGuest/i\n      - string: /SYSTEM\\\\(ControlSet\\d{3}|CurrentControlSet)\\\\Services\\\\VBoxMouse/i\n      - string: /SYSTEM\\\\(ControlSet\\d{3}|CurrentControlSet)\\\\Services\\\\VBoxService/i\n      - string: /SYSTEM\\\\(ControlSet\\d{3}|CurrentControlSet)\\\\Services\\\\VBoxSF/i\n      - string: /SYSTEM\\\\(ControlSet\\d{3}|CurrentControlSet)\\\\Services\\\\VBoxVideo/i\n      - string: /VBoxMouse\\.sys/i\n      - string: /VBoxGuest\\.sys/i\n      - string: /VBoxSF\\.sys/i\n      - string: /VBoxVideo\\.sys/i\n      - string: /vboxdisp\\.dll/i\n      - string: /vboxhook\\.dll/i\n      - string: /vboxmrxnp\\.dll/i\n      - string: /vboxogl\\.dll/i\n      - string: /vboxoglarrayspu\\.dll/i\n      - string: /vboxoglcrutil\\.dll/i\n      - string: /vboxoglerrorspu\\.dll/i\n      - string: /vboxoglfeedbackspu\\.dll/i\n      - string: /vboxoglpackspu\\.dll/i\n      - string: /vboxoglpassthroughspu\\.dll/i\n      - string: /vboxservice\\.exe/i\n      - string: /vboxtray\\.exe/i\n      - string: /VBoxControl\\.exe/i\n      - string: /oracle\\\\virtualbox guest additions\\\\/i\n      - string: /\\\\\\\\\\.\\\\VBoxMiniRdrDN/i\n      - string: /\\\\\\\\\\.\\\\VBoxGuest/i\n      - string: /\\\\\\\\\\.\\\\pipe\\\\VBoxMiniRdDN/i\n      - string: /\\\\\\\\\\.\\\\VBoxTrayIPC/i\n      - string: /\\\\\\\\\\.\\\\pipe\\\\VBoxTrayIPC/i\n      - string: /VBoxTrayToolWndClass/i\n      - string: /VBoxTrayToolWnd/i\n      - string: /vboxvideo/i\n      - string: /VBoxVideoW8/i\n      - string: /VBoxWddm/i\n      - string: /PCI\\\\VEN_80EE&DEV_CAFE/i\n      - string: /82801FB/i\n      - string: /82441FX/i\n      - string: /82371SB/i\n      - string: /OpenHCD/i\n      - string: /ACPIBus_BUS_0/i\n      - string: /PCI_BUS_0/i\n      - string: /PNP_BUS_0/i\n      - string: /Oracle Corporation/i\n      - string: /VBoxWdd/i\n      - string: /VBoxS/i\n        description: VirtualBox Shared Folders\n      - string: /VBoxMouse/i\n        description: VirtualBox Guest Mouse\n      - string: /VBoxGuest/i\n        description: VirtualBox Guest Driver\n      - string: /VBoxVBoxVBox/i\n      - string: /innotek GmbH/i\n      - string: /drivers\\\\vboxdrv/i\n",
+        "refs": [
+          {
+            "ref": "https://github.com/LordNoteworthy/al-khaser/blob/master/al-khaser/AntiVM/VirtualBox.cpp"
+          }
+        ]
+      },
+      {
+        "id": "35",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "get kernel32 base address",
+        "description": "linking/runtime-linking",
+        "authors": [
+          "moritz.raabe@mandiant.com"
+        ],
+        "match_data": [
+          "access PEB ldr_data",
+          "PEB access",
+          "gs access"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: get kernel32 base address\n    namespace: linking/runtime-linking\n    authors:\n      - moritz.raabe@mandiant.com\n    scopes:\n      static: basic block\n      dynamic: unsupported  # requires offset features\n    att&ck:\n      - Execution::Shared Modules [T1129]\n    references:\n      - https://idafchev.github.io/exploit/2017/09/26/writing_windows_shellcode.html\n      - https://www.geoffchappell.com/studies/windows/win32/ntdll/structs/ldr_data_table_entry.htm\n    examples:\n      - 67f8302a2fd28d15f62d6d20d748bfe350334e5353cbdef112bd1f8231b5599d:0x406936\n  features:\n    - and:\n      # PEB -> PEB.Ldr -> PEB_LDR_DATA.InLoadOrderModuleList.Flink\n      - match: access PEB ldr_data\n      # -> current module -> ntdll\n      - count(offset(0)): 2\n      # -> kernel32 -> LDR_DATA_TABLE_ENTRY.DllBase\n      - or:\n        - and:\n          - arch: i386\n          - offset: 0x18 = LDR_DATA_TABLE_ENTRY.DllBase\n        - and:\n          - arch: amd64\n          - offset: 0x30 = LDR_DATA_TABLE_ENTRY.DllBase\n",
+        "refs": [
+          {
+            "ref": "https://idafchev.github.io/exploit/2017/09/26/writing_windows_shellcode.html"
+          },
+          {
+            "ref": "https://www.geoffchappell.com/studies/windows/win32/ntdll/structs/ldr_data_table_entry.htm"
+          }
+        ]
+      },
+      {
+        "id": "antidebug_setunhandledexceptionfilter",
+        "name": "antidebug_setunhandledexceptionfilter",
+        "description": "SetUnhandledExceptionFilter detected (possible anti-debug)",
+        "match_data": [
+          "Process executable.exe"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "antianalysis_tls_section",
+        "name": "antianalysis_tls_section",
+        "description": "Contains .tls (Thread Local Storage) section",
+        "match_data": [
+          ".tls"
+        ],
+        "severity": "IMPACT_SEVERITY_LOW"
+      },
+      {
+        "id": "packer_entropy",
+        "name": "packer_entropy",
+        "description": "The binary likely contains encrypted or compressed data",
+        "match_data": [
+          ".rsrc"
+        ],
+        "severity": "IMPACT_SEVERITY_LOW"
+      },
+      {
+        "id": "injection_rwx",
+        "name": "injection_rwx",
+        "description": "Creates RWX memory",
+        "match_data": [
+          "Process executable.exe"
+        ],
+        "severity": "IMPACT_SEVERITY_LOW"
+      }
+    ],
+    "mbc": [
+      {
+        "id": "C0007",
+        "objective": "Memory",
+        "behavior": "Allocate Memory",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "id": "C0051",
+        "objective": "File System",
+        "behavior": "Read File",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "id": "C0030.001",
+        "objective": "Data",
+        "behavior": "Non-Cryptographic Hash",
+        "method": "MurmurHash",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "id": "C0026.001",
+        "objective": "Data",
+        "behavior": "Encode Data",
+        "method": "Base64",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "id": "C0019",
+        "objective": "Data",
+        "behavior": "Check String",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "id": "E1027.m02",
+        "objective": "Defense Evasion",
+        "behavior": "Obfuscated Files or Information",
+        "method": "Encoding-Standard Algorithm",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "id": "C0026.002",
+        "objective": "Data",
+        "behavior": "Encode Data",
+        "method": "XOR",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "id": "C0007",
+        "objective": "Memory",
+        "behavior": "Allocate Memory",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "11"
+          }
+        ]
+      },
+      {
+        "id": "C0018",
+        "objective": "Process",
+        "behavior": "Terminate Process",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "id": "B0046.001",
+        "objective": "Discovery",
+        "behavior": "Code Discovery",
+        "method": "Enumerate PE Sections",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "14"
+          }
+        ]
+      },
+      {
+        "id": "C0049",
+        "objective": "File System",
+        "behavior": "Get File Attributes",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "id": "C0029.001",
+        "objective": "Cryptography",
+        "behavior": "Cryptographic Hash",
+        "method": "MD5",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "17"
+          }
+        ]
+      },
+      {
+        "id": "E1027.m05",
+        "objective": "Defense Evasion",
+        "behavior": "Obfuscated Files or Information",
+        "method": "Encryption-Standard Algorithm",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "18"
+          }
+        ]
+      },
+      {
+        "id": "C0027.001",
+        "objective": "Cryptography",
+        "behavior": "Encrypt Data",
+        "method": "AES",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "18"
+          }
+        ]
+      },
+      {
+        "id": "C0038",
+        "objective": "Process",
+        "behavior": "Create Thread",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "22"
+          }
+        ]
+      },
+      {
+        "id": "E1027.m02",
+        "objective": "Defense Evasion",
+        "behavior": "Obfuscated Files or Information",
+        "method": "Encoding-Standard Algorithm",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "25"
+          }
+        ]
+      },
+      {
+        "id": "C0026.001",
+        "objective": "Data",
+        "behavior": "Encode Data",
+        "method": "Base64",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "25"
+          }
+        ]
+      },
+      {
+        "id": "E1083",
+        "objective": "Discovery",
+        "behavior": "File and Directory Discovery",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "26"
+          }
+        ]
+      },
+      {
+        "id": "C0027.009",
+        "objective": "Cryptography",
+        "behavior": "Encrypt Data",
+        "method": "RC4",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "31"
+          }
+        ]
+      },
+      {
+        "id": "C0021.004",
+        "objective": "Cryptography",
+        "behavior": "Generate Pseudo-random Sequence",
+        "method": "RC4 PRGA",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "31"
+          }
+        ]
+      },
+      {
+        "id": "C0052",
+        "objective": "File System",
+        "behavior": "Writes File",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "32"
+          }
+        ]
+      },
+      {
+        "id": "E1082",
+        "objective": "Discovery",
+        "behavior": "System Information Discovery",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "33"
+          }
+        ]
+      },
+      {
+        "id": "B0009",
+        "objective": "Anti-Behavioral Analysis",
+        "behavior": "Virtual Machine Detection",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "34"
+          }
+        ]
+      },
+      {
+        "id": "B0002"
+      },
+      {
+        "id": "B0003"
+      },
+      {
+        "id": "E1055"
+      },
+      {
+        "id": "OC0006"
+      },
+      {
+        "id": "C0002"
+      },
+      {
+        "id": "OB0001"
+      },
+      {
+        "id": "OB0002"
+      },
+      {
+        "id": "OB0006"
+      },
+      {
+        "id": "F0001"
+      }
+    ],
+    "memory_dumps": [
+      {
+        "file_name": "7032.dmp",
+        "process": "C:\\Users\\Bruno\\Desktop\\executable.exe",
+        "size": "119832576",
+        "base_address": "7077888"
+      }
+    ],
+    "http_conversations": [
+      {
+        "url": "120.79.51.185",
+        "request_method": "CONNECT"
+      }
+    ],
+    "dns_lookups": [
+      {
+        "hostname": "120.79.51.185",
+        "resolved_ips": [
+          "120.79.51.185"
+        ]
+      }
+    ],
+    "tags": [
+      "OBFUSCATED",
+      "DIRECT_CPU_CLOCK_ACCESS",
+      "RUNTIME_MODULES",
+      "IDLE",
+      "DETECT_DEBUG_ENVIRONMENT"
+    ],
+    "processes_injected": [
+      "%SAMPLEPATH%\\crb123.exe"
+    ],
+    "processes_terminated": [
+      "wmiadap.exe /F /T /R",
+      "${SamplePath}\\2cb4c54bc346421e0a4854698830405ac0dcd5046ae6c462f488f4e5319a90d2.exe",
+      "C:\\Windows\\System32\\wuapihost.exe"
+    ],
+    "ids_alerts": [
+      {
+        "rule_msg": "ET DNS Non-DNS or Non-Compliant DNS traffic on DNS port Opcode 8 through 15 set",
+        "rule_category": "Potential Corporate Privacy Violation",
+        "rule_id": "1:2014702",
+        "alert_severity": "info",
+        "rule_source": "Proofpoint Emerging Threats Open",
+        "alert_context": {
+          "dest_ip": "120.79.51.185",
+          "dest_port": 53
+        },
+        "rule_url": "https://rules.emergingthreats.net/",
+        "rule_references": [
+          "https://www.virustotal.com/gui/search/a56ec0f9bd46f921f65e4f6e598e5ed0",
+          "https://vrt-blog.snort.org/2008/08/checking-multiple-bits-in-flag-field_29.html"
+        ],
+        "rule_raw": "alert udp $HOME_NET any -> any 53 (msg:\"ET DNS Non-DNS or Non-Compliant DNS traffic on DNS port Opcode 8 through 15 set\"; content:!\"7PYqwfzt\"; depth:8; content:!\"r6fnvWj8\"; depth:8; byte_test:1,&,64,2; threshold: type limit, count 1, seconds 120, track by_dst; reference:md5,a56ec0f9bd46f921f65e4f6e598e5ed0; reference:url,vrt-blog.snort.org/2008/08/checking-multiple-bits-in-flag-field_29.html; classtype:policy-violation; sid:2014702; rev:13; metadata:created_at 2012_05_04, former_category DNS, performance_impact Significant, updated_at 2022_07_18;)"
+      },
+      {
+        "rule_msg": "ET DNS Non-DNS or Non-Compliant DNS traffic on DNS port Opcode 6 or 7 set",
+        "rule_category": "Potential Corporate Privacy Violation",
+        "rule_id": "1:2014701",
+        "alert_severity": "info",
+        "rule_source": "Proofpoint Emerging Threats Open",
+        "alert_context": {
+          "dest_ip": "120.79.51.185",
+          "dest_port": 53
+        },
+        "rule_url": "https://rules.emergingthreats.net/",
+        "rule_references": [
+          "https://www.virustotal.com/gui/search/a56ec0f9bd46f921f65e4f6e598e5ed0",
+          "https://vrt-blog.snort.org/2008/08/checking-multiple-bits-in-flag-field_29.html"
+        ],
+        "rule_raw": "alert udp $HOME_NET !9987 -> $EXTERNAL_NET 53 (msg:\"ET DNS Non-DNS or Non-Compliant DNS traffic on DNS port Opcode 6 or 7 set\"; content:!\"7PYqwfzt\"; depth:8; content:!\"r6fnvWj8\"; depth:8; byte_test:1,!&,64,2; byte_test:1,&,32,2; byte_test:1,&,16,2; threshold: type limit, count 1, seconds 120, track by_dst; reference:md5,a56ec0f9bd46f921f65e4f6e598e5ed0; reference:url,vrt-blog.snort.org/2008/08/checking-multiple-bits-in-flag-field_29.html; classtype:policy-violation; sid:2014701; rev:13; metadata:created_at 2012_05_04, updated_at 2022_04_18;)"
+      }
+    ],
+    "registry_keys_opened": [
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Lsa\\FipsAlgorithmPolicy\\Enabled",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Lsa\\FipsAlgorithmPolicy\\MDMEnabled",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Lsa\\FipsAlgorithmPolicy",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Lsa\\FipsAlgorithmPolicy\\STE",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Lsa\\FipsAlgorithmPolicy",
+      "\\REGISTRY\\MACHINE\\System\\CurrentControlSet\\Services\\WinSock2\\Parameters\\AppId_Catalog",
+      "\\REGISTRY\\MACHINE\\System\\CurrentControlSet\\Services\\Winsock2\\Parameters",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Winsock\\Setup Migration\\Providers\\Tcpip",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\AppModel\\Lookaside\\Packages",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography\\Defaults\\Provider Types\\Type 001",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography\\Defaults\\Provider\\Microsoft Strong Cryptographic Provider",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\OLE",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\crb123.exe",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList\\S-1-5-21-1015118539-3749460369-599379286-1001\\Preference",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\Tcpip\\Parameters\\Interfaces\\{3882a85b-858a-11eb-b9e1-806e6f6e6963}",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\AppId_Catalog",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\AppId_Catalog\\256D31E8",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\NameSpace_Catalog5",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\NameSpace_Catalog5\\00000014",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\NameSpace_Catalog5\\Catalog_Entries64",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\NameSpace_Catalog5\\Catalog_Entries64\\000000000001",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\NameSpace_Catalog5\\Catalog_Entries64\\000000000002",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\NameSpace_Catalog5\\Catalog_Entries64\\000000000003",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\NameSpace_Catalog5\\Catalog_Entries64\\000000000004",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\NameSpace_Catalog5\\Catalog_Entries64\\000000000005",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\NameSpace_Catalog5\\Catalog_Entries64\\000000000006",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\00000007",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000001",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000002",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000003",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000004",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000005",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000006",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000007",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000008",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000009",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000010",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000011",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000012",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WinSock2\\Parameters\\Protocol_Catalog9\\Catalog_Entries64\\000000000013",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\Winsock\\Setup Migration\\Providers\\Tcpip",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Segment Heap",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Policies\\Microsoft\\Cryptography\\Configuration",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Dnscache\\Parameters",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip6\\Parameters\\Interfaces\\{3882A85B-858A-11EB-B9E1-806E6F6E6963}",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{3882A85B-858A-11EB-B9E1-806E6F6E6963}",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces\\{44C728A6-CC3C-434D-B238-E5B6541E3476}",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Winsock\\Parameters",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Winsock\\Setup Migration\\Providers",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Cryptography",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Cryptography\\Offload",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\OLE\\Tracing",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Ole",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Ole\\FeatureDevelopmentProperties",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Rpc",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList\\S-1-5-21-1015118539-3749460369-599379286-1001",
+      "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows",
+      "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Cryptography",
+      "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MUI\\Settings",
+      "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\System\\DNSClient",
+      "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\DnsClient",
+      "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Rpc",
+      "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Display",
+      "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Safer\\CodeIdentifiers",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\ComputerName\\ActiveComputerName",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Error Message Instrument\\",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\FileSystem\\",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Hvsi",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Lsa",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Lsa\\FipsAlgorithmPolicy",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Nls\\CustomLocale",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Nls\\ExtendedLocale",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Nls\\Sorting\\Ids",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Nls\\Sorting\\Versions",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\ProfileList",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\SafeBoot\\Option",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Srp\\GP\\DLL",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\StateSeparation\\RedirectionMap\\Keys",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Winsock",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\WinSock2\\Parameters",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Winsock2\\Parameters",
+      "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\afunix\\Parameters\\Winsock",
+      "HKEY_LOCAL_MACHINE\\System\\Setup",
+      "\\REGISTRY\\USER"
+    ],
+    "verdicts": [
+      "UNKNOWN_VERDICT",
+      "MALWARE",
+      "CLEAN"
+    ],
+    "modules_loaded": [
+      "${SamplePath}\\2cb4c54bc346421e0a4854698830405ac0dcd5046ae6c462f488f4e5319a90d2.exe",
+      "C:\\Windows\\System32\\ntdll.dll",
+      "C:\\Windows\\System32\\kernel32.dll",
+      "C:\\Windows\\System32\\KernelBase.dll",
+      "C:\\Windows\\System32\\msvcrt.dll",
+      "C:\\Windows\\System32\\user32.dll",
+      "C:\\Windows\\System32\\gdi32.dll",
+      "C:\\Windows\\System32\\lpk.dll",
+      "C:\\Windows\\System32\\usp10.dll",
+      "C:\\Windows\\System32\\advapi32.dll",
+      "C:\\Windows\\System32\\sechost.dll",
+      "C:\\Windows\\System32\\rpcrt4.dll",
+      "C:\\Windows\\System32\\shell32.dll",
+      "C:\\Windows\\System32\\shlwapi.dll",
+      "C:\\Windows\\System32\\ole32.dll",
+      "C:\\Windows\\winsxs\\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.24203_none_1455c96c8b9566b9\\GdiPlus.dll",
+      "C:\\Windows\\System32\\dbghelp.dll",
+      "C:\\Windows\\System32\\ws2_32.dll",
+      "C:\\Windows\\System32\\nsi.dll",
+      "C:\\Windows\\System32\\psapi.dll",
+      "C:\\Windows\\System32\\imm32.dll",
+      "C:\\Windows\\System32\\msctf.dll",
+      "C:\\Windows\\System32\\oleaut32.dll",
+      "C:\\Windows\\System32\\setupapi.dll",
+      "C:\\Windows\\System32\\cfgmgr32.dll",
+      "C:\\Windows\\System32\\devobj.dll",
+      "C:\\Windows\\System32\\IPHLPAPI.DLL",
+      "C:\\Windows\\System32\\winnsi.dll",
+      "C:\\Windows\\System32\\api-ms-win-core-synch-l1-2-0.dll",
+      "C:\\Windows\\System32\\version.dll",
+      "C:\\Windows\\System32\\cryptbase.dll",
+      "C:\\Windows\\System32\\winmm.dll",
+      "C:\\Windows\\System32\\powrprof.dll",
+      "C:\\Windows\\System32\\cryptsp.dll",
+      "C:\\Windows\\System32\\rsaenh.dll",
+      "C:\\Windows\\System32\\sspicli.dll",
+      "C:\\Windows\\System32\\userenv.dll",
+      "C:\\Windows\\System32\\profapi.dll",
+      "C:\\Windows\\System32\\mswsock.dll",
+      "C:\\Windows\\System32\\WSHTCPIP.DLL",
+      "C:\\Windows\\System32\\nlaapi.dll",
+      "C:\\Windows\\System32\\NapiNSP.dll",
+      "C:\\Windows\\System32\\pnrpnsp.dll",
+      "C:\\Windows\\System32\\dnsapi.dll",
+      "C:\\Windows\\System32\\winrnr.dll",
+      "C:\\Windows\\System32\\FWPUCLNT.DLL",
+      "C:\\Windows\\System32\\rasadhlp.dll",
+      "kernel32.dll",
+      "advapi32.dll",
+      "ntdll.dll",
+      "winmm.dll",
+      "ws2_32.dll",
+      "API-MS-Win-Core-LocalRegistry-L1-1-0.dll",
+      "powrprof.dll",
+      "msvcrt.dll",
+      "IPHLPAPI.DLL",
+      "VERSION.dll",
+      "SHLWAPI.dll",
+      "USER32.dll",
+      "CRYPTSP.dll",
+      "C:\\Windows\\system32\\rsaenh.dll",
+      "SspiCli.dll",
+      "USERENV.dll",
+      "API-MS-Win-Security-SDDL-L1-1-0.dll",
+      "CRYPTBASE.dll",
+      "C:\\Windows\\system32\\mswsock.dll",
+      "C:\\Windows\\System32\\wshtcpip.dll",
+      "C:\\Windows\\system32\\NLAapi.dll",
+      "C:\\Windows\\system32\\napinsp.dll",
+      "C:\\Windows\\system32\\pnrpnsp.dll",
+      "DNSAPI.dll",
+      "C:\\Windows\\System32\\fwpuclnt.dll",
+      "rasadhlp.dll",
+      "dhcpcsvc6.DLL",
+      "dhcpcsvc.DLL"
+    ],
+    "processes_tree": [
+      {
+        "process_id": "2800",
+        "name": "wmiadap.exe /F /T /R"
+      },
+      {
+        "process_id": "2848",
+        "name": "%windir%\\system32\\wbem\\wmiprvse.exe"
+      },
+      {
+        "process_id": "2508",
+        "name": "%SAMPLEPATH%"
+      },
+      {
+        "process_id": "7032",
+        "name": "\"C:\\Users\\<USER>\\Desktop\\executable.exe\""
+      },
+      {
+        "process_id": "2912",
+        "name": "\"${SamplePath}\\2cb4c54bc346421e0a4854698830405ac0dcd5046ae6c462f488f4e5319a90d2.exe\" "
+      },
+      {
+        "process_id": "3032",
+        "name": "%WINDIR%\\explorer.exe",
+        "children": [
+          {
+            "process_id": "3208",
+            "name": "%SAMPLEPATH%\\crb123.exe"
+          }
+        ]
+      },
+      {
+        "process_id": "2500"
+      },
+      {
+        "process_id": "6092",
+        "name": "\"C:\\Users\\user\\Desktop\\crb123.exe\" "
+      }
+    ],
+    "ip_traffic": [
+      {
+        "destination_ip": "120.79.51.185",
+        "destination_port": 53,
+        "transport_layer_protocol": "UDP"
+      },
+      {
+        "destination_ip": "120.79.51.185",
+        "destination_port": 53,
+        "transport_layer_protocol": "TCP"
+      },
+      {
+        "destination_ip": "20.99.184.37",
+        "destination_port": 443,
+        "transport_layer_protocol": "TCP"
+      },
+      {
+        "destination_ip": "13.107.4.50",
+        "destination_port": 80,
+        "transport_layer_protocol": "TCP"
+      }
+    ],
+    "calls_highlighted": [
+      "GetTickCount"
+    ],
+    "files_opened": [
+      "C:\\Windows\\system32\\powrprof.dll",
+      "C:\\Windows\\system32\\VERSION.dll",
+      "C:\\Windows\\system32\\CRYPTSP.dll",
+      "C:\\Windows\\system32\\rsaenh.dll",
+      "C:\\Windows\\system32\\SspiCli.dll",
+      "C:\\Users\\<USER>\\AppData\\Roaming\\Microsoft",
+      "C:\\Users\\<USER>\\AppData\\Roaming\\Microsoft\\Crypto",
+      "C:\\Users\\<USER>\\AppData\\Roaming\\Microsoft\\Crypto\\RSA",
+      "C:\\Users\\<USER>\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-4270068108-2931534202-3907561125-1001",
+      "C:\\Users\\<USER>\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-4270068108-2931534202-3907561125-1001\\bd92d27a61e9b9c8576c007ef5f46261_574cbd14-d75b-425c-a623-6adf5a9d77b1",
+      "C:\\Windows\\system32\\mswsock.dll",
+      "C:\\Windows\\System32\\wshtcpip.dll",
+      "\\Device\\Afd\\Endpoint",
+      "C:\\Windows\\system32\\NLAapi.dll",
+      "C:\\Windows\\system32\\napinsp.dll",
+      "C:\\Windows\\system32\\pnrpnsp.dll",
+      "C:\\Windows\\System32\\winrnr.dll",
+      "C:\\Windows\\System32\\fwpuclnt.dll",
+      "C:\\Windows\\system32\\rasadhlp.dll",
+      "\\Device\\RasAcd",
+      "C:\\Windows\\system32\\dhcpcsvc6.DLL",
+      "C:\\Windows\\system32\\dhcpcsvc.DLL",
+      "\\DEVICE\\NETBT_TCPIP_{C88996E7-EF8E-41DF-A952-E1E7A6DC14AD}",
+      "\\DEVICE\\NETBT_TCPIP_{846EE342-7039-11DE-9D20-806E6F6E6963}",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-1015118539-3749460369-599379286-1001\\57484cf5fceb89c249434f0c3c4045ff_c784477d-3fc3-4206-9876-55a4df3943da",
+      "C:\\Windows\\Globalization\\Sorting\\sortdefault.nls",
+      "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+      "C:\\Windows\\SYSTEM32\\CRYPTSP.dll",
+      "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+      "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+      "C:\\Windows\\SYSTEM32\\SspiCli.dll",
+      "C:\\Windows\\SYSTEM32\\USERENV.dll",
+      "C:\\Windows\\SYSTEM32\\VERSION.dll",
+      "C:\\Windows\\SYSTEM32\\WINMMBASE.dll",
+      "C:\\Windows\\SYSTEM32\\bcrypt.dll",
+      "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+      "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+      "C:\\Windows\\SYSTEM32\\winmm.dll",
+      "C:\\Windows\\System32\\rasadhlp.dll",
+      "C:\\Windows\\system32\\0dd2307d7f21260e642d62069549e0a7ddc83b6f7437753732da738aa2d14308AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "C:\\Windows\\system32\\IMM32.DLL",
+      "C:\\Windows\\system32\\ntoskrnl.exe",
+      "Nsi",
+      "\\DEVICE\\NETBT_TCPIP_{3882A85B-858A-11EB-B9E1-806E6F6E6963}",
+      "\\DEVICE\\NETBT_TCPIP_{44C728A6-CC3C-434D-B238-E5B6541E3476}",
+      "\\Device\\KsecDD"
+    ],
+    "payloads_extracted": [
+      {
+        "sha256": "ea16bc00754e24652f61c7af1bb4e484eeb414568eaecc7695a6305d04ccd76b",
+        "size": "337771",
+        "payload_type": "Unpacked Shellcode",
+        "process_name": "C:\\Users\\Bruno\\Desktop\\executable.exe",
+        "timestamp": "2025-11-14T00:49:13Z"
+      }
+    ],
+    "files_dropped": [
+      {
+        "path": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERE5DC.tmp"
+      },
+      {
+        "path": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERE5DC.tmp.WERInternalMetadata.xml"
+      },
+      {
+        "path": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERE5DD.tmp"
+      },
+      {
+        "path": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERE5DD.tmp.csv"
+      },
+      {
+        "path": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERE5EE.tmp"
+      },
+      {
+        "path": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERE5EE.tmp.txt"
+      },
+      {
+        "path": "C:\\Windows\\System32\\spp\\store\\2.0\\data.dat.tmp"
+      },
+      {
+        "path": "C:\\Windows\\System32\\spp\\store\\2.0\\cache\\cache.dat"
+      }
+    ],
+    "files_deleted": [
+      "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERE5DC.tmp.WERInternalMetadata.xml",
+      "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERE5DD.tmp.csv",
+      "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERE5EE.tmp.txt",
+      "C:\\Windows\\System32\\spp\\store\\2.0\\cache\\cache.dat"
+    ],
+    "mitre_attack_techniques": [
+      {
+        "id": "T1129",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "parse PE header",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "id": "T1027",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "reference Base64 string",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "id": "T1027",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "encode data using XOR",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "id": "T1082",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "get system information on Windows",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "id": "T1027",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "encrypt data using AES via x86 extensions",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "18"
+          }
+        ]
+      },
+      {
+        "id": "T1129",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "access PEB ldr_data",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "24"
+          }
+        ]
+      },
+      {
+        "id": "T1027",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "encode data using Base64",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "25"
+          }
+        ]
+      },
+      {
+        "id": "T1083",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "check if file exists",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "26"
+          }
+        ]
+      },
+      {
+        "id": "T1027",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "encrypt data using RC4 PRGA",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "31"
+          }
+        ]
+      },
+      {
+        "id": "T1082",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "query environment variable",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "33"
+          }
+        ]
+      },
+      {
+        "id": "T1497.001",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "reference anti-VM strings targeting VirtualBox",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "34"
+          }
+        ]
+      },
+      {
+        "id": "T1129",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "get kernel32 base address",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "35"
+          }
+        ]
+      },
+      {
+        "id": "T1055",
+        "severity": "IMPACT_SEVERITY_LOW",
+        "signature_description": "Contains .tls (Thread Local Storage) section",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "antianalysis_tls_section"
+          }
+        ]
+      },
+      {
+        "id": "T1027",
+        "severity": "IMPACT_SEVERITY_LOW",
+        "signature_description": "The binary likely contains encrypted or compressed data",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "packer_entropy"
+          }
+        ]
+      },
+      {
+        "id": "T1027.002",
+        "severity": "IMPACT_SEVERITY_LOW",
+        "signature_description": "The binary likely contains encrypted or compressed data",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "packer_entropy"
+          }
+        ]
+      },
+      {
+        "id": "T1082",
+        "severity": "IMPACT_SEVERITY_LOW",
+        "signature_description": "get sysinfo"
+      },
+      {
+        "id": "T1106",
+        "severity": "IMPACT_SEVERITY_LOW",
+        "signature_description": "suspend thread"
+      },
+      {
+        "id": "T1622",
+        "severity": "IMPACT_SEVERITY_MEDIUM",
+        "signature_description": "get time manytimes"
+      },
+      {
+        "id": "T1497.001",
+        "severity": "IMPACT_SEVERITY_MEDIUM",
+        "signature_description": "check in wine by api"
+      },
+      {
+        "id": "T1134",
+        "severity": "IMPACT_SEVERITY_MEDIUM",
+        "signature_description": "modify token privilege"
+      },
+      {
+        "id": "T1082",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Queries the cryptographic machine GUID"
+      },
+      {
+        "id": "T1082",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Reads software policies"
+      }
+    ],
+    "files_written": [
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\Crypto",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\Crypto\\RSA",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\Crypto\\RSA\\S-1-5-21-1015118539-3749460369-599379286-1001"
+    ],
+    "verdict_confidence": 3,
+    "command_executions": [
+      "\"${SamplePath}\\2cb4c54bc346421e0a4854698830405ac0dcd5046ae6c462f488f4e5319a90d2.exe\" ",
+      "\"%SAMPLEPATH%\\crb123.exe\" "
+    ],
+    "attack_techniques": {
+      "T1129": [
+        {
+          "severity": "INFO",
+          "description": "parse PE header",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "access PEB ldr_data",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "24"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "get kernel32 base address",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "35"
+            }
+          ]
+        }
+      ],
+      "T1027": [
+        {
+          "severity": "INFO",
+          "description": "reference Base64 string",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "7"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "encode data using XOR",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "encrypt data using AES via x86 extensions",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "18"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "encode data using Base64",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "25"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "encrypt data using RC4 PRGA",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "31"
+            }
+          ]
+        },
+        {
+          "severity": "LOW",
+          "description": "The binary likely contains encrypted or compressed data",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "packer_entropy"
+            }
+          ]
+        }
+      ],
+      "T1082": [
+        {
+          "severity": "INFO",
+          "description": "get system information on Windows",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "16"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "query environment variable",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "33"
+            }
+          ]
+        },
+        {
+          "severity": "LOW",
+          "description": "get sysinfo"
+        },
+        {
+          "severity": "INFO",
+          "description": "Queries the cryptographic machine GUID"
+        },
+        {
+          "severity": "INFO",
+          "description": "Reads software policies"
+        }
+      ],
+      "T1083": [
+        {
+          "severity": "INFO",
+          "description": "check if file exists",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "26"
+            }
+          ]
+        }
+      ],
+      "T1497.001": [
+        {
+          "severity": "INFO",
+          "description": "reference anti-VM strings targeting VirtualBox",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "34"
+            }
+          ]
+        },
+        {
+          "severity": "MEDIUM",
+          "description": "check in wine by api"
+        }
+      ],
+      "T1055": [
+        {
+          "severity": "LOW",
+          "description": "Contains .tls (Thread Local Storage) section",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "antianalysis_tls_section"
+            }
+          ]
+        }
+      ],
+      "T1027.002": [
+        {
+          "severity": "LOW",
+          "description": "The binary likely contains encrypted or compressed data",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "packer_entropy"
+            }
+          ]
+        }
+      ],
+      "T1106": [
+        {
+          "severity": "LOW",
+          "description": "suspend thread"
+        }
+      ],
+      "T1622": [
+        {
+          "severity": "MEDIUM",
+          "description": "get time manytimes"
+        }
+      ],
+      "T1134": [
+        {
+          "severity": "MEDIUM",
+          "description": "modify token privilege"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3574 @@
+{
+  "data": {
+    "registry_keys_opened": [
+      "HKEY_CURRENT_USER\\Control Panel\\International",
+      "HKEY_CURRENT_USER\\Control Panel\\International\\Geo",
+      "HKEY_CURRENT_USER\\SOFTWARE\\RegisteredApplications",
+      "HKEY_CURRENT_USER\\Software\\Classes\\Local Settings\\MuiCache\\48\\52C64B7E",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\.NETFramework",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Fusion",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\Layers",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\CLSID\\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\ShellFolder",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\CLSID\\{59031A47-3F72-44A7-89C5-5595FE6B30EE}\\ShellFolder",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FileExts",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FileExts\\.doc",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FileExts\\.doc\\NULL",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FileExts\\.doc\\OpenWithList",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FileExts\\.doc\\OpenWithProgids",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FileExts\\.doc\\UserChoice",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{15734c0b-4aaa-4cbe-ad75-3e504f42acb3}\\",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{3882a871-858a-11eb-b9e1-806e6f6e6963}\\",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{3ad3197b-12d6-45c2-a036-8dbcc38b1f2e}\\",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{fde94e26-51ac-4a3b-a031-293cbf326422}\\",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\NULL",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SessionInfo\\1",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SessionInfo\\1\\KnownFolders",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\NonEnum",
+      "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\Windows\\Explorer",
+      "HKEY_CURRENT_USER_Classes",
+      "HKEY_CURRENT_USER_Classes\\*",
+      "HKEY_CURRENT_USER_Classes\\.doc",
+      "HKEY_CURRENT_USER_Classes\\.doc\\OpenWithProgids",
+      "HKEY_CURRENT_USER_Classes\\AllFilesystemObjects",
+      "HKEY_CURRENT_USER_Classes\\AllFilesystemObjects\\BrowseInPlace",
+      "HKEY_CURRENT_USER_Classes\\AllFilesystemObjects\\Clsid",
+      "HKEY_CURRENT_USER_Classes\\AllFilesystemObjects\\DocObject",
+      "HKEY_CURRENT_USER_Classes\\AllFilesystemObjects\\ShellEx\\IconHandler",
+      "HKEY_CURRENT_USER_Classes\\CLSID\\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\ShellFolder",
+      "HKEY_CURRENT_USER_Classes\\CLSID\\{59031A47-3F72-44A7-89C5-5595FE6B30EE}\\ShellFolder",
+      "HKEY_CURRENT_USER_Classes\\CLSID\\{59031a47-3f72-44a7-89c5-5595fe6b30ee}\\ShellFolder",
+      "HKEY_CURRENT_USER_Classes\\CLSID\\{97E467B4-98C6-4F19-9588-161B7773D6F6}",
+      "HKEY_CURRENT_USER_Classes\\CLSID\\{97E467B4-98C6-4F19-9588-161B7773D6F6}\\OverrideFileSystemProperties",
+      "HKEY_CURRENT_USER_Classes\\CLSID\\{97e467b4-98c6-4f19-9588-161b7773d6f6}",
+      "HKEY_CURRENT_USER_Classes\\CLSID\\{DFFACDC5-679F-4156-8947-C5C76BC0B67F}\\Instance",
+      "HKEY_CURRENT_USER_Classes\\CLSID\\{DFFACDC5-679F-4156-8947-C5C76BC0B67F}\\Instance\\InitPropertyBag",
+      "HKEY_CURRENT_USER_Classes\\CLSID\\{F324E4F9-8496-40B2-A1FF-9617C1C9AFFE}\\Instance",
+      "HKEY_CURRENT_USER_Classes\\Directory",
+      "HKEY_CURRENT_USER_Classes\\Directory\\BrowseInPlace",
+      "HKEY_CURRENT_USER_Classes\\Directory\\Clsid",
+      "HKEY_CURRENT_USER_Classes\\Directory\\DocObject",
+      "HKEY_CURRENT_USER_Classes\\Directory\\ShellEx\\IconHandler",
+      "HKEY_CURRENT_USER_Classes\\Drive\\shellex\\FolderExtensions",
+      "HKEY_CURRENT_USER_Classes\\Drive\\shellex\\FolderExtensions\\{fbeb8a05-beee-4442-804e-409d6c4515e9}",
+      "HKEY_CURRENT_USER_Classes\\ExplorerCLSIDFlags\\{97E467B4-98C6-4F19-9588-161B7773D6F6}",
+      "HKEY_CURRENT_USER_Classes\\Folder",
+      "HKEY_CURRENT_USER_Classes\\Folder\\BrowseInPlace",
+      "HKEY_CURRENT_USER_Classes\\Folder\\Clsid",
+      "HKEY_CURRENT_USER_Classes\\Folder\\DocObject",
+      "HKEY_CURRENT_USER_Classes\\Folder\\ShellEx\\IconHandler",
+      "HKEY_CURRENT_USER_Classes\\Kind.Document",
+      "HKEY_CURRENT_USER_Classes\\Kind.document",
+      "HKEY_CURRENT_USER_Classes\\Local Settings",
+      "HKEY_CURRENT_USER_Classes\\SystemFileAssociations\\.doc",
+      "HKEY_CURRENT_USER_Classes\\SystemFileAssociations\\document",
+      "HKEY_CURRENT_USER_Classes\\Unknown",
+      "HKEY_CURRENT_USER_Classes\\Unknown\\CurVer",
+      "HKEY_CURRENT_USER_Classes\\Word.Document.8",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\AllFilesystemObjects\\BrowseInPlace",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\AllFilesystemObjects\\Clsid",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\AllFilesystemObjects\\DocObject",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\AllFilesystemObjects\\ShellEx\\IconHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\AppID\\OpenWith.exe",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0DEC7D0C-BD63-4759-AA64-ADEFD70DCF9A}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0E5AAE11-A475-4C5B-AB00-C66DE400274E}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0E5AAE11-A475-4c5b-AB00-C66DE400274E}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0E5AAE11-A475-4c5b-AB00-C66DE400274E}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0E5AAE11-A475-4c5b-AB00-C66DE400274E}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0E5AAE11-A475-4c5b-AB00-C66DE400274E}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0E5AAE11-A475-4c5b-AB00-C66DE400274E}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0E5AAE11-A475-4c5b-AB00-C66DE400274E}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0E5AAE11-A475-4c5b-AB00-C66DE400274E}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0dec7d0c-bd63-4759-aa64-adefd70dcf9a}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0dec7d0c-bd63-4759-aa64-adefd70dcf9a}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0dec7d0c-bd63-4759-aa64-adefd70dcf9a}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0dec7d0c-bd63-4759-aa64-adefd70dcf9a}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0dec7d0c-bd63-4759-aa64-adefd70dcf9a}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0dec7d0c-bd63-4759-aa64-adefd70dcf9a}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{0dec7d0c-bd63-4759-aa64-adefd70dcf9a}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{1F486A52-3CB1-48FD-8F50-B8DC300D9F9D}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{1f486a52-3cb1-48fd-8f50-b8dc300d9f9d}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{1f486a52-3cb1-48fd-8f50-b8dc300d9f9d}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{1f486a52-3cb1-48fd-8f50-b8dc300d9f9d}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{1f486a52-3cb1-48fd-8f50-b8dc300d9f9d}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{1f486a52-3cb1-48fd-8f50-b8dc300d9f9d}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{1f486a52-3cb1-48fd-8f50-b8dc300d9f9d}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{1f486a52-3cb1-48fd-8f50-b8dc300d9f9d}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{6E29FABF-9977-42D1-8D0E-CA7E61AD87E6}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{6e29fabf-9977-42d1-8d0e-ca7e61ad87e6}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{6e29fabf-9977-42d1-8d0e-ca7e61ad87e6}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{6e29fabf-9977-42d1-8d0e-ca7e61ad87e6}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{6e29fabf-9977-42d1-8d0e-ca7e61ad87e6}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{6e29fabf-9977-42d1-8d0e-ca7e61ad87e6}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{6e29fabf-9977-42d1-8d0e-ca7e61ad87e6}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{6e29fabf-9977-42d1-8d0e-ca7e61ad87e6}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{76765B11-3F95-4AF2-AC9D-EA55D8994F1A}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{76765b11-3f95-4af2-ac9d-ea55d8994f1a}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{76765b11-3f95-4af2-ac9d-ea55d8994f1a}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{76765b11-3f95-4af2-ac9d-ea55d8994f1a}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{76765b11-3f95-4af2-ac9d-ea55d8994f1a}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{76765b11-3f95-4af2-ac9d-ea55d8994f1a}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{76765b11-3f95-4af2-ac9d-ea55d8994f1a}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{76765b11-3f95-4af2-ac9d-ea55d8994f1a}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{94B23D4D-1040-4C4B-9081-85D8D6FA36C4}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{94B23D4D-1040-4C4B-9081-85D8D6FA36C4}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{94B23D4D-1040-4C4B-9081-85D8D6FA36C4}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{94B23D4D-1040-4C4B-9081-85D8D6FA36C4}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{94B23D4D-1040-4C4B-9081-85D8D6FA36C4}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{94B23D4D-1040-4C4B-9081-85D8D6FA36C4}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{94B23D4D-1040-4C4B-9081-85D8D6FA36C4}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{94B23D4D-1040-4C4B-9081-85D8D6FA36C4}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{95E15D0A-66E6-93D9-C53C-76E6219D3341}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{95E15D0A-66E6-93D9-C53C-76E6219D3341}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{95E15D0A-66E6-93D9-C53C-76E6219D3341}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{95E15D0A-66E6-93D9-C53C-76E6219D3341}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{95E15D0A-66E6-93D9-C53C-76E6219D3341}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{95E15D0A-66E6-93D9-C53C-76E6219D3341}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{95E15D0A-66E6-93D9-C53C-76E6219D3341}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{95E15D0A-66E6-93D9-C53C-76E6219D3341}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{A6FF50C0-56C0-71CA-5732-BED303A59628}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{A6FF50C0-56C0-71CA-5732-BED303A59628}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{A6FF50C0-56C0-71CA-5732-BED303A59628}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{A6FF50C0-56C0-71CA-5732-BED303A59628}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{A6FF50C0-56C0-71CA-5732-BED303A59628}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{A6FF50C0-56C0-71CA-5732-BED303A59628}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{A6FF50C0-56C0-71CA-5732-BED303A59628}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{A6FF50C0-56C0-71CA-5732-BED303A59628}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{B196B286-BAB4-101A-B69C-00AA00341D07}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{B196B286-BAB4-101A-B69C-00AA00341D07}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{B196B286-BAB4-101A-B69C-00AA00341D07}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{B196B286-BAB4-101A-B69C-00AA00341D07}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{B196B286-BAB4-101A-B69C-00AA00341D07}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{B196B286-BAB4-101A-B69C-00AA00341D07}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{B196B286-BAB4-101A-B69C-00AA00341D07}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{B196B286-BAB4-101A-B69C-00AA00341D07}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{B77B1CBF-E827-44A9-A33A-6CCFEEAA142A}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{C2F03A33-21F5-47FA-B4BB-156362A2F239}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{C53E07EC-25F3-4093-AA39-FC67EA22E99D}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{C90250F3-4D7D-4991-9B69-A5C5BC1C2AE6}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{C90250F3-4D7D-4991-9B69-A5C5BC1C2AE6}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{C90250F3-4D7D-4991-9B69-A5C5BC1C2AE6}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{C90250F3-4D7D-4991-9B69-A5C5BC1C2AE6}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{C90250F3-4D7D-4991-9B69-A5C5BC1C2AE6}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{C90250F3-4D7D-4991-9B69-A5C5BC1C2AE6}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{C90250F3-4D7D-4991-9B69-A5C5BC1C2AE6}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{C90250F3-4D7D-4991-9B69-A5C5BC1C2AE6}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{DFFACDC5-679F-4156-8947-C5C76BC0B67F}\\Instance\\InitPropertyBag",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{DFFACDC5-679F-4156-8947-C5C76BC0B67F}\\Instance\\NULL",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{E44E9428-BDBC-4987-A099-40DC8FD255E7}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{b77b1cbf-e827-44a9-a33a-6ccfeeaa142a}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{b77b1cbf-e827-44a9-a33a-6ccfeeaa142a}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{b77b1cbf-e827-44a9-a33a-6ccfeeaa142a}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{b77b1cbf-e827-44a9-a33a-6ccfeeaa142a}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{b77b1cbf-e827-44a9-a33a-6ccfeeaa142a}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{b77b1cbf-e827-44a9-a33a-6ccfeeaa142a}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{b77b1cbf-e827-44a9-a33a-6ccfeeaa142a}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c2f03a33-21f5-47fa-b4bb-156362a2f239}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c2f03a33-21f5-47fa-b4bb-156362a2f239}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c2f03a33-21f5-47fa-b4bb-156362a2f239}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c2f03a33-21f5-47fa-b4bb-156362a2f239}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c53e07ec-25f3-4093-aa39-fc67ea22e99d}\\Elevation",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c53e07ec-25f3-4093-aa39-fc67ea22e99d}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c53e07ec-25f3-4093-aa39-fc67ea22e99d}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c53e07ec-25f3-4093-aa39-fc67ea22e99d}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c53e07ec-25f3-4093-aa39-fc67ea22e99d}\\LocalServer",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c53e07ec-25f3-4093-aa39-fc67ea22e99d}\\LocalServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{c53e07ec-25f3-4093-aa39-fc67ea22e99d}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{e44e9428-bdbc-4987-a099-40dc8fd255e7}\\InprocHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{e44e9428-bdbc-4987-a099-40dc8fd255e7}\\InprocHandler32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{e44e9428-bdbc-4987-a099-40dc8fd255e7}\\InprocServer32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{e44e9428-bdbc-4987-a099-40dc8fd255e7}\\TreatAs",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Folder\\BrowseInPlace",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Folder\\Clsid",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Folder\\DocObject",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Folder\\ShellEx\\IconHandler",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{00000114-0000-0000-C000-000000000046}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{00000114-0000-0000-C000-000000000046}\\ProxyStubClsid32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{00000134-0000-0000-C000-000000000046}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{00000134-0000-0000-C000-000000000046}\\ProxyStubClsid32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{18B21AA9-E184-4FF0-9F5E-F882D03771B3}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{18B21AA9-E184-4FF0-9F5E-F882D03771B3}\\ProxyStubClsid32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{1C9CD5BB-98E9-4491-A60F-31AACC72B83C}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{1C9CD5BB-98E9-4491-A60F-31AACC72B83C}\\ProxyStubClsid32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{4D4C1E64-E410-4FAA-BAFA-59CA069BFEC2}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{4D4C1E64-E410-4FAA-BAFA-59CA069BFEC2}\\ProxyStubClsid32",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{55272A00-42CB-11CE-8135-00AA004BB851}",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\Interface\\{55272A00-42CB-11CE-8135-00AA004BB851}\\ProxyStubClsid32"
+    ],
+    "processes_tree": [
+      {
+        "process_id": "6916",
+        "name": "C:\\Windows\\SysWOW64\\unarchiver.exe\" \"C:\\Users\\user\\Desktop\\INVOICE N L96505 03_23.zip",
+        "children": [
+          {
+            "process_id": "6952",
+            "name": "C:\\Windows\\SysWOW64\\7za.exe C:\\Windows\\System32\\7za.exe\" x -pinfected -y -o\"C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3\" \"C:\\Users\\user\\Desktop\\INVOICE N L96505 03_23.zip",
+            "children": [
+              {
+                "process_id": "6968",
+                "name": "C:\\Windows\\System32\\conhost.exe C:\\Windows\\system32\\conhost.exe 0xffffffff -ForceV1"
+              }
+            ]
+          },
+          {
+            "process_id": "6560",
+            "name": "C:\\Windows\\SysWOW64\\cmd.exe cmd.exe\" /C \"C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3\\INVOICE 589 03_23.doc",
+            "children": [
+              {
+                "process_id": "3844",
+                "name": "C:\\Windows\\System32\\conhost.exe C:\\Windows\\system32\\conhost.exe 0xffffffff -ForceV1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "process_id": "6464",
+        "name": "C:\\Windows\\System32\\OpenWith.exe C:\\Windows\\system32\\OpenWith.exe -Embedding"
+      },
+      {
+        "process_id": "3346",
+        "name": "/usr/bin/exo-open exo-open \"/tmp/INVOICE N L96505 03_23.zip\"",
+        "children": [
+          {
+            "process_id": "3350",
+            "name": "/usr/bin/dbus-launch dbus-launch --autolaunch=a39eb3ed78b7401fb6809ed0c562a5b1 --binary-syntax --close-stderr"
+          },
+          {
+            "process_id": "3352",
+            "name": "/usr/bin/exo-open n/a"
+          }
+        ]
+      },
+      {
+        "process_id": "3353",
+        "name": "/usr/bin/engrampa engrampa \"/tmp/INVOICE N L96505 03_23.zip\"",
+        "children": [
+          {
+            "process_id": "3358",
+            "name": "/usr/bin/dbus-launch dbus-launch --autolaunch=a39eb3ed78b7401fb6809ed0c562a5b1 --binary-syntax --close-stderr"
+          },
+          {
+            "process_id": "3370",
+            "name": "/usr/lib/p7zip/7z l -slt -bd -y -- \"/tmp/INVOICE N L96505 03_23.zip\""
+          }
+        ]
+      },
+      {
+        "process_id": "3250",
+        "name": "/usr/bin/gpgconf --list-dirs"
+      },
+      {
+        "process_id": "3253",
+        "name": "/usr/bin/gpgconf --list-components"
+      },
+      {
+        "process_id": "3255",
+        "name": "/usr/bin/gpg --version"
+      },
+      {
+        "process_id": "3259",
+        "name": "/usr/bin/gpgsm --version"
+      },
+      {
+        "process_id": "3261",
+        "name": "/usr/bin/gpgconf --version"
+      },
+      {
+        "process_id": "3263",
+        "name": "/usr/bin/gpg --version"
+      },
+      {
+        "process_id": "3265",
+        "name": "/usr/bin/gpg gpg --enable-special-filenames --batch --no-sk-comments --homedir /var/lib/fwupd/gnupg --status-fd 21 --no-tty --charset utf8 --enable-progress-filter --exit-on-status-write-error --logger-fd 23 --import -- -&24"
+      },
+      {
+        "process_id": "3267",
+        "name": "/usr/bin/gpg gpg --enable-special-filenames --batch --no-sk-comments --homedir /var/lib/fwupd/gnupg --status-fd 21 --no-tty --charset utf8 --enable-progress-filter --exit-on-status-write-error --logger-fd 23 --import -- -&24"
+      },
+      {
+        "process_id": "3269",
+        "name": "/usr/bin/gpg gpg --enable-special-filenames --batch --no-sk-comments --homedir /var/lib/fwupd/gnupg --status-fd 21 --no-tty --charset utf8 --enable-progress-filter --exit-on-status-write-error --logger-fd 23 --import -- -&24"
+      },
+      {
+        "process_id": "3271",
+        "name": "/usr/bin/gpg gpg --enable-special-filenames --batch --no-sk-comments --homedir /var/lib/fwupd/gnupg --status-fd 21 --no-tty --charset utf8 --enable-progress-filter --exit-on-status-write-error --logger-fd 23 --import -- -&24"
+      },
+      {
+        "process_id": "3275",
+        "name": "/usr/bin/gpg gpg --enable-special-filenames --batch --no-sk-comments --homedir /var/lib/fwupd/gnupg --status-fd 21 --no-tty --charset utf8 --enable-progress-filter --exit-on-status-write-error --logger-fd 23 --verify -- -&24 -&26"
+      },
+      {
+        "process_id": "3296",
+        "name": "/usr/bin/gpg gpg --enable-special-filenames --batch --no-sk-comments --homedir /var/lib/fwupd/gnupg --status-fd 21 --no-tty --charset utf8 --enable-progress-filter --exit-on-status-write-error --logger-fd 23 --verify -- -&24 -&26"
+      },
+      {
+        "process_id": "3421",
+        "name": "/bin/dpkg dpkg --print-architecture"
+      }
+    ],
+    "registry_keys_set": [
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\LangID",
+        "value": "09 04 "
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Windows\\system32\\OpenWith.exe.FriendlyAppName",
+        "value": "Pick an app"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Windows\\system32\\OpenWith.exe.ApplicationCompany",
+        "value": "Microsoft Corporation"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe.FriendlyAppName",
+        "value": "Adobe Acrobat Reader DC"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe.ApplicationCompany",
+        "value": "Adobe Systems Incorporated"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe.FriendlyAppName",
+        "value": "Firefox"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe.ApplicationCompany",
+        "value": "Mozilla Corporation"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Program Files\\Internet Explorer\\iexplore.exe.FriendlyAppName",
+        "value": "Internet Explorer"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Program Files\\Internet Explorer\\iexplore.exe.ApplicationCompany",
+        "value": "Microsoft Corporation"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Windows\\system32\\mspaint.exe.FriendlyAppName",
+        "value": "Paint"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Windows\\system32\\mspaint.exe.ApplicationCompany",
+        "value": "Microsoft Corporation"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Windows\\system32\\NOTEPAD.EXE.FriendlyAppName",
+        "value": "Notepad"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Windows\\system32\\NOTEPAD.EXE.ApplicationCompany",
+        "value": "Microsoft Corporation"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\MuiCache\\48\\52C64B7E\\@wmploc.dll,-102",
+        "value": "Windows Media Player"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe.FriendlyAppName",
+        "value": "Windows Media Player"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe.ApplicationCompany",
+        "value": "Microsoft Corporation"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Program Files\\Windows NT\\Accessories\\WORDPAD.EXE.FriendlyAppName",
+        "value": "WordPad"
+      },
+      {
+        "key": "HKEY_CURRENT_USER_Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\MuiCache\\C:\\Program Files\\Windows NT\\Accessories\\WORDPAD.EXE.ApplicationCompany",
+        "value": "Microsoft Corporation"
+      }
+    ],
+    "files_opened": [
+      "C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe",
+      "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe",
+      "C:\\Program Files (x86)\\Windows Media Player\\en-US\\wmplayer.exe.mui",
+      "C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe",
+      "C:\\Program Files\\Internet Explorer\\en-US\\iexplore.exe.mui",
+      "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+      "C:\\Program Files\\Windows NT\\Accessories\\WORDPAD.EXE",
+      "C:\\Program Files\\Windows NT\\Accessories\\en-US\\WORDPAD.EXE.mui",
+      "C:\\Program Files\\WindowsApps\\Microsoft.WindowsStore_12011.1001.1.0_x64__8wekyb3d8bbwe\\Microsoft.System.Package.Metadata\\S-1-5-21-1015118539-3749460369-599379286-1001-MergedResources-0.pri",
+      "C:\\Program Files\\WindowsApps\\Microsoft.WindowsStore_12011.1001.1.0_x64__8wekyb3d8bbwe\\resources.pri",
+      "C:\\Users\\desktop.ini",
+      "C:\\Users\\user\\AppData\\Local\\IconCache.db",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\CLR_v2.0_32\\UsageLogs\\unarchiver.exe.log",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Caches",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Caches\\cversions.1.db",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Caches\\{AFBF9F1A-8EE8-4C77-AF34-C647E37CA0D9}.1.ver0x000000000000002d.db",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Explorer",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Explorer\\iconcache_32.db",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Explorer\\iconcache_idx.db",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Explorer\\thumbcache_32.db",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Explorer\\thumbcache_idx.db",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\unarchiver.log",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3\\",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3\\INVOICE 589 03_23.doc",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\CLR Security Config\\v2.0.50727.312\\security.config",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\CLR Security Config\\v2.0.50727.312\\security.config.cch",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\CLR Security Config\\v2.0.50727.312\\security.config.cch.6916.5657125",
+      "C:\\Users\\user\\Contacts\\desktop.ini",
+      "C:\\Users\\user\\Desktop\\INVOICE N L96505 03_23.zip",
+      "C:\\Users\\user\\Desktop\\desktop.ini",
+      "C:\\Users\\user\\Documents\\desktop.ini",
+      "C:\\Users\\user\\Downloads\\desktop.ini",
+      "C:\\Users\\user\\Favorites\\desktop.ini",
+      "C:\\Users\\user\\Links\\desktop.ini",
+      "C:\\Users\\user\\Music\\desktop.ini",
+      "C:\\Users\\user\\OneDrive\\desktop.ini",
+      "C:\\Users\\user\\Pictures\\desktop.ini",
+      "C:\\Users\\user\\Saved Games\\desktop.ini",
+      "C:\\Users\\user\\Searches\\desktop.ini",
+      "C:\\Users\\user\\Videos\\desktop.ini",
+      "C:\\WINDOWS\\FONTS\\SEGMDL2.TTF",
+      "C:\\WINDOWS\\FONTS\\SEGOEUI.TTF",
+      "C:\\WINDOWS\\FONTS\\SEGUISB.TTF",
+      "C:\\WINDOWS\\FONTS\\SEGUISYM.TTF",
+      "C:\\Windows\\AppPatch\\sysmain.sdb",
+      "C:\\Windows\\Globalization\\Sorting\\sortdefault.nls",
+      "C:\\Windows\\Microsoft.NET\\Framework\\",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v1.0.3705\\clr.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v1.0.3705\\mscorwks.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v1.1.4322\\clr.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v1.1.4322\\mscorwks.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\CONFIG\\machine.config",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\clr.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\enterprisesec.config",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\enterprisesec.config.cch",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\enterprisesec.config.cch.6916.5657125",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\machine.config",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\security.config",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\security.config.cch",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\config\\security.config.cch.6916.5657125",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\mscorjit.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\mscorwks.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\clr.dll",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\mscoreei.dll",
+      "C:\\Windows\\SYSTEM32\\",
+      "C:\\Windows\\SYSTEM32\\apphelp.dll",
+      "C:\\Windows\\SYSTEM32\\dcomp.dll",
+      "C:\\Windows\\SYSTEM32\\edputil.dll",
+      "C:\\Windows\\SYSTEM32\\ntmarta.dll",
+      "C:\\Windows\\SYSTEM32\\policymanager.dll",
+      "C:\\Windows\\SYSTEM32\\resourcepolicyclient.dll",
+      "C:\\Windows\\SYSTEM32\\sxs.dll",
+      "C:\\Windows\\SYSTEM32\\usermgrcli.dll",
+      "C:\\Windows\\SYSTEM32\\wintypes.dll",
+      "C:\\Windows\\SysWOW64\\",
+      "C:\\Windows\\SysWOW64\\7z.dll",
+      "C:\\Windows\\SysWOW64\\ADVAPI32.dll",
+      "C:\\Windows\\SysWOW64\\ActXPrxy.dll",
+      "C:\\Windows\\SysWOW64\\CLDAPI.dll",
+      "C:\\Windows\\SysWOW64\\CRYPTBASE.dll",
+      "C:\\Windows\\SysWOW64\\CRYPTSP.dll",
+      "C:\\Windows\\SysWOW64\\Codecs\\",
+      "C:\\Windows\\SysWOW64\\FLTLIB.DLL",
+      "C:\\Windows\\SysWOW64\\Formats\\",
+      "C:\\Windows\\SysWOW64\\GDI32.dll",
+      "C:\\Windows\\SysWOW64\\IMM32.DLL",
+      "C:\\Windows\\SysWOW64\\KERNEL32.dll",
+      "C:\\Windows\\SysWOW64\\KERNELBASE.dll",
+      "C:\\Windows\\SysWOW64\\MSCOREE.DLL",
+      "C:\\Windows\\SysWOW64\\OneCoreCommonProxyStub.dll",
+      "C:\\Windows\\SysWOW64\\OneCoreUAPCommonProxyStub.dll",
+      "C:\\Windows\\SysWOW64\\OpenWith.exe",
+      "C:\\Windows\\SysWOW64\\PROPSYS.dll",
+      "C:\\Windows\\SysWOW64\\RPCRT4.dll",
+      "C:\\Windows\\SysWOW64\\SHLWAPI.dll",
+      "C:\\Windows\\SysWOW64\\SspiCli.dll",
+      "C:\\Windows\\SysWOW64\\USER32.dll",
+      "C:\\Windows\\SysWOW64\\VERSION.dll",
+      "C:\\Windows\\SysWOW64\\WinTypes.dll",
+      "C:\\Windows\\SysWOW64\\Windows.StateRepositoryPS.dll",
+      "C:\\Windows\\SysWOW64\\apphelp.dll",
+      "C:\\Windows\\SysWOW64\\bcrypt.dll",
+      "C:\\Windows\\SysWOW64\\bcryptPrimitives.dll",
+      "C:\\Windows\\SysWOW64\\cfgmgr32.dll",
+      "C:\\Windows\\SysWOW64\\cmd.exe",
+      "C:\\Windows\\SysWOW64\\cmdext.dll",
+      "C:\\Windows\\SysWOW64\\combase.dll",
+      "C:\\Windows\\SysWOW64\\edputil.dll",
+      "C:\\Windows\\SysWOW64\\en-US\\OpenWith.exe.mui",
+      "C:\\Windows\\SysWOW64\\en-US\\PROPSYS.dll.mui",
+      "C:\\Windows\\SysWOW64\\en-US\\cmd.exe.mui",
+      "C:\\Windows\\SysWOW64\\en-US\\tzres.dll.mui",
+      "C:\\Windows\\SysWOW64\\gdi32full.dll",
+      "C:\\Windows\\SysWOW64\\iertutil.dll",
+      "C:\\Windows\\SysWOW64\\kernel.appcore.dll",
+      "C:\\Windows\\SysWOW64\\l_intl.nls",
+      "C:\\Windows\\SysWOW64\\msvcp_win.dll",
+      "C:\\Windows\\SysWOW64\\msvcrt.dll",
+      "C:\\Windows\\SysWOW64\\ntdll.dll",
+      "C:\\Windows\\SysWOW64\\ole32.dll",
+      "C:\\Windows\\SysWOW64\\oleaut32.dll",
+      "C:\\Windows\\SysWOW64\\powrprof.dll",
+      "C:\\Windows\\SysWOW64\\profapi.dll",
+      "C:\\Windows\\SysWOW64\\rsaenh.dll",
+      "C:\\Windows\\SysWOW64\\sechost.dll",
+      "C:\\Windows\\SysWOW64\\shcore.dll",
+      "C:\\Windows\\SysWOW64\\shell32.dll",
+      "C:\\Windows\\SysWOW64\\tzres.dll",
+      "C:\\Windows\\SysWOW64\\ucrtbase.dll",
+      "C:\\Windows\\SysWOW64\\unarchiver.exe",
+      "C:\\Windows\\SysWOW64\\unarchiver.exe.config",
+      "C:\\Windows\\SysWOW64\\urlmon.dll",
+      "C:\\Windows\\SysWOW64\\uxtheme.dll",
+      "C:\\Windows\\SysWOW64\\win32u.dll",
+      "C:\\Windows\\SysWOW64\\windows.storage.dll",
+      "C:\\Windows\\System32\\7za.exe",
+      "C:\\Windows\\System32\\ActXPrxy.dll",
+      "C:\\Windows\\System32\\Bcp47Langs.dll",
+      "C:\\Windows\\System32\\CoreMessaging.dll",
+      "C:\\Windows\\System32\\CoreUIComponents.dll",
+      "C:\\Windows\\System32\\DUI70.dll",
+      "C:\\Windows\\System32\\DUser.dll",
+      "C:\\Windows\\System32\\MrmCoreR.dll",
+      "C:\\Windows\\System32\\OLEACC.dll",
+      "C:\\Windows\\System32\\OneCoreCommonProxyStub.dll",
+      "C:\\Windows\\System32\\OneCoreUAPCommonProxyStub.dll",
+      "C:\\Windows\\System32\\SHELL32.dll",
+      "C:\\Windows\\System32\\SLC.dll",
+      "C:\\Windows\\System32\\StateRepository.Core.dll",
+      "C:\\Windows\\System32\\TextInputFramework.dll",
+      "C:\\Windows\\System32\\TileDataRepository.dll",
+      "C:\\Windows\\System32\\UIAnimation.dll",
+      "C:\\Windows\\System32\\USERENV.dll",
+      "C:\\Windows\\System32\\Windows.StateRepository.dll",
+      "C:\\Windows\\System32\\Windows.StateRepositoryClient.dll",
+      "C:\\Windows\\System32\\Windows.StateRepositoryPS.dll",
+      "C:\\Windows\\System32\\Windows.UI.AppDefaults.dll",
+      "C:\\Windows\\System32\\Windows.UI.Immersive.dll",
+      "C:\\Windows\\System32\\appresolver.dll",
+      "C:\\Windows\\System32\\bcp47mrm.dll",
+      "C:\\Windows\\System32\\d3d11.dll",
+      "C:\\Windows\\System32\\dxgi.dll",
+      "C:\\Windows\\System32\\en-US\\DUI70.dll.mui",
+      "C:\\Windows\\System32\\en-US\\SHELL32.dll.mui",
+      "C:\\Windows\\System32\\en-US\\Windows.UI.Immersive.dll.mui",
+      "C:\\Windows\\System32\\sppc.dll",
+      "C:\\Windows\\System32\\thumbcache.dll",
+      "C:\\Windows\\System32\\uiautomationcore.dll",
+      "C:\\Windows\\System32\\usermgrproxy.dll",
+      "C:\\Windows\\WinSxS\\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.1304_none_d3fbe61b7c93d9f0",
+      "C:\\Windows\\WinSxS\\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.1304_none_d3fbe61b7c93d9f0\\COMCTL32.dll",
+      "C:\\Windows\\WinSxS\\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9445_none_d08c58b4442ba54f",
+      "C:\\Windows\\WinSxS\\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9445_none_d08c58b4442ba54f\\",
+      "C:\\Windows\\WinSxS\\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9445_none_d08c58b4442ba54f\\MSVCR80.dll",
+      "C:\\Windows\\assembly\\GAC_32\\mscorlib\\2.0.0.0__b77a5c561934e089\\",
+      "C:\\Windows\\assembly\\GAC_32\\mscorlib\\2.0.0.0__b77a5c561934e089\\sortkey.nlp",
+      "C:\\Windows\\assembly\\GAC_32\\mscorlib\\2.0.0.0__b77a5c561934e089\\sorttbls.nlp",
+      "C:\\Windows\\assembly\\GAC_MSIL\\System\\2.0.0.0__b77a5c561934e089\\",
+      "C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System\\52cfeb9aedd3786f3082b1f75214480c\\System.ni.dll",
+      "C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\index6c.dat",
+      "C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\mscorlib\\88c070ebedc734e5a9868fad1dc130ef\\mscorlib.ni.dll",
+      "C:\\Windows\\assembly\\pubpol66.dat",
+      "C:\\Windows\\system32\\",
+      "C:\\Windows\\system32\\Bcrypt.dll",
+      "C:\\Windows\\system32\\D3D10Warp.dll",
+      "C:\\Windows\\system32\\IMM32.DLL",
+      "C:\\Windows\\system32\\NOTEPAD.EXE",
+      "C:\\Windows\\system32\\OLEACCRC.DLL",
+      "C:\\Windows\\system32\\OpenWith.exe",
+      "C:\\Windows\\system32\\PROPSYS.dll",
+      "C:\\Windows\\system32\\WindowsCodecs.dll",
+      "C:\\Windows\\system32\\directmanipulation.dll",
+      "C:\\Windows\\system32\\dwmapi.dll",
+      "C:\\Windows\\system32\\dwrite.dll",
+      "C:\\Windows\\system32\\en-US\\NOTEPAD.EXE.mui",
+      "C:\\Windows\\system32\\en-US\\OLEACCRC.DLL.mui",
+      "C:\\Windows\\system32\\en-US\\OpenWith.exe.mui",
+      "/dev/urandom",
+      "/etc/dconf/profile/user",
+      "/etc/dpkg/dpkg.cfg",
+      "/etc/dpkg/dpkg.cfg.d",
+      "/etc/dpkg/dpkg.cfg.d/pkg-config-hook-config",
+      "/etc/fonts/conf.avail",
+      "/etc/fonts/conf.avail/10-antialias.conf",
+      "/etc/fonts/conf.avail/10-autohint.conf",
+      "/etc/fonts/conf.avail/10-hinting-full.conf",
+      "/etc/fonts/conf.avail/10-hinting-medium.conf",
+      "/etc/fonts/conf.avail/10-hinting-none.conf",
+      "/etc/fonts/conf.avail/10-hinting-slight.conf",
+      "/etc/fonts/conf.avail/10-no-sub-pixel.conf",
+      "/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf",
+      "/etc/fonts/conf.avail/10-sub-pixel-bgr.conf",
+      "/etc/fonts/conf.avail/10-sub-pixel-rgb.conf",
+      "/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf",
+      "/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf",
+      "/etc/fonts/conf.avail/10-unhinted.conf",
+      "/etc/fonts/conf.avail/11-lcdfilter-default.conf",
+      "/etc/fonts/conf.avail/11-lcdfilter-legacy.conf",
+      "/etc/fonts/conf.avail/11-lcdfilter-light.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf",
+      "/etc/fonts/conf.avail/20-unhint-small-vera.conf",
+      "/etc/fonts/conf.avail/25-unhint-nonlatin.conf",
+      "/etc/fonts/conf.avail/30-0-google-crosextra-carlito-fontconfig.conf",
+      "/etc/fonts/conf.avail/30-cjk-aliases.conf",
+      "/etc/fonts/conf.avail/30-droid-noto-mono.conf",
+      "/etc/fonts/conf.avail/30-droid-noto.conf",
+      "/etc/fonts/conf.avail/30-metric-aliases.conf",
+      "/etc/fonts/conf.avail/40-nonlatin.conf",
+      "/etc/fonts/conf.avail/45-generic.conf",
+      "/etc/fonts/conf.avail/45-latin.conf",
+      "/etc/fonts/conf.avail/49-sansserif.conf",
+      "/etc/fonts/conf.avail/50-user.conf",
+      "/etc/fonts/conf.avail/51-local.conf",
+      "/etc/fonts/conf.avail/53-monospace-lcd-filter.conf",
+      "/etc/fonts/conf.avail/56-language-selector-ar.conf",
+      "/etc/fonts/conf.avail/57-dejavu-sans-mono.conf",
+      "/etc/fonts/conf.avail/57-dejavu-sans.conf",
+      "/etc/fonts/conf.avail/57-dejavu-serif.conf",
+      "/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf",
+      "/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf",
+      "/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf",
+      "/etc/fonts/conf.avail/59-lohit-devanagari.conf",
+      "/etc/fonts/conf.avail/60-generic.conf",
+      "/etc/fonts/conf.avail/60-latin.conf",
+      "/etc/fonts/conf.avail/62-google-crosextra-carlito-fontconfig.conf",
+      "/etc/fonts/conf.avail/64-language-selector-prefer.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-beng-extra.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-deva-extra.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-gubbi.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-gujr-extra.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-guru-extra.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-orya-extra.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-pagul.conf",
+      "/etc/fonts/conf.avail/65-0-fonts-telu-extra.conf",
+      "/etc/fonts/conf.avail/65-0-smc-meera.conf",
+      "/etc/fonts/conf.avail/65-0-smc-rachana.conf",
+      "/etc/fonts/conf.avail/65-droid-sans-fallback.conf",
+      "/etc/fonts/conf.avail/65-fonts-persian.conf",
+      "/etc/fonts/conf.avail/65-khmer.conf",
+      "/etc/fonts/conf.avail/65-nonlatin.conf",
+      "/etc/fonts/conf.avail/66-lohit-assamese.conf",
+      "/etc/fonts/conf.avail/66-lohit-bengali.conf",
+      "/etc/fonts/conf.avail/66-lohit-devanagari.conf",
+      "/etc/fonts/conf.avail/66-lohit-gujarati.conf",
+      "/etc/fonts/conf.avail/66-lohit-gurmukhi.conf",
+      "/etc/fonts/conf.avail/66-lohit-kannada.conf",
+      "/etc/fonts/conf.avail/66-lohit-odia.conf",
+      "/etc/fonts/conf.avail/66-lohit-tamil-classical.conf",
+      "/etc/fonts/conf.avail/66-lohit-tamil.conf",
+      "/etc/fonts/conf.avail/66-lohit-telugu.conf",
+      "/etc/fonts/conf.avail/67-fonts-smc-manjari.conf",
+      "/etc/fonts/conf.avail/67-lohit-malayalam.conf",
+      "/etc/fonts/conf.avail/67-smc-anjalioldlipi.conf",
+      "/etc/fonts/conf.avail/67-smc-chilanka.conf",
+      "/etc/fonts/conf.avail/67-smc-dyuthi.conf",
+      "/etc/fonts/conf.avail/67-smc-karumbi.conf",
+      "/etc/fonts/conf.avail/67-smc-keraleeyam.conf",
+      "/etc/fonts/conf.avail/67-smc-raghumalayalamsans.conf",
+      "/etc/fonts/conf.avail/67-smc-suruma.conf",
+      "/etc/fonts/conf.avail/67-smc-uroob.conf",
+      "/etc/fonts/conf.avail/69-language-selector-ja.conf",
+      "/etc/fonts/conf.avail/69-language-selector-zh-cn.conf",
+      "/etc/fonts/conf.avail/69-language-selector-zh-hk.conf",
+      "/etc/fonts/conf.avail/69-language-selector-zh-mo.conf",
+      "/etc/fonts/conf.avail/69-language-selector-zh-sg.conf",
+      "/etc/fonts/conf.avail/69-language-selector-zh-tw.conf",
+      "/etc/fonts/conf.avail/69-unifont.conf",
+      "/etc/fonts/conf.avail/70-force-bitmaps.conf",
+      "/etc/fonts/conf.avail/70-no-bitmaps.conf",
+      "/etc/fonts/conf.avail/70-yes-bitmaps.conf",
+      "/etc/fonts/conf.avail/80-delicious.conf",
+      "/etc/fonts/conf.avail/90-synthetic.conf",
+      "/etc/fonts/conf.avail/99-language-selector-zh.conf",
+      "/etc/fonts/conf.d",
+      "/etc/fonts/conf.d/65-khmer.conf",
+      "/etc/fonts/fonts.conf",
+      "/etc/gcrypt/hwf.deny",
+      "/etc/gnome/defaults.list",
+      "/etc/gtk-3.0/settings.ini",
+      "/etc/locale.alias",
+      "/etc/machine-id",
+      "/etc/xdg/mimeapps.list",
+      "/proc/3350/fd",
+      "/proc/3353/fd",
+      "/proc/3358/fd",
+      "/proc/filesystems",
+      "/proc/self/fd",
+      "/root/.Xdefaults-buffalo",
+      "/root/.cache/dconf/profile",
+      "/root/.cache/dconf/user",
+      "/root/.config/dconf/user",
+      "/root/.config/ibus/bus/a39eb3ed78b7401fb6809ed0c562a5b1-unix-0",
+      "/root/.config/mimeapps.list",
+      "/root/.fonts/.uuid",
+      "/root/.gnupg/gpg.conf",
+      "/root/.gnupg/gpgsm.conf",
+      "/root/.icons/DMZ-White/cursors/col-resize",
+      "/root/.icons/DMZ-White/cursors/h_double_arrow",
+      "/root/.icons/DMZ-White/cursors/text",
+      "/root/.icons/DMZ-White/cursors/xterm",
+      "/root/.icons/DMZ-White/index.theme",
+      "/root/.icons/cursors/col-resize",
+      "/root/.icons/cursors/h_double_arrow",
+      "/root/.icons/cursors/text",
+      "/root/.icons/cursors/xterm",
+      "/root/.icons/default/cursors/col-resize",
+      "/root/.icons/default/cursors/h_double_arrow",
+      "/root/.icons/default/cursors/text",
+      "/root/.icons/default/cursors/xterm",
+      "/root/.icons/default/index.theme",
+      "/root/.icons/index.theme",
+      "/root/.local/share/applications",
+      "/root/.local/share/applications/defaults.list",
+      "/root/.local/share/applications/mimeapps.list",
+      "/root/.local/share/applications/mimeinfo.cache",
+      "/root/.local/share/fonts/.uuid",
+      "/root/.local/share/glib-2.0/schemas/gschemas.compiled",
+      "/root/.local/share/mime//aliases",
+      "/root/.local/share/mime//generic-icons",
+      "/root/.local/share/mime//icons",
+      "/root/.local/share/mime//subclasses",
+      "/root/.local/share/mime/aliases",
+      "/root/.local/share/mime/application/msword.xml",
+      "/root/.local/share/mime/generic-icons",
+      "/root/.local/share/mime/icons",
+      "/root/.local/share/mime/subclasses",
+      "/root/.local/share/recently-used.xbel",
+      "/run/dconf/user/0",
+      "/run/user/1000/gdm/Xauthority",
+      "/sys/devices/system/cpu",
+      "/tmp",
+      "/tmp/INVOICE N L96505 03_23.zip",
+      "/usr/bin/7z",
+      "/usr/lib/locale/C.UTF-8/LC_CTYPE",
+      "/usr/lib/p7zip/7z.so",
+      "/usr/lib/p7zip/Codecs",
+      "/usr/lib/p7zip/Formats",
+      "/usr/lib/x86_64-linux-gnu/charset.alias",
+      "/usr/lib/x86_64-linux-gnu/gio/modules",
+      "/usr/lib/x86_64-linux-gnu/gio/modules/giomodule.cache",
+      "/usr/local/share//mime//aliases",
+      "/usr/local/share//mime//generic-icons",
+      "/usr/local/share//mime//icons",
+      "/usr/local/share//mime//subclasses",
+      "/usr/local/share/applications",
+      "/usr/local/share/applications/defaults.list",
+      "/usr/local/share/applications/mimeapps.list",
+      "/usr/local/share/applications/mimeinfo.cache",
+      "/usr/local/share/dconf/profile/user",
+      "/usr/local/share/fonts",
+      "/usr/local/share/fonts/.uuid",
+      "/usr/local/share/glib-2.0/schemas/gschemas.compiled",
+      "/usr/local/share/mime/aliases",
+      "/usr/local/share/mime/application/msword.xml",
+      "/usr/local/share/mime/generic-icons",
+      "/usr/local/share/mime/icons",
+      "/usr/local/share/mime/subclasses",
+      "/usr/share//mime//mime.cache",
+      "/usr/share/X11/locale/en_US.UTF-8/XLC_LOCALE",
+      "/usr/share/X11/locale/locale.alias",
+      "/usr/share/X11/locale/locale.dir",
+      "/usr/share/applications",
+      "/usr/share/applications/defaults.list",
+      "/usr/share/applications/engrampa.desktop",
+      "/usr/share/applications/mimeapps.list",
+      "/usr/share/applications/mimeinfo.cache",
+      "/usr/share/applications/screensavers",
+      "/usr/share/dconf/profile/user",
+      "/usr/share/fontconfig/conf.avail/30-opensymbol.conf",
+      "/usr/share/fontconfig/conf.avail/64-01-tlwg-kinnari.conf",
+      "/usr/share/fontconfig/conf.avail/64-02-tlwg-norasi.conf",
+      "/usr/share/fontconfig/conf.avail/64-10-tlwg-loma.conf"
+    ],
+    "memory_dumps": [
+      {
+        "file_name": "00000004.00000000.1120458801.00000000023E0000.00000002.00000001.00040000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "37617664",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000008.00000002.1204892247.0000024CB9002000.00000004.00000020.00020000.00000000.sdmp",
+        "size": "65536",
+        "base_address": "2528544563200",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1140660110.0000024124EE0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "32768",
+        "base_address": "2478815707136",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1138272960.0000024124FA4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "24576",
+        "base_address": "2478816509952",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1131288925.0000024126DE9000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478848249856",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129522852.0000000002DCA000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "20480",
+        "base_address": "48013312",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1134300552.0000024127032000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "40960",
+        "base_address": "2478850646016",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133894552.0000024126FB0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850113536",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1134362751.000002412703D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850691072",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1136897746.0000024127047000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "32768",
+        "base_address": "2478850732032",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000008.00000002.1204808936.0000007650A7F000.00000004.00000010.00020000.00000000.sdmp",
+        "size": "4096",
+        "base_address": "508159324160",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1127851849.0000000002B41000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "45355008",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000008.00000002.1204775949.000000765087C000.00000004.00000010.00020000.00000000.sdmp",
+        "size": "16384",
+        "base_address": "508157214720",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1131302563.0000024126DC6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478848106496",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000002.1127498290.0000000002930000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "45056",
+        "base_address": "43188224",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1127898377.0000000002C70000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "46596096",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000000.1120110380.00000000023D0000.00000002.00000001.00040000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "16384",
+        "base_address": "37552128",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000007.00000002.1141866680.0000024126DB2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478848024576",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1127623254.0000000002964000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "167936",
+        "base_address": "43401216",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1142815797.0000024129525000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478889390080",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133531283.0000024126FB4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850129920",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139556857.0000024126DBD000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478848069632",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1134995715.0000024129552000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478889574400",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129342926.0000000001190000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "18415616",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.1108332449.000000000151F000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "22147072",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133916425.0000024126FB4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850129920",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1138316553.0000024124FA0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478816493568",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000002.1127986044.00000000031FF000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "52424704",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1143110699.000002412BD20000.00000002.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478931312640",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133344348.000002412703D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850691072",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129418073.0000000002A6F000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "44494848",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1137005191.0000024124F6F000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478816292864",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1132664921.0000024126FAE000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850105344",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1142572210.00000241294F0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "61440",
+        "base_address": "2478889172992",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.1108108028.0000000000FDC000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "16384",
+        "base_address": "16629760",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1142855534.000002412952A000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "36864",
+        "base_address": "2478889410560",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1131378784.0000024126DD5000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478848167936",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129289206.0000000001180000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "65536",
+        "base_address": "18350080",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1127372181.000000000277E000.00000004.00000001.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "41410560",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1140335742.000000E1C937B000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "969743511552",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1140453861.000000E1C9779000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "28672",
+        "base_address": "969747697664",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1130823140.0000024126DD2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478848155648",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1138829592.000002412701D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850560000",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000008.00000002.1204921163.0000024CB9013000.00000004.00000020.00020000.00000000.sdmp",
+        "size": "73728",
+        "base_address": "2528544632832",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1127925954.0000000002CB6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "46882816",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1127302522.00000000023A0000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "37355520",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1128085344.0000000004D9C000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "16384",
+        "base_address": "81379328",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1129488808.0000000002DC2000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "28672",
+        "base_address": "47980544",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000000.969061538.0000000000FF0000.00000004.00000400.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "16711680",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000007.00000003.1134481871.0000024124FBD000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "139264",
+        "base_address": "2478816612352",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1138861975.0000024127032000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "40960",
+        "base_address": "2478850646016",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129375216.00000000011C0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "16384",
+        "base_address": "18612224",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1138967714.0000024129521000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478889373696",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000003.1122257336.0000000002956000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "43343872",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000003.1122215470.000000000293E000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "43245568",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141175442.0000024124F6F000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478816292864",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1137857269.0000024126DA5000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "24576",
+        "base_address": "2478847971328",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141753903.0000024126970000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478843559936",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1130206788.000000000534E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "87351296",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1140374722.000000E1C947F000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "969744576512",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139495988.0000024126DD4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478848163840",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000008.00000002.1204952818.0000024CB9026000.00000004.00000020.00020000.00000000.sdmp",
+        "size": "8192",
+        "base_address": "2528544710656",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000003.1122197577.000000000293B000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "43233280",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1140202484.000000E1C8F76000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "40960",
+        "base_address": "969739296768",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1128068526.0000000004D5E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "81125376",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1132573958.0000024126F9F000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850043904",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141196123.0000024124F76000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "28672",
+        "base_address": "2478816321536",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000000.1120787565.00000000023E0000.00000002.00000001.00040000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "37617664",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000007.00000003.1133407716.0000024129558000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478889598976",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1132547292.00007DF4008C1000.00000020.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "138486934671360",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141814695.0000024126DA2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478847959040",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1130184737.000000000530E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "87089152",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1134857081.000002412954C000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478889549824",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000002.1127438138.00000000027E6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "12288",
+        "base_address": "41836544",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.1108212140.00000000012BF000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "19656704",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139642630.0000024126DB6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478848040960",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141310244.0000024124F97000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "36864",
+        "base_address": "2478816456704",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1137796799.0000024126DAB000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "110592",
+        "base_address": "2478847995904",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1131074033.0000024126DCD000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478848135168",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1138337633.0000024124FA4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "24576",
+        "base_address": "2478816509952",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139763067.0000024126DA6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478847975424",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000003.1122120110.0000000002946000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "43278336",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000000.1120474889.00000000023F0000.00000004.00000001.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "37683200",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000007.00000003.1133948381.0000024126FC5000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850199552",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1130140883.000000000520E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "86040576",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1128172558.000000000501E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "84008960",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1134271278.000002412701D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850560000",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1132997648.000002412701D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850560000",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129038045.0000000001062000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "17178624",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1132561594.0000024126F9B000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478850027520",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000008.00000002.1204978110.0000024CB902C000.00000004.00000020.00020000.00000000.sdmp",
+        "size": "24576",
+        "base_address": "2528544735232",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000000.968787521.0000000000FF0000.00000004.00000400.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "16711680",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000000.00000002.1130034557.0000000004F8E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "83419136",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1137937704.0000024124F76000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "73728",
+        "base_address": "2478816321536",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1132776276.0000024126FC9000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "270336",
+        "base_address": "2478850215936",
+        "stage": "MEM_STAGE_FREE",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "238"
+          }
+        ]
+      },
+      {
+        "file_name": "00000001.00000003.1107821984.00000000012DF000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "19787776",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1132734343.0000024126FBD000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850166784",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1142180288.0000024126FC9000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850215936",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1140294621.000000E1C92FE000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "969742999552",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1141980679.0000024126F50000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "188416",
+        "base_address": "2478849720320",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133522015.0000024126FB2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850121728",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1142798519.0000024129522000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478889377792",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1136815673.0000024127016000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478850531328",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1137746729.0000024126DE5000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478848233472",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1130063993.000000000508D000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "12288",
+        "base_address": "84463616",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1128586130.000000000071D000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "12288",
+        "base_address": "7458816",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1130782533.0000024126DCD000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478848135168",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1138071469.0000024124FA4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "24576",
+        "base_address": "2478816509952",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133446984.0000024129558000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478889598976",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1128576220.00000000006B0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "12288",
+        "base_address": "7012352",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1135062689.0000024124F88000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "217088",
+        "base_address": "2478816395264",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1142954546.000002412954A000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478889541632",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1130924274.0000024126DC9000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478848118784",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1136853519.0000024127032000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "40960",
+        "base_address": "2478850646016",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133231618.0000024127016000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478850531328",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000002.1127393178.00000000027BE000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "41672704",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000000.1120436393.00000000023D0000.00000002.00000001.00040000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "16384",
+        "base_address": "37552128",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000008.00000002.1205029889.0000024CB9050000.00000004.00000020.00020000.00000000.sdmp",
+        "size": "4096",
+        "base_address": "2528544882688",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1128021382.0000000004C5E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "80076800",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1142977709.000002412954C000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478889549824",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133513709.0000024126FB0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850113536",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129261034.0000000001150000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "16384",
+        "base_address": "18153472",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1136511094.0000024124FAA000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "77824",
+        "base_address": "2478816534528",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1131150112.0000024126DD8000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478848180224",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000002.1127956428.00000000030FF000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "51376128",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000003.1122157588.0000000002CB6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "46882816",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141943451.0000024126DC2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478848090112",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000008.00000002.1204832148.0000024CB8E30000.00000004.00000020.00020000.00000000.sdmp",
+        "size": "4096",
+        "base_address": "2528542654464",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1128605467.0000000000750000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "16384",
+        "base_address": "7667712",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1127314451.000000000263D000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "12288",
+        "base_address": "40095744",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000008.00000002.1204793898.000000765097D000.00000004.00000010.00020000.00000000.sdmp",
+        "size": "12288",
+        "base_address": "508158267392",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1143018514.0000024129552000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478889574400",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1138169991.0000024124F8B000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "94208",
+        "base_address": "2478816407552",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139199289.0000024126FCD000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478850232320",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1132530550.0000024129090000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478884585472",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1136591999.0000024124FBA000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478816600064",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1140757907.0000024124EF0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "360448",
+        "base_address": "2478815772672",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.1108256204.0000000001328000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "53248",
+        "base_address": "20086784",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133937466.0000024126FBD000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850166784",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1131194794.0000024126DE8000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478848245760",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1134163583.000002412700C000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "28672",
+        "base_address": "2478850490368",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000001.00000002.1108313515.0000000001336000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "20144128",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1141855034.0000024126DAF000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478848012288",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133564423.0000024126FBD000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850166784",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1142106763.0000024126F7F000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478849912832",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1131042987.0000024126DC6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478848106496",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133882791.0000024126FAE000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850105344",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000008.00000002.1205065341.0000024CB9802000.00000004.00000800.00020000.00000000.sdmp",
+        "size": "4096",
+        "base_address": "2528552951808",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133908283.0000024126FB2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850121728",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1142225218.0000024126FD2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "233472",
+        "base_address": "2478850252800",
+        "stage": "MEM_STAGE_EXIT",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "238"
+          }
+        ]
+      },
+      {
+        "file_name": "00000001.00000002.1108178785.00000000011B0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "24576",
+        "base_address": "18546688",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1128644884.0000000000AF6000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "11493376",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.1108379440.0000000002E85000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "40960",
+        "base_address": "48779264",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1131333045.0000024126DCE000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478848139264",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133588433.0000024126FC9000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "270336",
+        "base_address": "2478850215936",
+        "stage": "MEM_STAGE_FREE",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "238"
+          }
+        ]
+      },
+      {
+        "file_name": "00000004.00000002.1127574335.0000000002956000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "53248",
+        "base_address": "43343872",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139316004.0000024126DC1000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478848086016",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141468766.0000024124FBB000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478816604160",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1132761197.0000024126FC3000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478850191360",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1128697519.0000000000C40000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "36864",
+        "base_address": "12845056",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1134234753.0000024127016000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478850531328",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133806961.0000024127047000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "32768",
+        "base_address": "2478850732032",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1137757760.0000024126DC6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478848106496",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000001.00000002.1108143440.000000000114E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "8192",
+        "base_address": "18145280",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000008.00000002.1204822879.0000024CB8E20000.00000004.00000020.00040000.00000000.sdmp",
+        "size": "4096",
+        "base_address": "2528542588928",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139787305.0000024126DAF000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478848012288",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000002.1127887054.0000000002B52000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "45424640",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1132622959.0000024126FA7000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850076672",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1134808666.000002412954A000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478889541632",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1134929875.0000024129552000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478889574400",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1143075463.0000024129B20000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478895661056",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000008.00000002.1204757415.000000765077E000.00000004.00000010.00020000.00000000.sdmp",
+        "size": "8192",
+        "base_address": "508156174336",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1142142069.0000024126F8A000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478849957888",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133740430.0000024127032000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "40960",
+        "base_address": "2478850646016",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139402953.000002412B6A2000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "28672",
+        "base_address": "2478924505088",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139719687.0000024126DA1000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478847954944",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1142492385.000002412703D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850691072",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1142358023.000002412700C000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478850490368",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1129437228.0000000002DB1000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "49152",
+        "base_address": "47910912",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139273165.0000024126DB4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478848032768",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139049937.0000024127016000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478850531328",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141253873.0000024124F8B000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "24576",
+        "base_address": "2478816407552",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000000.1120803966.00000000023F0000.00000004.00000001.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "37683200",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000000.00000002.1130007740.0000000004F4E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "83156992",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1141829553.0000024126DA6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478847975424",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1138937103.0000024127047000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "32768",
+        "base_address": "2478850732032",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133277631.0000024127032000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "40960",
+        "base_address": "2478850646016",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141560187.0000024126860000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478842445824",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000008.00000002.1205002506.0000024CB9033000.00000004.00000020.00020000.00000000.sdmp",
+        "size": "8192",
+        "base_address": "2528544763904",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000008.00000002.1204859848.0000024CB8F90000.00000004.00000800.00020000.00000000.sdmp",
+        "size": "4096",
+        "base_address": "2528544096256",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139739784.0000024126DA4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478847967232",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1142410831.0000024127016000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478850531328",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1130236247.000000000544F000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "88403968",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000000.1120149378.00000000023F0000.00000004.00000001.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "37683200",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000007.00000003.1133957498.0000024126FC9000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "270336",
+        "base_address": "2478850215936",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133022172.0000024127032000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "40960",
+        "base_address": "2478850646016",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1137078986.0000024124FAB000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "61440",
+        "base_address": "2478816538624",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133389269.0000024129550000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "28672",
+        "base_address": "2478889566208",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129769666.0000000002DFD000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "40960",
+        "base_address": "48222208",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1143051814.0000024129559000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478889603072",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.1108162091.0000000001190000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "18415616",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1136879242.000002412703D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850691072",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1136992150.0000024124F6C000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478816280576",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1128661223.0000000000AFA000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "24576",
+        "base_address": "11509760",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1128004995.0000000004BE0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "4096",
+        "base_address": "79560704",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1140487493.000000E1C97FE000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "969748242432",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1132682575.0000024126FB2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850121728",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1131111589.0000024126DD2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478848155648",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1140603722.0000024124E50000.00000004.00000020.00040000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478815117312",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139897165.0000024126DA6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478847975424",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129233088.000000000114E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "18145280",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1135905200.0000024124FA2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "110592",
+        "base_address": "2478816501760",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000003.966661969.00000000011A0000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "32768",
+        "base_address": "18481152",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1136424813.000002412952A000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "36864",
+        "base_address": "2478889410560",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1131460118.0000024126DD4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478848163840",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139231738.0000024126DB8000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "57344",
+        "base_address": "2478848049152",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141883495.0000024126DB6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478848040960",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1141109736.0000024124F49000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478816137216",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1141531750.0000024124FDB000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478816735232",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1131424408.0000024126DCD000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478848135168",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133789175.000002412703D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850691072",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000002.1128114309.0000000004E9E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "82436096",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1128722947.0000000000C4B000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "114688",
+        "base_address": "12890112",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1129696248.0000000002DF4000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "48185344",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1128881904.0000000000C7A000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "155648",
+        "base_address": "13082624",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1129948939.0000000003DB1000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "64688128",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1127541103.000000000293D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "40960",
+        "base_address": "43241472",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1138543760.0000024126FD0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "241664",
+        "base_address": "2478850244608",
+        "stage": "MEM_STAGE_FREE",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "238"
+          }
+        ]
+      },
+      {
+        "file_name": "00000007.00000003.1138403336.0000024124F7D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "45056",
+        "base_address": "2478816350208",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000001.00000002.1108067194.0000000000E00000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "14680064",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1132949932.000002412700C000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "28672",
+        "base_address": "2478850490368",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1128827169.0000000000C69000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "40960",
+        "base_address": "13012992",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000004.00000002.1127714394.0000000002993000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "163840",
+        "base_address": "43593728",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139597698.0000024126DC2000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478848090112",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139851064.0000024126DAF000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478848012288",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133249377.000002412701D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850560000",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000000.1120765364.00000000023D0000.00000002.00000001.00040000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "16384",
+        "base_address": "37552128",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000008.00000002.1204713578.000000765039B000.00000004.00000010.00020000.00000000.sdmp",
+        "size": "20480",
+        "base_address": "508152098816",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1134390814.0000024127047000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "32768",
+        "base_address": "2478850732032",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1130125757.00000000051CE000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "85778432",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133504884.0000024126FAE000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850105344",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1132703850.0000024126FB4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850129920",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133478746.0000024126F97000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478850011136",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141905208.0000024126DBE000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478848073728",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.1108124487.000000000110E000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "8192",
+        "base_address": "17883136",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139370486.000002412B684000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478924382208",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1138470182.0000024124F91000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "61440",
+        "base_address": "2478816432128",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1138791086.0000024127016000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478850531328",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129093625.0000000001072000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "17244160",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1142665429.0000024129500000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "135168",
+        "base_address": "2478889238528",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000001.00000002.1108086083.0000000000EDD000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "12288",
+        "base_address": "15585280",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1140710763.0000024124EE9000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "24576",
+        "base_address": "2478815744000",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139168062.0000024127047000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "32768",
+        "base_address": "2478850732032",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1140623681.0000024124EC0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478815576064",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133084362.0000024127047000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "32768",
+        "base_address": "2478850732032",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129655857.0000000002DE9000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "40960",
+        "base_address": "48140288",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1132674109.0000024126FB0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478850113536",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139947571.00000241268EC000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478843019264",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1134974156.000002412954F000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478889562112",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133420971.0000024129548000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478889533440",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1132593099.0000024126FA1000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478850052096",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1128541086.0000000000690000.00000004.00000020.00040000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "6881280",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139100327.0000024127032000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "40960",
+        "base_address": "2478850646016",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1129613776.0000000002DDE000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "40960",
+        "base_address": "48095232",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139141244.000002412703D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850691072",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139622233.0000024126DB3000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "4096",
+        "base_address": "2478848028672",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139039099.000002412700F000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850502656",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139217082.0000024126DA1000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478847954944",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1130758336.0000024126DC7000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478848110592",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1132633885.0000024126FAA000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478850088960",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1139829878.0000024126DA9000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478847987712",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1138997296.0000024124F96000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "40960",
+        "base_address": "2478816452608",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000001.00000002.1108427685.0000000002E90000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "8192",
+        "base_address": "48824320",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1129880479.0000000002E0C000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "20480",
+        "base_address": "48283648",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1135790610.0000024129533000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "77824",
+        "base_address": "2478889447424",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000008.00000002.1204964625.0000024CB9029000.00000004.00000020.00020000.00000000.sdmp",
+        "size": "8192",
+        "base_address": "2528544722944",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1137692490.0000024126DDA000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "40960",
+        "base_address": "2478848188416",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1142388245.0000024127010000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478850506752",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1131237044.0000024126DE4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478848229376",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000004.00000002.1128130493.0000000004EDE000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "82698240",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1136834383.000002412701D000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "16384",
+        "base_address": "2478850560000",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000002.1141229178.0000024124F7F000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "36864",
+        "base_address": "2478816358400",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1140558212.000000E1C997D000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "969749811200",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1130983401.0000024126DC6000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478848106496",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000001.00000002.1108231134.0000000001320000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "24576",
+        "base_address": "20054016",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1129119764.000000000107C000.00000040.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "17285120",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000000.00000002.1129022910.0000000001050000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "8192",
+        "base_address": "17104896",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1139915207.0000024126DB0000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478848016384",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000001.00000000.968525386.0000000000FF0000.00000004.00000400.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "16711680",
+        "stage": "MEM_STAGE_NEW"
+      },
+      {
+        "file_name": "00000004.00000002.1127457761.00000000028FE000.00000004.00000010.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\cmd.exe",
+        "size": "8192",
+        "base_address": "42983424",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1141690920.00000241268E4000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "32768",
+        "base_address": "2478842986496",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1131314703.0000024126DC8000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "8192",
+        "base_address": "2478848114688",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000001.00000002.1108048623.0000000000BF0000.00000004.00000020.00040000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\7za.exe",
+        "size": "4096",
+        "base_address": "12517376",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000002.1141489791.0000024124FC1000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "12288",
+        "base_address": "2478816628736",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1133704787.0000024127016000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "20480",
+        "base_address": "2478850531328",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000007.00000003.1133684246.000002412700C000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "28672",
+        "base_address": "2478850490368",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000008.00000002.1204745527.00000076506FF000.00000004.00000010.00020000.00000000.sdmp",
+        "size": "4096",
+        "base_address": "508155654144",
+        "stage": "MEM_STAGE_EXIT"
+      },
+      {
+        "file_name": "00000007.00000003.1136618432.0000024126FC9000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "270336",
+        "base_address": "2478850215936",
+        "stage": "MEM_STAGE_FREE",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "238"
+          }
+        ]
+      },
+      {
+        "file_name": "00000007.00000003.1138363733.0000024124F8B000.00000004.00000020.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\System32\\OpenWith.exe",
+        "size": "86016",
+        "base_address": "2478816407552",
+        "stage": "MEM_STAGE_FREE"
+      },
+      {
+        "file_name": "00000000.00000002.1128557096.00000000006A0000.00000004.00000800.00020000.00000000.sdmp",
+        "process": "C:\\Windows\\SysWOW64\\unarchiver.exe",
+        "size": "4096",
+        "base_address": "6946816",
+        "stage": "MEM_STAGE_EXIT"
+      }
+    ],
+    "command_executions": [
+      "dbus-launch --autolaunch=a39eb3ed78b7401fb6809ed0c562a5b1 --binary-syntax --close-stderr",
+      "/bin/sh -e -u -c \"export GIO_LAUNCHED_DESKTOP_FILE_PID=$$; exec \\\"$@\\\"\" sh engrampa \"/tmp/INVOICE N L96505 03_23.zip\"",
+      "engrampa \"/tmp/INVOICE N L96505 03_23.zip\"",
+      "7z l -slt -bd -y -- \"/tmp/INVOICE N L96505 03_23.zip\"",
+      "/usr/lib/p7zip/7z l -slt -bd -y -- \"/tmp/INVOICE N L96505 03_23.zip\"",
+      "/usr/bin/gpgconf --list-dirs",
+      "/usr/bin/gpgconf --list-components",
+      "/usr/bin/gpg --version",
+      "/usr/bin/gpgsm --version",
+      "/usr/bin/gpgconf --version",
+      "gpg --enable-special-filenames --batch --no-sk-comments --homedir /var/lib/fwupd/gnupg --status-fd 21 --no-tty --charset utf8 --enable-progress-filter --exit-on-status-write-error --logger-fd 23 --import -- -&24",
+      "gpg --enable-special-filenames --batch --no-sk-comments --homedir /var/lib/fwupd/gnupg --status-fd 21 --no-tty --charset utf8 --enable-progress-filter --exit-on-status-write-error --logger-fd 23 --verify -- -&24 -&26",
+      "dpkg --print-architecture"
+    ],
+    "signature_matches": [
+      {
+        "id": "541",
+        "description": "Document contains an embedded VBA macro which executes code when the document is opened / closed",
+        "match_data": [
+          "Sub AutoOpen()"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "236",
+        "description": "Creates temporary files",
+        "match_data": [
+          "C:\\Users\\user\\AppData\\Local\\Temp\\unarchiver.log"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "509",
+        "description": "Reads software policies",
+        "match_data": [
+          "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\Windows\\Safer\\CodeIdentifiers"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO",
+        "refs": [
+          {
+            "ref": "#registry_keys_opened",
+            "value": "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\Windows\\Safer\\CodeIdentifiers"
+          }
+        ]
+      },
+      {
+        "id": "171",
+        "description": "Parts of this applications are using the .NET runtime (Probably coded in C#)",
+        "match_data": [
+          "C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\mscorlib\\88c070ebedc734e5a9868fad1dc130ef\\mscorlib.ni.dll",
+          "C:\\Windows\\assembly\\GAC_32\\mscorlib\\2.0.0.0__b77a5c561934e089\\sorttbls.nlp",
+          "C:\\Windows\\assembly\\GAC_32\\mscorlib\\2.0.0.0__b77a5c561934e089\\sortkey.nlp"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "337",
+        "description": "Queries the volume information (name, serial number etc) of a device",
+        "match_data": [
+          "C:\\Windows\\Fonts\\segoeui.ttf VolumeInformation",
+          "C:\\Windows\\Fonts\\seguisym.ttf VolumeInformation",
+          "C:\\Windows\\Fonts\\seguisb.ttf VolumeInformation",
+          "C:\\Windows\\Fonts\\segmdl2.ttf VolumeInformation"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "285",
+        "description": "Queries the cryptographic machine GUID",
+        "match_data": [
+          "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography MachineGuid"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "715",
+        "description": "Classification label",
+        "match_data": [
+          "mal48.expl.evad.winZIP@9/3@0/0"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "381",
+        "description": "Disables application error messsages (SetErrorMode)",
+        "match_data": [
+          "NOOPENFILEERRORBOX"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "229",
+        "description": "Spawns processes",
+        "match_data": [
+          "C:\\Windows\\SysWOW64\\unarchiver.exe C:\\Windows\\SysWOW64\\unarchiver.exe\" \"C:\\Users\\user\\Desktop\\INVOICE N L96505 03_23.zip",
+          "C:\\Windows\\SysWOW64\\7za.exe C:\\Windows\\System32\\7za.exe\" x -pinfected -y -o\"C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3\" \"C:\\Users\\user\\Desktop\\INVOICE N L96505 03_23.zip",
+          "C:\\Windows\\System32\\conhost.exe C:\\Windows\\system32\\conhost.exe 0xffffffff -ForceV1",
+          "C:\\Windows\\SysWOW64\\cmd.exe cmd.exe\" /C \"C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3\\INVOICE 589 03_23.doc",
+          "C:\\Windows\\System32\\OpenWith.exe C:\\Windows\\system32\\OpenWith.exe -Embedding"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "543",
+        "description": "Document contains an embedded VBA macro with suspicious strings",
+        "match_data": [
+          "    CallByName sbQrKWe, KZcpQkXS, 1, Fi, FdHmEj & e",
+          "    CallByName LmVngSM, VyLpaM, 1, F",
+          "    wrz = CallByName(ActiveDocument, JJxPwJuC, 2)",
+          "    CallByName LmVngSM, cf, 1, F",
+          "    CallByName Um, jyQhujN, 1, XIflfm",
+          "    CgmmkYKG = CallByName(UQSuSREa, CVKld, 2)",
+          "    CallByName Um, s, 1",
+          "    CallByName LmVngSM, TAKzWZ, 1, F",
+          "    CallByName Um, TXxlVcxe, 1",
+          "    CallByName UQSuSREa, NozEpPV, 1",
+          "    KqsAdkcv = CallByName(UQSuSREa, jVksI, 2)",
+          "    CallByName Um, cLB, 4, 1",
+          "            CallByName dllBRu, mDCEr, 1, yGgfO.Items, 4",
+          "                CallByName atasC, wSg, 1, VthNzHxD.Path, F",
+          "    CallByName UQSuSREa, s, 1, ys, mooaT, False",
+          "    CallByName UQSuSREa, SouiCA, 4, 4, 13056",
+          "    CallByName Um, hbJwOpZz, 1, F, 2",
+          "    Set HWxIHhv = CallByName(sbQrKWe, tgcAmc, 1, uAsB)"
+        ],
+        "severity": "IMPACT_SEVERITY_LOW"
+      },
+      {
+        "id": "214",
+        "description": "Reads ini files",
+        "match_data": [
+          "C:\\Users\\user\\Desktop\\desktop.ini"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "507",
+        "description": "Uses an in-process (OLE) Automation server",
+        "match_data": [
+          "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\{95E15D0A-66E6-93D9-C53C-76E6219D3341}\\InProcServer32"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "307",
+        "description": "May sleep (evasive loops) to hinder dynamic analysis",
+        "match_data": [
+          "-922337203685477s >= -30000s"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "688",
+        "description": "Document contains an embedded VBA with many randomly named variables",
+        "match_data": [
+          "High entropy of concatenated variable names"
+        ],
+        "severity": "IMPACT_SEVERITY_LOW"
+      },
+      {
+        "id": "95",
+        "description": "Creates mutexes",
+        "match_data": [
+          "\\Sessions\\1\\BaseNamedObjects\\Local\\SM0:6968:120:WilError_01",
+          "\\Sessions\\1\\BaseNamedObjects\\Local\\SM0:6464:120:WilError_01",
+          "\\Sessions\\1\\BaseNamedObjects\\Local\\SM0:3844:120:WilError_01"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "1318",
+        "description": "Creates a process in suspended mode (likely to inject code)",
+        "match_data": [
+          "C:\\Windows\\SysWOW64\\7za.exe C:\\Windows\\System32\\7za.exe\" x -pinfected -y -o\"C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3\" \"C:\\Users\\user\\Desktop\\INVOICE N L96505 03_23.zip",
+          "C:\\Windows\\SysWOW64\\cmd.exe cmd.exe\" /C \"C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3\\INVOICE 589 03_23.doc"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "1884",
+        "description": "Contains medium sleeps (>= 30s)",
+        "match_data": [
+          "delay time: 922337203685477"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "92",
+        "description": "Creates guard pages, often used to prevent reverse engineering and debugging",
+        "match_data": [
+          "page read and write | page guard"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "226",
+        "description": "Contains long sleeps (>= 3 min)",
+        "match_data": [
+          "delay time: 922337203685477"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "238",
+        "description": "URLs found in memory or binary data",
+        "match_data": [
+          "http://www.python.org/",
+          "https://support.mozilla.org",
+          "https://www.mozilla.org",
+          "https://www.mozilla.org/firefox/91.0.1/releasenotes",
+          "https://www.oracle.com/technetwork/java/javase/downloads"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "510",
+        "description": "Uses new MSVCR Dlls",
+        "match_data": [
+          "C:\\Windows\\WinSxS\\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9445_none_d08c58b4442ba54f\\MSVCR80.dll"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "4049",
+        "description": "Uses the \"uname\" system call to query kernel version information (possible evasion)",
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "715",
+        "description": "Classification label",
+        "match_data": [
+          "clean1.linZIP@0/13@0/0"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      },
+      {
+        "id": "4044",
+        "description": "Creates hidden files and/or directories",
+        "match_data": [
+          "/root/.cache"
+        ],
+        "severity": "IMPACT_SEVERITY_INFO"
+      }
+    ],
+    "text_highlighted": [
+      ""
+    ],
+    "mitre_attack_techniques": [
+      {
+        "id": "T1064",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Document contains an embedded VBA macro which executes code when the document is opened / closed",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "541"
+          }
+        ]
+      },
+      {
+        "id": "T1064",
+        "severity": "IMPACT_SEVERITY_LOW",
+        "signature_description": "Document contains an embedded VBA macro with suspicious strings",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "543"
+          }
+        ]
+      },
+      {
+        "id": "T1064",
+        "severity": "IMPACT_SEVERITY_LOW",
+        "signature_description": "Document contains an embedded VBA with many randomly named variables",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "688"
+          }
+        ]
+      },
+      {
+        "id": "T1562.001",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Creates guard pages, often used to prevent reverse engineering and debugging",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "92"
+          }
+        ]
+      },
+      {
+        "id": "T1497",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Contains medium sleeps (>= 30s)",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "1884"
+          }
+        ]
+      },
+      {
+        "id": "T1497",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "May sleep (evasive loops) to hinder dynamic analysis",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "307"
+          }
+        ]
+      },
+      {
+        "id": "T1497",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Contains long sleeps (>= 3 min)",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "226"
+          }
+        ]
+      },
+      {
+        "id": "T1083",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Reads ini files",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "214"
+          }
+        ]
+      },
+      {
+        "id": "T1082",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Queries the cryptographic machine GUID",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "285"
+          }
+        ]
+      },
+      {
+        "id": "T1082",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Reads software policies",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "509"
+          }
+        ]
+      },
+      {
+        "id": "T1082",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Queries the volume information (name, serial number etc) of a device",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "337"
+          }
+        ]
+      },
+      {
+        "id": "T1564.001",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Creates hidden files, links and/or directories",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "4044"
+          }
+        ]
+      },
+      {
+        "id": "T1518.001",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "Uses the \"uname\" system call to query kernel version information (possible evasion)",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "4049"
+          }
+        ]
+      }
+    ],
+    "verdicts": [
+      "CLEAN"
+    ],
+    "mutexes_created": [
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\SyncRootManager",
+      "\\Sessions\\1\\BaseNamedObjects\\Local\\ZonesCacheCounterMutex",
+      "\\Sessions\\1\\BaseNamedObjects\\Local\\ZonesLockedCacheCounterMutex",
+      "\\Sessions\\1\\BaseNamedObjects\\Local\\SessionImmersiveColorMutex",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_idx.db!rwWriterMutex",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_16.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_32.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_48.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_96.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_256.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_768.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_1280.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_1920.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_2560.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_sr.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_wide.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_exif.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_wide_alternate.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_custom_stream.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_idx.db!IconCacheInit",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:iconcache_idx.db!rwReaderRefs",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_idx.db!rwWriterMutex",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_16.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_32.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_48.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_96.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_256.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_768.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_1280.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_1920.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_2560.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_sr.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_wide.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_exif.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_wide_alternate.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_custom_stream.db!dfMaintainer",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_idx.db!ThumbnailCacheInit",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_idx.db!rwReaderRefs",
+      "\\Sessions\\1\\BaseNamedObjects\\Global\\C::Users:user:AppData:Local:Microsoft:Windows:Explorer:thumbcache_idx.db!18a358"
+    ],
+    "files_written": [
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Caches",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Explorer",
+      "C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Explorer\\iconcache_idx.db",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\unarchiver.log",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3\\INVOICE 589 03_23.doc",
+      "C:\\Users\\user\\AppData\\Roaming",
+      "\\Device\\ConDrv\\\\Connect",
+      "/root/.cache/dconf/user",
+      "/var/lib/fwupd/gnupg/.#lk0x0000555c337d5b80.buffalo.3275",
+      "/var/lib/fwupd/gnupg/.#lk0x00005563c0349b80.buffalo.3267",
+      "/var/lib/fwupd/gnupg/.#lk0x00005597b185bb80.buffalo.3265",
+      "/var/lib/fwupd/gnupg/.#lk0x000055b3aca24b80.buffalo.3269",
+      "/var/lib/fwupd/gnupg/.#lk0x000055b7f0ff7b80.buffalo.3271",
+      "/var/lib/fwupd/gnupg/.#lk0x000055ee7cd85b80.buffalo.3296",
+      "/var/lib/fwupd/gnupg/pubring.kbx.tmp"
+    ],
+    "files_deleted": [
+      "/var/lib/fwupd/gnupg/.#lk0x0000555c337d5b80.buffalo.3275",
+      "/var/lib/fwupd/gnupg/.#lk0x0000555c337d5b80.buffalo.3275x",
+      "/var/lib/fwupd/gnupg/.#lk0x00005563c0349b80.buffalo.3267",
+      "/var/lib/fwupd/gnupg/.#lk0x00005563c0349b80.buffalo.3267x",
+      "/var/lib/fwupd/gnupg/.#lk0x00005597b185bb80.buffalo.3265",
+      "/var/lib/fwupd/gnupg/.#lk0x00005597b185bb80.buffalo.3265x",
+      "/var/lib/fwupd/gnupg/.#lk0x000055b3aca24b80.buffalo.3269",
+      "/var/lib/fwupd/gnupg/.#lk0x000055b3aca24b80.buffalo.3269x",
+      "/var/lib/fwupd/gnupg/.#lk0x000055b7f0ff7b80.buffalo.3271",
+      "/var/lib/fwupd/gnupg/.#lk0x000055b7f0ff7b80.buffalo.3271x",
+      "/var/lib/fwupd/gnupg/.#lk0x000055ee7cd85b80.buffalo.3296",
+      "/var/lib/fwupd/gnupg/.#lk0x000055ee7cd85b80.buffalo.3296x",
+      "/var/lib/fwupd/gnupg/pubring.kbx.lock",
+      "/var/lib/fwupd/gnupg/pubring.kbx.tmp"
+    ],
+    "files_dropped": [
+      {
+        "path": "C:\\Users\\user\\AppData\\Local\\Temp\\unarchiver.log",
+        "sha256": "a8f6efeed92c0432f7d506510986c56ec1f3b179bf2d92a214cc72ee612362de",
+        "type": "TEXT"
+      },
+      {
+        "path": "C:\\Users\\user\\AppData\\Local\\Temp\\yyun04ei.0k3\\INVOICE 589 03_23.doc",
+        "sha256": "2e116e6a43dcc2ee55df34664a7d5bfae36918f3a8ce5af97be6cb99e3a4de5b",
+        "type": "DOC"
+      },
+      {
+        "path": "/var/lib/fwupd/gnupg/.#lk0x0000555c337d5b80.buffalo.3275",
+        "sha256": "2499906a0b7bc7cfc2b314aa8ab937fcebdbb344de6e59a96dc4952dadb6b7f3",
+        "type": "TEXT"
+      },
+      {
+        "path": "/var/lib/fwupd/gnupg/.#lk0x00005563c0349b80.buffalo.3267",
+        "sha256": "c2d8140459b264958b3fbc8d6e662cd098cf59d68322bdae0de005a6c6977bc2",
+        "type": "TEXT"
+      },
+      {
+        "path": "/var/lib/fwupd/gnupg/.#lk0x00005597b185bb80.buffalo.3265",
+        "sha256": "896e36f04e82f49c753e0b10b9b22f94a13698b1d29f86d26800484cddc2a531",
+        "type": "TEXT"
+      },
+      {
+        "path": "/var/lib/fwupd/gnupg/.#lk0x000055b3aca24b80.buffalo.3269",
+        "sha256": "e0e63bbb3faefc00c1881b1bd238c2dc8f56bc9e9d0bb2572c01aa0949ff134b",
+        "type": "TEXT"
+      },
+      {
+        "path": "/var/lib/fwupd/gnupg/.#lk0x000055b7f0ff7b80.buffalo.3271",
+        "sha256": "79ed555872c565af8b246cc2b1eee030931b218877bdf5c2c80c7bf28069fbd6",
+        "type": "TEXT"
+      },
+      {
+        "path": "/var/lib/fwupd/gnupg/.#lk0x000055ee7cd85b80.buffalo.3296",
+        "sha256": "4288d90dcc6e17910a3104522c76354aef28029320253d134f91f150b026a97d",
+        "type": "TEXT"
+      }
+    ],
+    "verdict_confidence": 1,
+    "tags": [
+      "DETECT_DEBUG_ENVIRONMENT",
+      "LONG_SLEEPS",
+      "SETS_PROCESS_NAME"
+    ],
+    "attack_techniques": {
+      "T1064": [
+        {
+          "severity": "INFO",
+          "description": "Document contains an embedded VBA macro which executes code when the document is opened / closed",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "541"
+            }
+          ]
+        },
+        {
+          "severity": "LOW",
+          "description": "Document contains an embedded VBA macro with suspicious strings",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "543"
+            }
+          ]
+        },
+        {
+          "severity": "LOW",
+          "description": "Document contains an embedded VBA with many randomly named variables",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "688"
+            }
+          ]
+        }
+      ],
+      "T1562.001": [
+        {
+          "severity": "INFO",
+          "description": "Creates guard pages, often used to prevent reverse engineering and debugging",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "92"
+            }
+          ]
+        }
+      ],
+      "T1497": [
+        {
+          "severity": "INFO",
+          "description": "Contains medium sleeps (>= 30s)",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "1884"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "May sleep (evasive loops) to hinder dynamic analysis",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "307"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "Contains long sleeps (>= 3 min)",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "226"
+            }
+          ]
+        }
+      ],
+      "T1083": [
+        {
+          "severity": "INFO",
+          "description": "Reads ini files",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "214"
+            }
+          ]
+        }
+      ],
+      "T1082": [
+        {
+          "severity": "INFO",
+          "description": "Queries the cryptographic machine GUID",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "285"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "Reads software policies",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "509"
+            }
+          ]
+        },
+        {
+          "severity": "INFO",
+          "description": "Queries the volume information (name, serial number etc) of a device",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "337"
+            }
+          ]
+        }
+      ],
+      "T1564.001": [
+        {
+          "severity": "INFO",
+          "description": "Creates hidden files, links and/or directories",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "4044"
+            }
+          ]
+        }
+      ],
+      "T1518.001": [
+        {
+          "severity": "INFO",
+          "description": "Uses the \"uname\" system call to query kernel version information (possible evasion)",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "4049"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

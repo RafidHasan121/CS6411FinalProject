@@ -1,0 +1,234 @@
+{
+  "data": {
+    "memory_pattern_ips": [
+      "206.189.150.190",
+      "23.253.208.162",
+      "103.109.247.10",
+      "51.68.138.110"
+    ],
+    "verdicts": [
+      "TROJAN",
+      "MALWARE"
+    ],
+    "memory_pattern_urls": [
+      "https://206.189.150.190:8116",
+      "https://23.253.208.162:9217",
+      "https://103.109.247.10:10443",
+      "https://51.68.138.110"
+    ],
+    "modules_loaded": [
+      "c:\\windows\\system32\\winscard.dll",
+      "c:\\windows\\system32\\imm32.dll",
+      "c:\\windows\\system32\\mpr.dll",
+      "c:\\windows\\syswow64\\ntdll.dll",
+      "c:\\windows\\syswow64\\usp10.dll",
+      "c:\\windows\\syswow64\\iertutil.dll",
+      "c:\\windows\\system32\\rsaenh.dll",
+      "c:\\windows\\syswow64\\ws2_32.dll",
+      "c:\\windows\\system32\\srvcli.dll",
+      "c:\\windows\\syswow64\\sechost.dll",
+      "c:\\windows\\system32\\ntdll.dll",
+      "c:\\windows\\syswow64\\userenv.dll",
+      "c:\\windows\\system32\\apphelp.dll",
+      "c:\\windows\\syswow64\\gdi32.dll",
+      "c:\\windows\\syswow64\\normaliz.dll",
+      "c:\\windows\\syswow64\\rpcrt4.dll",
+      "c:\\windows\\system32\\wkscli.dll",
+      "c:\\windows\\apppatch\\aclayers.dll",
+      "c:\\windows\\system32\\wow64.dll",
+      "c:\\windows\\syswow64\\oleaut32.dll",
+      "c:\\windows\\syswow64\\kernelbase.dll",
+      "c:\\windows\\system32\\cryptsp.dll",
+      "c:\\windows\\system32\\netapi32.dll",
+      "c:\\windows\\syswow64\\wininet.dll",
+      "c:\\windows\\syswow64\\user32.dll",
+      "c:\\windows\\syswow64\\advapi32.dll",
+      "c:\\windows\\syswow64\\msctf.dll",
+      "c:\\windows\\system32\\wow64win.dll",
+      "c:\\users\\elijah\\appdata\\local\\temp\\0027021524.dll",
+      "c:\\windows\\syswow64\\sspicli.dll",
+      "c:\\windows\\system32\\winspool.drv",
+      "c:\\windows\\syswow64\\api-ms-win-downlevel-normaliz-l1-1-0.dll",
+      "c:\\windows\\syswow64\\kernel32.dll",
+      "c:\\windows\\syswow64\\msvcrt.dll",
+      "c:\\windows\\syswow64\\shlwapi.dll",
+      "c:\\windows\\system32\\lz32.dll",
+      "c:\\windows\\syswow64\\profapi.dll",
+      "c:\\windows\\syswow64\\api-ms-win-downlevel-shlwapi-l1-1-0.dll",
+      "c:\\windows\\system32\\wow64cpu.dll",
+      "c:\\windows\\syswow64\\cryptbase.dll",
+      "c:\\windows\\syswow64\\ole32.dll",
+      "c:\\windows\\syswow64\\nsi.dll",
+      "c:\\windows\\syswow64\\api-ms-win-downlevel-version-l1-1-0.dll",
+      "c:\\windows\\system32\\netutils.dll",
+      "c:\\windows\\apppatch\\acwow64.dll",
+      "c:\\windows\\syswow64\\psapi.dll",
+      "c:\\windows\\syswow64\\api-ms-win-downlevel-advapi32-l1-1-0.dll",
+      "c:\\windows\\syswow64\\shell32.dll",
+      "c:\\windows\\syswow64\\lpk.dll",
+      "c:\\windows\\system32\\samcli.dll",
+      "c:\\windows\\syswow64\\api-ms-win-downlevel-user32-l1-1-0.dll",
+      "c:\\windows\\system32\\version.dll",
+      "c:\\users\\elijah\\appdata\\local\\temp\\ecf60d585aad070feca119d7bfbf3fabd828cee5b8bc5.dll",
+      "\\Windows\\SysWOW64\\cryptbase.dll",
+      "\\Windows\\System32\\ntdll.dll",
+      "\\Windows\\SysWOW64\\oleaut32.dll",
+      "\\Windows\\SysWOW64\\shell32.dll",
+      "\\Windows\\SysWOW64\\KernelBase.dll",
+      "\\Windows\\SysWOW64\\uxtheme.dll",
+      "\\Windows\\SysWOW64\\Wldap32.dll",
+      "\\Windows\\SysWOW64\\cfgmgr32.dll",
+      "\\Windows\\SysWOW64\\msvcrt.dll",
+      "\\Windows\\SysWOW64\\user32.dll",
+      "\\Windows\\SysWOW64\\msasn1.dll",
+      "\\Windows\\System32\\apisetschema.dll",
+      "\\Windows\\SysWOW64\\kernel32.dll",
+      "\\Windows\\System32\\wow64cpu.dll",
+      "\\Windows\\SysWOW64\\propsys.dll",
+      "\\Windows\\SysWOW64\\advapi32.dll",
+      "\\Windows\\System32\\wow64win.dll",
+      "\\Windows\\System32\\user32.dll",
+      "\\Windows\\SysWOW64\\sspicli.dll",
+      "\\Windows\\SysWOW64\\wininet.dll",
+      "\\Windows\\SysWOW64\\shlwapi.dll",
+      "\\Windows\\SysWOW64\\crypt32.dll",
+      "\\Windows\\SysWOW64\\devobj.dll",
+      "\\Windows\\SysWOW64\\iertutil.dll",
+      "\\Windows\\SysWOW64\\gdi32.dll",
+      "\\Windows\\SysWOW64\\urlmon.dll",
+      "\\Windows\\System32\\wow64.dll",
+      "\\Windows\\SysWOW64\\ntdll.dll",
+      "\\Windows\\winsxs\\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\\comctl32.dll",
+      "\\Windows\\SysWOW64\\setupapi.dll",
+      "\\Windows\\SysWOW64\\lpk.dll",
+      "\\Windows\\SysWOW64\\imm32.dll",
+      "\\Windows\\SysWOW64\\sechost.dll",
+      "\\Windows\\System32\\kernel32.dll",
+      "\\Windows\\SysWOW64\\rpcrt4.dll",
+      "\\Windows\\SysWOW64\\api-ms-win-core-synch-l1-2-0.dll",
+      "\\Windows\\SysWOW64\\ntmarta.dll",
+      "\\Windows\\SysWOW64\\clbcatq.dll",
+      "\\Windows\\SysWOW64\\ole32.dll",
+      "\\Windows\\SysWOW64\\usp10.dll",
+      "\\Windows\\SysWOW64\\msctf.dll",
+      "\\Windows\\SysWOW64\\WinSCard.dll",
+      "\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll",
+      "\\Windows\\SysWOW64\\dwmapi.dll",
+      "\\Windows\\SysWOW64\\lz32.dll"
+    ],
+    "command_executions": [
+      "%SANDBOX_DLL_LOADER_X86% %SAMPLEPATH% %WORKDIR% 483",
+      "C:\\Users\\Elijah\\AppData\\Local\\Temp\\rundll32.exe 0027021524.dll",
+      "C:\\Users\\Elijah\\AppData\\Local\\Temp\\rundll32.exe ecf60d585aad070feca119d7bfbf3fabd828cee5b8bc5.dll",
+      "\"C:\\Users\\kEecfMwgj\\Desktop\\tGPQitO.exe\" /dll=\"C:\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll\" /fn_id=FporeoniYjdegtess /fn_args=\"1\"",
+      "\"C:\\Users\\kEecfMwgj\\Desktop\\tGPQitO.exe\" /dll=\"C:\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll\" /fn_id=FporeoniYjdegtess /fn_args=\"iexplore.exe\"",
+      "\"C:\\Users\\kEecfMwgj\\Desktop\\tGPQitO.exe\" /dll=\"C:\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll\" /fn_id=FporeoniYjdegtess /fn_args=\"explorer.exe\"",
+      "\"C:\\Users\\kEecfMwgj\\Desktop\\tGPQitO.exe\" /dll=\"C:\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll\" /fn_id=FporeoniYjdegtess /fn_args=\"127.0.0.1\"",
+      "\"C:\\Users\\kEecfMwgj\\Desktop\\tGPQitO.exe\" /dll=\"C:\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll\" /fn_id=FporeoniYjdegtess",
+      "\"C:\\Users\\kEecfMwgj\\Desktop\\tGPQitO.exe\" /dll=\"C:\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll\" /fn_id=FporeoniYjdegtess /fn_args=\"%Temp%\\IXP000.TMP\\\"",
+      "\"C:\\Users\\kEecfMwgj\\Desktop\\tGPQitO.exe\" /dll=\"C:\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll\" /fn_id=FporeoniYjdegtess /fn_args=\"0\"",
+      "\"C:\\Users\\kEecfMwgj\\Desktop\\tGPQitO.exe\" /dll=\"C:\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll\" /fel=\"C:\\Users\\KEECFM~1\\AppData\\Local\\Temp\\tmppkgr9ogz\" /s",
+      "\"C:\\Users\\kEecfMwgj\\Desktop\\tGPQitO.exe\" /dll=\"C:\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll\" /fn_id=FporeoniYjdegtess /fn_args=\"DefaultInstall\"",
+      "\"C:\\Users\\kEecfMwgj\\Desktop\\tGPQitO.exe\" /dll=\"C:\\Users\\KEECFM~1\\Desktop\\ecf60d585aad070feca119d7bfbf3f929c23da7cde1a2e988abd828cee5b8bc5.dll\" /fn_id=FporeoniYjdegtess /fn_args=\"Install\""
+    ],
+    "processes_created": [
+      "C:\\Users\\Elijah\\AppData\\Local\\Temp\\rundll32.exe",
+      "c:\\users\\keecfmwgj\\desktop\\tgpqito.exe"
+    ],
+    "processes_terminated": [
+      "%windir%\\System32\\svchost.exe -k WerSvcGroup",
+      "%windir%\\SysWOW64\\WerFault.exe -u -p 2608 -s 188",
+      "wmiadap.exe /F /T /R",
+      "%SANDBOX_DLL_LOADER_X86% %SAMPLEPATH% %WORKDIR% 483",
+      "c:\\users\\keecfmwgj\\desktop\\tgpqito.exe"
+    ],
+    "verdict_labels": [
+      "Dridex"
+    ],
+    "registry_keys_set": [
+      {
+        "key": "HKU\\S-1-5-21-575823232-3065301323-1442773979-1000\\Software\\Microsoft\\SystemCertificates\\Root\\Certificates\\0174E68C97DDF1E0EEEA415EA336A163D2B61AFD\\Blob",
+        "value": "5C 00 00 00 01 00 00 00 04 00 00 00 00 10 00 00 04 00 00 00 01 00 00 00 10 00 00 00 0D BE 92 DE FF 7D 36 BB 48 C4 A6 B1 15 24 95 38 0F 00 00 00 01 00 00 00 20 00 00 00 53 FE B9 19 2E D4 80 F2 09 12 4A 2C 57 D7 E8 97 7A 2E 9F 39 46 1D BF 21 4D F1 12 CB 16 02 4F A2 14 00 00 00 01 00 00 00 14 00 00 00 78 B8 30 FD 63 AC 7B 89 4A 07 3B ED F6 8A 83 9C C3 52 02 65 19 00 00 00 01 00 00 00 10 00 00 00 B5 74 AF 30 C5 C1 BA 3A 69 A7 10 02 00 82 4D D0 03 00 00 00 01 00 00 00 14 00 00 00 01 74 E6 8C 97 DD F1 E0 EE EA 41 5E A3 36 A1 63 D2 B6 1A FD 20 00 00 00 01 00 00 00 F8 05 00 00 30 82 05 F4 30 82 03 DC A0 03 02 01 02 02 09 00 E0 EA 61 4C 28 56 32 64 30 0D 06 09 2A 86 48 86 F7 0D 01 01 0B 05 00 30 81 8E 31 0B 30 09 06 03 55 04 06 13 02 49 4C 31 0F 30 0D 06 03 55 04 08 0C 06 43 65 6E 74 65 72 31 0C 30 0A 06 03 55 04 07 0C 03 4C 6F 64 31 10 30 0E 06 03 55 04 0A 0C 07 47 6F 50 72 6F 78 79 31 10 30 0E 06 03 55 04 0B 0C 07 47 6F 50 72 6F 78 79 31 1A 30 18 06 03 55 04 03 0C 11 67 6F 70 72 6F 78 79 2E 67 69 74 68 75 62 2E 69 6"
+      },
+      {
+        "key": "HKLM\\Software\\Microsoft\\Windows\\Windows Error Reporting\\Debug\\StoreLocation",
+        "value": "%LOCALAPPDATA%\\Microsoft\\Windows\\WER\\ReportArchive\\AppCrash_c2ae_uiproxy32.e_8cad58fada47177cb1dd9d269927af5b31323ba8_0ab1b96f"
+      },
+      {
+        "key": "HKU\\S-1-5-21-575823232-3065301323-1442773979-1000\\Software\\Microsoft\\Windows\\Windows Error Reporting\\Debug\\StoreLocation",
+        "value": "%LOCALAPPDATA%\\Microsoft\\Windows\\WER\\ReportArchive\\AppCrash_c2ae_uiproxy32.e_8cad58fada47177cb1dd9d269927af5b31323ba8_0ab1b96f"
+      }
+    ],
+    "verdict_confidence": 70,
+    "processes_tree": [
+      {
+        "process_id": "2704",
+        "name": "%windir%\\System32\\svchost.exe -k WerSvcGroup",
+        "children": [
+          {
+            "process_id": "2736",
+            "name": "%windir%\\SysWOW64\\WerFault.exe -u -p 2608 -s 188"
+          }
+        ]
+      },
+      {
+        "process_id": "2972",
+        "name": "wmiadap.exe /F /T /R"
+      },
+      {
+        "process_id": "3012",
+        "name": "%windir%\\system32\\wbem\\wmiprvse.exe"
+      },
+      {
+        "process_id": "2608",
+        "name": "%SANDBOX_DLL_LOADER_X86% %SAMPLEPATH% %WORKDIR% 483"
+      },
+      {
+        "process_id": "2948",
+        "name": "C:\\Users\\Elijah\\AppData\\Local\\Temp\\rundll32.exe"
+      },
+      {
+        "process_id": "proc_1",
+        "name": "tgpqito.exe",
+        "children": [
+          {
+            "process_id": "proc_2",
+            "name": "tgpqito.exe"
+          },
+          {
+            "process_id": "proc_3",
+            "name": "tgpqito.exe"
+          },
+          {
+            "process_id": "proc_4",
+            "name": "tgpqito.exe"
+          },
+          {
+            "process_id": "proc_5",
+            "name": "tgpqito.exe"
+          },
+          {
+            "process_id": "proc_6",
+            "name": "tgpqito.exe"
+          },
+          {
+            "process_id": "proc_7",
+            "name": "tgpqito.exe"
+          },
+          {
+            "process_id": "proc_8",
+            "name": "tgpqito.exe"
+          },
+          {
+            "process_id": "proc_9",
+            "name": "tgpqito.exe"
+          },
+          {
+            "process_id": "proc_10",
+            "name": "tgpqito.exe"
+          }
+        ]
+      }
+    ]
+  }
+}

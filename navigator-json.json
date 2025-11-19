@@ -1,0 +1,99 @@
+{
+    "version": "4.5",
+    "name": "Sample Threat Assessment Layer",
+    "description": "Example MITRE ATT&CK Navigator layer showing techniques related to credential access and lateral movement.",
+    "domain": "enterprise-attack",
+    "techniques": [
+        {
+            "techniqueID": "T1003",
+            "score": 80,
+            "comment": "Common technique for credential dumping via LSASS memory.",
+            "color": "#ff6666",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Detection",
+                    "value": "Sysmon event ID 10 and LSASS access detection"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1021",
+            "score": 70,
+            "comment": "Used for lateral movement via remote services like SMB, RDP, or SSH.",
+            "color": "#ffa500",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Tool",
+                    "value": "Impacket, PsExec"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1059",
+            "score": 90,
+            "comment": "Execution via command-line or scripting interpreter.",
+            "color": "#ff0000",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "Script Type",
+                    "value": "PowerShell, Bash"
+                }
+            ],
+            "showSubtechniques": false
+        }
+    ],
+    "gradient": {
+        "colors": [
+            "#ffffff",
+            "#ff0000"
+        ],
+        "minValue": 0,
+        "maxValue": 100
+    },
+    "legendItems": [
+        {
+            "label": "High Risk",
+            "color": "#ff0000"
+        },
+        {
+            "label": "Medium Risk",
+            "color": "#ffa500"
+        },
+        {
+            "label": "Low Risk",
+            "color": "#ffff00"
+        }
+    ],
+    "showTacticRowBackground": true,
+    "tacticRowBackground": "#e0e0e0",
+    "selectTechniquesAcrossTactics": true,
+    "sorting": 0,
+    "viewMode": 0,
+    "hideDisabled": false,
+    "techniqueLayout": "side",
+    "filters": {
+        "stages": [
+            "act"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "macOS"
+        ]
+    },
+    "metadata": [
+        {
+            "name": "Author",
+            "value": "Alieu Samateh"
+        },
+        {
+            "name": "Date Created",
+            "value": "2025-11-13"
+        }
+    ]
+}

@@ -1,0 +1,978 @@
+{
+  "data": {
+    "http_conversations": [
+      {
+        "url": "http://www.sarele.com/docview/fre.php",
+        "request_method": "POST",
+        "request_headers": {
+          "Host": "www.sarele.com",
+          "Content-Length": "159",
+          "Content-Type": "application/octet-stream",
+          "Content-Key": "D5654A0C",
+          "Accept": "*/*",
+          "Connection": "close",
+          "User-Agent": "Mozilla/4.08 (Charon; Inferno)",
+          "Content-Encoding": "binary"
+        },
+        "response_headers": {
+          "content-length": "0",
+          "connection": "close"
+        },
+        "response_status_code": 405
+      },
+      {
+        "url": "http://www.sarele.com/docview/fre.php",
+        "request_method": "POST"
+      }
+    ],
+    "files_written": [
+      "C:\\Users\\user\\AppData\\Roaming\\61A0A7\\7468E2.hdb",
+      "C:\\Users\\user\\AppData\\Roaming\\61A0A7\\7468E2.lck",
+      "C:\\Users\\user\\AppData\\Roaming\\61A0A7\\7468E2.exe",
+      "\\Sessions\\1\\BaseNamedObjects",
+      "\\Device\\KsecDD"
+    ],
+    "files_deleted": [
+      "C:\\Users\\user\\AppData\\Roaming\\61A0A7\\7468E2.hdb",
+      "C:\\Users\\user\\AppData\\Roaming\\61A0A7\\7468E2.lck",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\1f136e0a701ef39aca6d9a4209ea2369.exe",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\CONFIG\\security.config.cch.2808.14570212",
+      "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\CONFIG\\enterprisesec.config.cch.2808.14570212",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\CLR Security Config\\v2.0.50727.312\\security.config.cch.2808.14570243"
+    ],
+    "processes_tree": [
+      {
+        "process_id": "2860",
+        "name": "wmiadap.exe /F /T /R"
+      },
+      {
+        "process_id": "2900",
+        "name": "%windir%\\system32\\wbem\\wmiprvse.exe"
+      },
+      {
+        "process_id": "2192",
+        "name": "%windir%\\System32\\svchost.exe -k WerSvcGroup"
+      },
+      {
+        "process_id": "2552",
+        "name": "%TEMP%\\RZCJD3MGAY49HPLJ.exe",
+        "children": [
+          {
+            "process_id": "2652",
+            "name": "\"%TEMP%\\RZCJD3MGAY49HPLJ.exe\" "
+          }
+        ]
+      },
+      {
+        "process_id": "2808",
+        "name": "0d8d726f094109c68861dc5199da1c0e.exe",
+        "time_offset": 28601,
+        "children": [
+          {
+            "process_id": "3052",
+            "name": "0d8d726f094109c68861dc5199da1c0e.exe",
+            "time_offset": 28604
+          }
+        ]
+      }
+    ],
+    "sigma_analysis_results": [
+      {
+        "match_context": [
+          {
+            "values": {
+              "CommandLine": "\\??\\C:\\Windows\\system32\\conhost.exe",
+              "Image": "\\??\\C:\\Windows\\system32\\conhost.exe",
+              "EventID": "1"
+            }
+          }
+        ],
+        "rule_level": "high",
+        "rule_id": "25fc56c1bee673d7ff3edcf371e4d2a36c0af83222da348961b87735c8efa61f",
+        "rule_source": "Sigma Integrated Rule Set (GitHub)",
+        "rule_title": "System File Execution Location Anomaly",
+        "rule_description": "Detects the execution of a Windows system binary that is usually located in the system folder from an uncommon location.\n",
+        "rule_author": "Florian Roth (Nextron Systems), Patrick Bareiss, Anton Kutepov, oscd.community, Nasreddine Bencherchali (Nextron Systems)"
+      },
+      {
+        "match_context": [
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Comodo\\Dragon\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\MapleStudio\\ChromePlus\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Nichrome\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Chromium\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Torch\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Epic Privacy Browser\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\CocCoc\\Browser\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Vivaldi\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Superbird\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Coowon\\Coowon\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\360Browser\\Browser\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\CatalinaGroup\\Citrio\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Google\\Chrome SxS\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Orbitum\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Local\\Iridium\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Roaming\\Fenrir Inc\\Sleipnir\\setting\\modules\\ChromiumViewer\\User Data\\Default\\Login Data"
+            }
+          },
+          {
+            "values": {
+              "FileName": "C:\\Users\\user\\AppData\\Roaming\\Fenrir Inc\\Sleipnir5\\setting\\modules\\ChromiumViewer\\User Data\\Default\\Login Data"
+            }
+          }
+        ],
+        "rule_level": "low",
+        "rule_id": "0f8e3c8e1fbbfbe7cf4a673a7445d726cd5c91d52f036a090b8e242dd368058e",
+        "rule_source": "Sigma Integrated Rule Set (GitHub)",
+        "rule_title": "Suspicious File Access to Browser Credential Storage",
+        "rule_description": "Detects file access to browser credential storage paths by non-browser processes, which may indicate credential access attempts.\nAdversaries may attempt to access browser credential storage to extract sensitive information such as usernames and passwords or cookies.\nThis behavior is often commonly observed in credential stealing malware.\n",
+        "rule_author": "frack113, X__Junior (Nextron Systems), Swachchhanda Shrawan Poudel (Nextron Systems), Parth-FourCore"
+      }
+    ],
+    "memory_pattern_urls": [
+      "http://alphastand.top/alien/fre.php",
+      "http://alphastand.trade/alien/fre.php",
+      "http://alphastand.win/alien/fre.php",
+      "http://kbfvzoboss.bid/alien/fre.php",
+      "http://www.sarele.com/docview/fre.php"
+    ],
+    "mitre_attack_techniques": [
+      {
+        "id": "T1620",
+        "severity": "IMPACT_SEVERITY_INFO",
+        "signature_description": "invoke .NET assembly method",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "id": "T1129",
+        "signature_description": "The process attempted to dynamically load a malicious function"
+      },
+      {
+        "id": "T1129",
+        "signature_description": "The process tried to load dynamically one or more functions."
+      },
+      {
+        "id": "T1057",
+        "signature_description": "The process has tried to detect the debugger probing the use of page guards."
+      },
+      {
+        "id": "T1071",
+        "signature_description": "Detected one or more anomalous HTTP requests"
+      },
+      {
+        "id": "T1071",
+        "signature_description": "Detected HTTP requests to some non white-listed domains"
+      },
+      {
+        "id": "T1057",
+        "signature_description": "The process attempted to detect a running debugger using common APIs"
+      },
+      {
+        "id": "T1107",
+        "signature_description": "The process attempted to delete its original binary"
+      },
+      {
+        "id": "T1070",
+        "signature_description": "The process attempted to delete its original binary"
+      },
+      {
+        "id": "T1082",
+        "signature_description": "Queries for the computername"
+      },
+      {
+        "id": "T1081",
+        "signature_description": "Detected an attempt to access Browser data that may contain sensible informations (e.g. user credentials)"
+      },
+      {
+        "id": "T1119",
+        "signature_description": "Detected an attempt to access Browser data that may contain sensible informations (e.g. user credentials)"
+      },
+      {
+        "id": "T1082",
+        "signature_description": "The process tried to collect informations about the system reading some known registry keys"
+      },
+      {
+        "id": "T1012",
+        "signature_description": "The process tried to collect informations about the system reading some known registry keys"
+      },
+      {
+        "id": "T1081",
+        "signature_description": "The process attempted to collect credentials from installed FTP clients"
+      },
+      {
+        "id": "T1119",
+        "signature_description": "The process attempted to collect credentials from installed FTP clients"
+      },
+      {
+        "id": "T1081",
+        "signature_description": "The process attempted to collect informations related to installed instant messaging clients"
+      },
+      {
+        "id": "T1119",
+        "signature_description": "The process attempted to collect informations related to installed instant messaging clients"
+      }
+    ],
+    "mutexes_created": [
+      "Local\\MSCTF.Asm.MutexDefault0",
+      "E32B5DE61A0A7468E2C50125",
+      "Global\\CLR_CASOFF_MUTEX"
+    ],
+    "ip_traffic": [
+      {
+        "destination_ip": "13.248.169.48",
+        "destination_port": 80,
+        "transport_layer_protocol": "TCP"
+      }
+    ],
+    "command_executions": [
+      "C:\\Windows\\System32\\svchost.exe -k WerSvcGroup",
+      "C:\\Windows\\system32\\schtasks.exe /delete /f /TN \"Microsoft\\Windows\\Customer Experience Improvement Program\\Uploader\"",
+      "\\??\\C:\\Windows\\system32\\conhost.exe",
+      " ",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\1f136e0a701ef39aca6d9a4209ea2369.exe"
+    ],
+    "dns_lookups": [
+      {
+        "hostname": "www.sarele.com",
+        "resolved_ips": [
+          "76.223.54.146",
+          "13.248.169.48"
+        ]
+      },
+      {
+        "hostname": "a904c694c05102f30.awsglobalaccelerator.com",
+        "resolved_ips": [
+          "13.248.169.48"
+        ]
+      }
+    ],
+    "services_started": [
+      "VaultSvc"
+    ],
+    "signature_matches": [
+      {
+        "id": "0",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "suspend thread",
+        "description": "host-interaction/thread/suspend",
+        "authors": [
+          "0x534a@mailbox.org",
+          "anushka.virgaonkar@mandiant.com"
+        ],
+        "match_data": [
+          "api: System.Threading.Thread::Sleep"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: suspend thread\n    namespace: host-interaction/thread/suspend\n    authors:\n      - 0x534a@mailbox.org\n      - anushka.virgaonkar@mandiant.com\n    scopes:\n      static: basic block\n      dynamic: call\n    mbc:\n      - Process::Suspend Thread [C0055]\n    examples:\n      - 787cbc8a6d1bc58ea169e51e1ad029a637f22560660cc129ab8a099a745bd50e:0x502f4c\n  features:\n    - or:\n      - api: kernel32.SuspendThread\n      - api: ntdll.NtSuspendThread\n      - api: ntdll.ZwSuspendThread\n      - api: System.Threading.Thread::Suspend\n      - api: System.Threading.Thread::Sleep\n"
+      },
+      {
+        "id": "1",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "compiled to the .NET platform",
+        "description": "runtime/dotnet",
+        "authors": [
+          "william.ballenthin@mandiant.com"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: compiled to the .NET platform\n    namespace: runtime/dotnet\n    authors:\n      - william.ballenthin@mandiant.com\n    scopes:\n      static: file\n      dynamic: file\n    examples:\n      - b9f5bd514485fb06da39beff051b9fdc\n  features:\n    - or:\n      - format: dotnet\n      - import: mscoree._CorExeMain\n      - import: mscoree._corexemain\n      - import: mscoree._CorDllMain\n      - import: mscoree._cordllmain\n"
+      },
+      {
+        "id": "2",
+        "format": "SIG_FORMAT_CAPA",
+        "name": "invoke .NET assembly method",
+        "description": "load-code/dotnet",
+        "authors": [
+          "anushka.virgaonkar@mandiant.com",
+          "mehunhoff@google.com"
+        ],
+        "match_data": [
+          "api: System.Reflection.MethodBase::Invoke",
+          "api: System.Reflection.ConstructorInfo::Invoke"
+        ],
+        "rule_src": "rule:\n  meta:\n    name: invoke .NET assembly method\n    namespace: load-code/dotnet\n    authors:\n      - anushka.virgaonkar@mandiant.com\n      - mehunhoff@google.com\n    scopes:\n      static: function\n      dynamic: call\n    att&ck:\n      - Defense Evasion::Reflective Code Loading [T1620]\n  features:\n    - and:\n      - format: dotnet\n      - optional:\n        - api: System.Reflection.Module::GetMethod\n        - api: System.Reflection.Module::GetMethodImpl\n        - api: System.Reflection.Module::GetMethods\n        - api: System.Reflection.Module::ResolveMethod\n        - api: System.Type::GetMethod\n        - api: System.Type::GetMethodImpl\n        - api: System.Type::GetMethods\n      - or:\n        - api: System.Delegate::DynamicInvoke\n        - api: System.Delegate::DynamicInvokeImpl\n        - api: System.Type::InvokeMember\n        - api: System.Reflection.MethodInfo::Invoke\n        - api: System.Reflection.MethodBase::Invoke\n        - api: System.Reflection.ConstructorInfo::Invoke\n"
+      }
+    ],
+    "mbc": [
+      {
+        "id": "C0055",
+        "objective": "Process",
+        "behavior": "Suspend Thread",
+        "refs": [
+          {
+            "ref": "#signature_matches",
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "calls_highlighted": [
+      "\"C:\\Users\\a.monaldo\\AppData\\Local\\Temp\\1f136e0a701ef39aca6d9a4209ea2369.exe\" ",
+      "kernel32.VirtualAllocEx",
+      "ntdll.NtTerminateProcess",
+      "kernel32.Wow64SetThreadContext",
+      "advapi32.RegOpenKeyExW"
+    ],
+    "verdict_labels": [
+      "LokiBot"
+    ],
+    "memory_pattern_domains": [
+      "alphastand.top",
+      "alphastand.trade",
+      "alphastand.win",
+      "kbfvzoboss.bid",
+      "www.sarele.com"
+    ],
+    "verdict_confidence": 70,
+    "files_opened": [
+      "c:\\",
+      "C:\\Program Files (x86)\\Mozilla Firefox\\nss3.dll",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\profiles.ini",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\pkcs11.txt",
+      "C:\\",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\cert9.db",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\cert9.db-journal",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\cert9.db-wal",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\key4.db",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\key4.db-journal",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\key4.db-wal",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\signons.sqlite",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\logins.json",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\signons.txt",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\signons2.txt",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\65g3u5h7.default-release\\signons3.txt",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\frmzuqel.default\\pkcs11.txt",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\frmzuqel.default\\secmod.db",
+      "C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\frmzuqel.default\\cert9.db",
+      "C:\\Program Files\\NETGATE\\Black Hawk",
+      "C:\\Program Files (x86)\\Lunascape\\Lunascape6\\plugins\\{9BDD5314-20A6-4d98-AB30-8325A95771EE}",
+      "C:\\Users\\user\\AppData\\Local\\Comodo\\Dragon\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Comodo\\Dragon\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalComodo\\Dragon\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalComodo\\Dragon\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\MapleStudio\\ChromePlus\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\MapleStudio\\ChromePlus\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalMapleStudio\\ChromePlus\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalMapleStudio\\ChromePlus\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalGoogle\\Chrome\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalGoogle\\Chrome\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Nichrome\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Nichrome\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalNichrome\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalNichrome\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\RockMelt\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\RockMelt\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalRockMelt\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalRockMelt\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Spark\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Spark\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalSpark\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalSpark\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Chromium\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Chromium\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalChromium\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalChromium\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Titan Browser\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Titan Browser\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalTitan Browser\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalTitan Browser\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Torch\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Torch\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalTorch\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalTorch\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Yandex\\YandexBrowser\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Yandex\\YandexBrowser\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalYandex\\YandexBrowser\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalYandex\\YandexBrowser\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Epic Privacy Browser\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Epic Privacy Browser\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalEpic Privacy Browser\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalEpic Privacy Browser\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\CocCoc\\Browser\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\CocCoc\\Browser\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalCocCoc\\Browser\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalCocCoc\\Browser\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Vivaldi\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Vivaldi\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalVivaldi\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalVivaldi\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Comodo\\Chromodo\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Comodo\\Chromodo\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalComodo\\Chromodo\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalComodo\\Chromodo\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Superbird\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Superbird\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalSuperbird\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalSuperbird\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Coowon\\Coowon\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Coowon\\Coowon\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalCoowon\\Coowon\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalCoowon\\Coowon\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Mustang Browser\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Mustang Browser\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalMustang Browser\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalMustang Browser\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\360Browser\\Browser\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\360Browser\\Browser\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\Local360Browser\\Browser\\Login Data",
+      "C:\\Users\\user\\AppData\\Local360Browser\\Browser\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\CatalinaGroup\\Citrio\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\CatalinaGroup\\Citrio\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalCatalinaGroup\\Citrio\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalCatalinaGroup\\Citrio\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Google\\Chrome SxS\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Google\\Chrome SxS\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalGoogle\\Chrome SxS\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalGoogle\\Chrome SxS\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Orbitum\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Orbitum\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalOrbitum\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalOrbitum\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Iridium\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\Iridium\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\LocalIridium\\Login Data",
+      "C:\\Users\\user\\AppData\\LocalIridium\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Opera\\Opera Next\\data\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Opera\\Opera Next\\data\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Opera\\Opera Next\\data\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Opera\\Opera Next\\data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Opera Software\\Opera Stable\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Opera Software\\Opera Stable\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Opera Software\\Opera Stable\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Opera Software\\Opera Stable\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Fenrir Inc\\Sleipnir\\setting\\modules\\ChromiumViewer\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Fenrir Inc\\Sleipnir\\setting\\modules\\ChromiumViewer\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Fenrir Inc\\Sleipnir\\setting\\modules\\ChromiumViewer\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Fenrir Inc\\Sleipnir\\setting\\modules\\ChromiumViewer\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Fenrir Inc\\Sleipnir5\\setting\\modules\\ChromiumViewer\\User Data\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Fenrir Inc\\Sleipnir5\\setting\\modules\\ChromiumViewer\\User Data\\Default\\Web Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Fenrir Inc\\Sleipnir5\\setting\\modules\\ChromiumViewer\\Login Data",
+      "C:\\Users\\user\\AppData\\Roaming\\Fenrir Inc\\Sleipnir5\\setting\\modules\\ChromiumViewer\\Default\\Login Data",
+      "C:\\Users\\user\\AppData\\Local\\QupZilla\\profiles\\default\\browsedata.db",
+      "C:\\Users\\user\\AppData\\Roaming\\Opera",
+      "C:\\Users\\user\\AppData\\Roaming\\.purple\\accounts.xml",
+      "C:\\Users\\user\\Documents\\SuperPutty",
+      "C:\\Program Files (x86)\\FTPShell\\ftpshell.fsi",
+      "C:\\Users\\user\\AppData\\Roaming\\Notepad++\\plugins\\config\\NppFTP\\NppFTP.xml",
+      "C:\\Program Files (x86)\\oZone3D\\MyFTP\\myftp.ini",
+      "C:\\Users\\user\\AppData\\Roaming\\FTPBox\\profiles.conf",
+      "C:\\Program Files (x86)\\Sherrod Computers\\sherrod FTP\\favorites",
+      "C:\\Program Files (x86)\\FTP Now\\sites.xml",
+      "C:\\Program Files (x86)\\NexusFile\\userdata\\ftpsite.ini",
+      "C:\\Users\\user\\AppData\\Roaming\\NexusFile\\ftpsite.ini",
+      "C:\\Users\\user\\Documents\\NetSarang\\Xftp\\Sessions",
+      "C:\\Users\\user\\AppData\\Roaming\\NetSarang\\Xftp\\Sessions",
+      "C:\\Program Files (x86)\\EasyFTP\\data",
+      "C:\\Users\\user\\AppData\\Roaming\\SftpNetDrive",
+      "C:\\Program Files (x86)\\AbleFTP7\\encPwd.jsd",
+      "C:\\Program Files (x86)\\AbleFTP7\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP7\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP8\\encPwd.jsd",
+      "C:\\Program Files (x86)\\AbleFTP8\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP8\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP9\\encPwd.jsd",
+      "C:\\Program Files (x86)\\AbleFTP9\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP9\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP10\\encPwd.jsd",
+      "C:\\Program Files (x86)\\AbleFTP10\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP10\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP11\\encPwd.jsd",
+      "C:\\Program Files (x86)\\AbleFTP11\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP11\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP12\\encPwd.jsd",
+      "C:\\Program Files (x86)\\AbleFTP12\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP12\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP13\\encPwd.jsd",
+      "C:\\Program Files (x86)\\AbleFTP13\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP13\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP14\\encPwd.jsd",
+      "C:\\Program Files (x86)\\AbleFTP14\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\AbleFTP14\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp7\\encPwd.jsd",
+      "C:\\Program Files (x86)\\JaSFtp7\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp7\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp8\\encPwd.jsd",
+      "C:\\Program Files (x86)\\JaSFtp8\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp8\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp9\\encPwd.jsd",
+      "C:\\Program Files (x86)\\JaSFtp9\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp9\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp10\\encPwd.jsd",
+      "C:\\Program Files (x86)\\JaSFtp10\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp10\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp11\\encPwd.jsd",
+      "C:\\Program Files (x86)\\JaSFtp11\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp11\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp12\\encPwd.jsd",
+      "C:\\Program Files (x86)\\JaSFtp12\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp12\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp13\\encPwd.jsd",
+      "C:\\Program Files (x86)\\JaSFtp13\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp13\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp14\\encPwd.jsd",
+      "C:\\Program Files (x86)\\JaSFtp14\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\JaSFtp14\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize7\\encPwd.jsd",
+      "C:\\Program Files (x86)\\Automize7\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize7\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize8\\encPwd.jsd",
+      "C:\\Program Files (x86)\\Automize8\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize8\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize9\\encPwd.jsd",
+      "C:\\Program Files (x86)\\Automize9\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize9\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize10\\encPwd.jsd",
+      "C:\\Program Files (x86)\\Automize10\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize10\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize11\\encPwd.jsd",
+      "C:\\Program Files (x86)\\Automize11\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize11\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize12\\encPwd.jsd",
+      "C:\\Program Files (x86)\\Automize12\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize12\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize13\\encPwd.jsd",
+      "C:\\Program Files (x86)\\Automize13\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize13\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize14\\encPwd.jsd",
+      "C:\\Program Files (x86)\\Automize14\\data\\settings\\sshProfiles-j.jsd",
+      "C:\\Program Files (x86)\\Automize14\\data\\settings\\ftpProfiles-j.jsd",
+      "C:\\Users\\user\\AppData\\Roaming\\Cyberduck",
+      "C:\\Users\\user\\AppData\\Roaming\\iterate_GmbH",
+      "C:\\Users\\user\\.config\\fullsync\\profiles.xml",
+      "C:\\Users\\user\\AppData\\Roaming\\FTPInfo\\ServerList.xml",
+      "C:\\Users\\user\\AppData\\Roaming\\FTPInfo\\ServerList.cfg",
+      "C:\\Program Files (x86)\\FileZilla\\Filezilla.xml",
+      "C:\\Users\\user\\AppData\\Roaming\\FileZilla\\filezilla.xml",
+      "C:\\Users\\user\\AppData\\Roaming\\FileZilla\\recentservers.xml",
+      "C:\\Users\\user\\AppData\\Roaming\\FileZilla\\sitemanager.xml",
+      "C:\\Program Files (x86)\\Staff-FTP\\sites.ini",
+      "C:\\Users\\user\\AppData\\Roaming\\BlazeFtp\\site.dat",
+      "C:\\Program Files (x86)\\Fastream NETFile\\My FTP Links",
+      "C:\\Program Files (x86)\\GoFTP\\settings\\Connections.txt",
+      "C:\\Users\\user\\AppData\\Roaming\\Estsoft\\ALFTP\\ESTdb2.dat",
+      "C:\\Program Files (x86)\\DeluxeFTP\\sites.xml",
+      "C:\\Windows\\wcx_ftp.ini",
+      "C:\\Users\\user\\AppData\\Roaming\\wcx_ftp.ini",
+      "C:\\Users\\user\\wcx_ftp.ini",
+      "C:\\Users\\user\\AppData\\Roaming\\GHISLER\\wcx_ftp.ini",
+      "C:\\Program Files (x86)\\FTPGetter\\Profile\\servers.xml",
+      "C:\\Users\\user\\AppData\\Roaming\\FTPGetter\\servers.xml",
+      "C:\\Program Files (x86)\\WS_FTP\\WS_FTP.INI",
+      "C:\\Windows\\WS_FTP.INI",
+      "C:\\Users\\user\\AppData\\Roaming\\Ipswitch",
+      "C:\\Users\\user\\site.xml",
+      "C:\\Users\\user\\AppData\\Local\\PokerStars*",
+      "C:\\Users\\user\\AppData\\Local\\ExpanDrive",
+      "C:\\Users\\user\\AppData\\Roaming\\Steed\\bookmarks.txt",
+      "C:\\Users\\user\\AppData\\Roaming\\FlashFXP",
+      "C:\\ProgramData\\FlashFXP",
+      "C:\\Users\\user\\AppData\\Local\\INSoftware\\NovaFTP\\NovaFTP.db",
+      "C:\\Users\\user\\AppData\\Roaming\\NetDrive\\NDSites.ini",
+      "C:\\Users\\user\\AppData\\Roaming\\NetDrive2\\drives.dat",
+      "C:\\ProgramData\\NetDrive2\\drives.dat",
+      "C:\\Users\\user\\AppData\\Roaming\\SmartFTP",
+      "C:\\Users\\user\\AppData\\Roaming\\Far Manager\\Profile\\PluginsData\\42E4AEB1-A230-44F4-B33C-F195BB654931.db",
+      "C:\\Users\\user\\Documents\\*.tlp",
+      "C:\\Users\\user\\Documents\\*.bscp",
+      "C:\\Users\\user\\Documents\\*.vnc",
+      "C:\\Users\\user\\Desktop\\*.vnc",
+      "C:\\Users\\user\\Documents\\mSecure",
+      "C:\\ProgramData\\Syncovery",
+      "C:\\Program Files (x86)\\FreshWebmaster\\FreshFTP\\FtpSites.SMF",
+      "C:\\Users\\user\\AppData\\Roaming\\BitKinex\\bitkinex.ds",
+      "C:\\Users\\user\\AppData\\Roaming\\UltraFXP\\sites.xml",
+      "C:\\Users\\user\\AppData\\Roaming\\FTP Now\\sites.xml",
+      "C:\\Program Files (x86)\\Odin Secure FTP Expert\\QFDefault.QFQ",
+      "C:\\Program Files (x86)\\Odin Secure FTP Expert\\SiteInfo.QFP",
+      "C:\\Program Files (x86)\\Foxmail\\mail",
+      "C:\\Foxmail*",
+      "C:\\Users\\user\\AppData\\Roaming\\Pocomail\\accounts.ini",
+      "C:\\Users\\user\\Documents\\Pocomail\\accounts.ini",
+      "C:\\Users\\user\\AppData\\Roaming\\GmailNotifierPro\\ConfigData.xml",
+      "C:\\Users\\user\\AppData\\Roaming\\DeskSoft\\CheckMail",
+      "C:\\Program Files (x86)\\WinFtp Client\\Favorites.dat",
+      "C:\\Windows\\32BitFtp.TMP",
+      "C:\\Windows\\32BitFtp.ini",
+      "C:\\FTP Navigator\\Ftplist.txt",
+      "C:\\Softwarenetz\\Mailing\\Daten\\mailing.vdt",
+      "C:\\Users\\user\\AppData\\Roaming\\Opera Mail\\Opera Mail\\wand.dat",
+      "C:\\Users\\user\\Documents\\*Mailbox.ini",
+      "C:\\Users\\user\\Documents\\yMail2\\POP3.xml",
+      "C:\\Users\\user\\Documents\\yMail2\\SMTP.xml",
+      "C:\\Users\\user\\Documents\\yMail2\\Accounts.xml",
+      "C:\\Users\\user\\Documents\\yMail\\ymail.ini",
+      "C:\\Users\\user\\AppData\\Roaming\\TrulyMail\\Data\\Settings\\user.config",
+      "C:\\Users\\user\\Documents\\*.spn",
+      "C:\\Users\\user\\Desktop\\*.spn",
+      "C:\\Users\\user\\AppData\\Roaming\\To-Do DeskList\\tasks.db",
+      "C:\\Users\\user\\AppData\\Roaming\\stickies\\images",
+      "C:\\Users\\user\\AppData\\Roaming\\stickies\\rtf",
+      "C:\\Users\\user\\AppData\\Roaming\\NoteFly\\notes",
+      "C:\\Users\\user\\AppData\\Roaming\\Conceptworld\\Notezilla\\Notes8.db",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\Sticky Notes\\StickyNotes.snt",
+      "C:\\Users\\user\\Documents",
+      "C:\\Users\\user\\Documents\\*.kdbx",
+      "C:\\Users\\user\\Desktop",
+      "C:\\Users\\user\\Desktop\\*.kdbx",
+      "C:\\Users\\user\\Documents\\*.kdb",
+      "C:\\Users\\user\\Desktop\\*.kdb",
+      "C:\\Users\\user\\Documents\\Enpass",
+      "C:\\Users\\user\\Documents\\My RoboForm Data",
+      "C:\\Users\\user\\Documents\\1Password",
+      "C:\\Users\\user\\AppData\\Local\\Temp\\Mikrotik\\Winbox",
+      "C:\\Users\\user\\AppData\\Roaming\\61A0A7",
+      "C:\\Users\\user\\AppData\\Roaming\\61A0A7\\7468E2.hdb",
+      "C:\\Users\\user\\AppData\\Roaming\\61A0A7\\7468E2.lck",
+      "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\Credentials"
+    ],
+    "ids_alerts": [
+      {
+        "rule_msg": "(http_inspect) unknown Content-Encoding used",
+        "rule_category": "unknown",
+        "rule_id": "119:226",
+        "alert_severity": "low",
+        "rule_source": "Snort registered user ruleset",
+        "alert_context": {
+          "dest_ip": "13.248.169.48",
+          "dest_port": 80
+        },
+        "rule_url": "https://www.snort.org/downloads/#rule-downloads",
+        "rule_raw": "alert ( gid:119; sid:226; rev:2; msg:\"(http_inspect) unknown Content-Encoding used\"; metadata: policy max-detect-ips drop, rule-type preproc; classtype:unknown;)"
+      },
+      {
+        "rule_msg": "MALWARE-CNC User-Agent known malicious user-agent string - Win.Trojan.LokiBot",
+        "rule_category": "trojan-activity",
+        "rule_id": "1:40066",
+        "alert_severity": "high",
+        "rule_source": "Snort registered user ruleset",
+        "alert_context": {
+          "dest_ip": "13.248.169.48",
+          "dest_port": 80
+        },
+        "rule_url": "https://www.snort.org/downloads/#rule-downloads",
+        "rule_references": [
+          "https://virustotal.com/gui/file/2e3e5642106ffbde1596a2335eda84e1c48de0bf4a5872f94ae5ee4f7bffda39/detection",
+          "https://virustotal.com/gui/file/682fa75de9a2c11d5bdc9545ebc914af00921c807be5bb86296321bc55e08c86/detection",
+          "https://virustotal.com/gui/file/80f4803c1ae286005a64ad790ae2d9f7e8294c6e436b7c686bd91257efbaa1e5/detection"
+        ],
+        "rule_raw": "alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS ( msg:\"MALWARE-CNC User-Agent known malicious user-agent string - Win.Trojan.LokiBot\"; flow:to_server,established; http_header; content:\"User-Agent|3A| Mozilla/4.08 (Charon|3B| Inferno)\",fast_pattern,nocase; metadata:impact_flag red,policy balanced-ips drop,policy max-detect-ips drop,policy security-ips drop; service:http; reference:url,virustotal.com/gui/file/2e3e5642106ffbde1596a2335eda84e1c48de0bf4a5872f94ae5ee4f7bffda39/detection; reference:url,virustotal.com/gui/file/682fa75de9a2c11d5bdc9545ebc914af00921c807be5bb86296321bc55e08c86/detection; reference:url,virustotal.com/gui/file/80f4803c1ae286005a64ad790ae2d9f7e8294c6e436b7c686bd91257efbaa1e5/detection; classtype:trojan-activity; gid:1; sid:40066; rev:5; )"
+      },
+      {
+        "rule_msg": "MALWARE-CNC Lokibot outbound connection attempt",
+        "rule_category": "trojan-activity",
+        "rule_id": "1:56577",
+        "alert_severity": "high",
+        "rule_source": "Snort registered user ruleset",
+        "alert_context": {
+          "dest_ip": "13.248.169.48",
+          "dest_port": 80
+        },
+        "rule_url": "https://www.snort.org/downloads/#rule-downloads",
+        "rule_references": [
+          "https://virustotal.com/gui/file/c9038e31f798119d9e93e7eafbdd3e0f215e24ee2200fcd2a3ba460d549894ab/detection",
+          "https://www.malware-traffic-analysis.net/2020/10/12/index.html"
+        ],
+        "rule_raw": "alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS ( msg:\"MALWARE-CNC Lokibot outbound connection attempt\"; flow:to_server,established; http_uri; content:\"/fre.php\",fast_pattern,nocase; http_header; content:\"User-Agent: Mozilla/4.08 (Charon|3B| Inferno)\",nocase; metadata:impact_flag red,policy balanced-ips drop,policy max-detect-ips drop,policy security-ips drop; service:http; reference:url,virustotal.com/gui/file/c9038e31f798119d9e93e7eafbdd3e0f215e24ee2200fcd2a3ba460d549894ab/detection; reference:url,www.malware-traffic-analysis.net/2020/10/12/index.html; classtype:trojan-activity; sid:56577; rev:1; )"
+      },
+      {
+        "rule_msg": "ET MALWARE LokiBot User-Agent (Charon/Inferno)",
+        "rule_category": "A Network Trojan was detected",
+        "rule_id": "1:2021641",
+        "alert_severity": "high",
+        "rule_source": "Proofpoint Emerging Threats Open",
+        "alert_context": {
+          "dest_ip": "13.248.169.48",
+          "dest_port": 80,
+          "hostname": "www.sarele.com",
+          "url": "http://www.sarele.com/docview/fre.php"
+        },
+        "rule_url": "https://rules.emergingthreats.net/",
+        "rule_raw": "alert http $HOME_NET any -> $EXTERNAL_NET any (msg:\"ET MALWARE LokiBot User-Agent (Charon/Inferno)\"; flow:established,to_server; http.user_agent; content:\"(Charon|3b 20|Inferno)\"; fast_pattern; classtype:trojan-activity; sid:2021641; rev:10; metadata:created_at 2015_08_18, malware_family lokibot, confidence High, signature_severity Critical, updated_at 2024_11_20, reviewed_at 2024_04_10;)"
+      },
+      {
+        "rule_msg": "ET MALWARE LokiBot Checkin",
+        "rule_category": "Malware Command and Control Activity Detected",
+        "rule_id": "1:2025381",
+        "alert_severity": "high",
+        "rule_source": "Proofpoint Emerging Threats Open",
+        "alert_context": {
+          "dest_ip": "13.248.169.48",
+          "dest_port": 80,
+          "hostname": "www.sarele.com",
+          "url": "http://www.sarele.com/docview/fre.php"
+        },
+        "rule_url": "https://rules.emergingthreats.net/",
+        "rule_references": [
+          "https://www.virustotal.com/gui/search/5ba6cf36f57697a1eb5ac8deaa377b4b"
+        ],
+        "rule_raw": "alert http $HOME_NET any -> $EXTERNAL_NET any (msg:\"ET MALWARE LokiBot Checkin\"; flow:established,to_server; http.method; content:\"POST\"; http.uri; content:\".php\"; http.header; content:\"Content-Key|3a 20|\"; fast_pattern; http.header_names; content:!\"Referer|0d 0a|\"; content:\"|0d 0a|User-Agent|0d 0a|Host|0d 0a|Accept|0d 0a|Content-Type|0d 0a|\"; startswith; nocase; reference:md5,5ba6cf36f57697a1eb5ac8deaa377b4b; classtype:command-and-control; sid:2025381; rev:7; metadata:created_at 2015_11_24, malware_family lokibot, confidence High, signature_severity Critical, updated_at 2024_11_20;)"
+      },
+      {
+        "rule_msg": "ET MALWARE LokiBot Application/Credential Data Exfiltration Detected M1",
+        "rule_category": "A Network Trojan was detected",
+        "rule_id": "1:2024312",
+        "alert_severity": "high",
+        "rule_source": "Proofpoint Emerging Threats Open",
+        "alert_context": {
+          "dest_ip": "13.248.169.48",
+          "dest_port": 80,
+          "hostname": "www.sarele.com",
+          "url": "http://www.sarele.com/docview/fre.php"
+        },
+        "rule_url": "https://rules.emergingthreats.net/",
+        "rule_raw": "alert http $HOME_NET any -> $EXTERNAL_NET any (msg:\"ET MALWARE LokiBot Application/Credential Data Exfiltration Detected M1\"; flow:established,to_server; http.method; content:\"POST\"; http.user_agent; content:\"(Charon|3b 20|Inferno)\"; http.request_body; content:\"|00 27 00|\"; offset:1; depth:3; pcre:\"/^[\\x00-\\x01]\\x00.\\x00{3}/R\"; classtype:trojan-activity; sid:2024312; rev:5; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, created_at 2017_05_17, deployment Perimeter, malware_family lokibot, confidence High, signature_severity Critical, updated_at 2024_11_20;)"
+      },
+      {
+        "rule_msg": "ET MALWARE LokiBot Request for C2 Commands Detected M1",
+        "rule_category": "Malware Command and Control Activity Detected",
+        "rule_id": "1:2024313",
+        "alert_severity": "high",
+        "rule_source": "Proofpoint Emerging Threats Open",
+        "alert_context": {
+          "dest_ip": "13.248.169.48",
+          "dest_port": 80,
+          "hostname": "www.sarele.com",
+          "url": "http://www.sarele.com/docview/fre.php"
+        },
+        "rule_url": "https://rules.emergingthreats.net/",
+        "rule_raw": "alert http $HOME_NET any -> $EXTERNAL_NET any (msg:\"ET MALWARE LokiBot Request for C2 Commands Detected M1\"; flow:established,to_server; flowbits:set,ET.LokiBot; http.method; content:\"POST\"; http.user_agent; content:\"(Charon|3b 20|Inferno)\"; http.request_body; content:\"|00 28 00|\"; offset:1; depth:3; pcre:\"/^[\\x00-\\x01]\\x00.\\x00{3}/R\"; classtype:command-and-control; sid:2024313; rev:6; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, created_at 2017_05_17, deployment Perimeter, malware_family lokibot, confidence High, signature_severity Critical, updated_at 2024_11_20;)"
+      },
+      {
+        "rule_msg": "ET MALWARE LokiBot Request for C2 Commands Detected M2",
+        "rule_category": "Malware Command and Control Activity Detected",
+        "rule_id": "1:2024318",
+        "alert_severity": "high",
+        "rule_source": "Proofpoint Emerging Threats Open",
+        "alert_context": {
+          "dest_ip": "13.248.169.48",
+          "dest_port": 80,
+          "hostname": "www.sarele.com",
+          "url": "http://www.sarele.com/docview/fre.php"
+        },
+        "rule_url": "https://rules.emergingthreats.net/",
+        "rule_raw": "alert http $HOME_NET any -> $EXTERNAL_NET any (msg:\"ET MALWARE LokiBot Request for C2 Commands Detected M2\"; flow:established,to_server; http.method; content:\"POST\"; http.content_type; content:\"application|2f|octet-stream\"; http.header; content:\"Content-Encoding|3a 20|binary|0d 0a|Content-Key|3a 20|\"; fast_pattern; content:\"|0d 0a|\"; distance:8; within:2; http.header_names; content:!\"|0d 0a|Referer|0d 0a|\"; content:\"|0d 0a|User-Agent|0d 0a|Host|0d 0a|Accept|0d 0a|Content-Type|0d 0a|Content-Encoding|0d 0a|Content-Key|0d 0a|Content-Length|0d 0a|Connection|0d 0a 0d 0a|\"; http.request_body; content:\"|00 28 00|\"; offset:1; depth:3; pcre:\"/^[\\x00-\\x01]\\x00.\\x00{3}/R\"; classtype:command-and-control; sid:2024318; rev:6; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, created_at 2017_05_17, deployment Perimeter, malware_family lokibot, confidence High, signature_severity Critical, updated_at 2024_11_20;)"
+      }
+    ],
+    "verdicts": [
+      "STEALER",
+      "MALWARE"
+    ],
+    "modules_loaded": [
+      "shlwapi",
+      "ADVAPI32",
+      "user32",
+      "api-ms-win-core-sysinfo-l1-2-1",
+      "mscoree",
+      "OLEAUT32",
+      "SHELL32",
+      "culture",
+      "CRYPTBASE",
+      "mswsock",
+      "NETAPI32",
+      "SspiCli",
+      "System.ni",
+      "fwpuclnt",
+      "mscorlib.ni",
+      "ole32",
+      "kernel32",
+      "DNSAPI",
+      "ws2_32",
+      "bcrypt",
+      "apphelp",
+      "wshtcpip",
+      "ntdll",
+      "freebl3",
+      "RPCRT4",
+      "mscoreei",
+      "wship6",
+      "shell32",
+      "rpcrt4",
+      "rsaenh",
+      "CRYPT32",
+      "SHLWAPI",
+      "profapi",
+      "cryptbase",
+      "API-MS-Win-Security-SDDL-L1-1-0",
+      "psapi",
+      "softokn3",
+      "System.Windows.Forms.ni",
+      "SAMLIB",
+      "USERENV",
+      "System.Drawing.ni",
+      "advapi32",
+      "vaultcli",
+      "IPHLPAPI",
+      "API-MS-Win-Security-LSALookup-L1-1-0"
+    ],
+    "attack_techniques": {
+      "T1620": [
+        {
+          "severity": "INFO",
+          "description": "invoke .NET assembly method",
+          "refs": [
+            {
+              "ref": "#signature_matches",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "T1129": [
+        {
+          "severity": "UNKNOWN",
+          "description": "The process attempted to dynamically load a malicious function"
+        },
+        {
+          "severity": "UNKNOWN",
+          "description": "The process tried to load dynamically one or more functions."
+        }
+      ],
+      "T1057": [
+        {
+          "severity": "UNKNOWN",
+          "description": "The process has tried to detect the debugger probing the use of page guards."
+        },
+        {
+          "severity": "UNKNOWN",
+          "description": "The process attempted to detect a running debugger using common APIs"
+        }
+      ],
+      "T1071": [
+        {
+          "severity": "UNKNOWN",
+          "description": "Detected one or more anomalous HTTP requests"
+        },
+        {
+          "severity": "UNKNOWN",
+          "description": "Detected HTTP requests to some non white-listed domains"
+        }
+      ],
+      "T1107": [
+        {
+          "severity": "UNKNOWN",
+          "description": "The process attempted to delete its original binary"
+        }
+      ],
+      "T1070": [
+        {
+          "severity": "UNKNOWN",
+          "description": "The process attempted to delete its original binary"
+        }
+      ],
+      "T1082": [
+        {
+          "severity": "UNKNOWN",
+          "description": "Queries for the computername"
+        },
+        {
+          "severity": "UNKNOWN",
+          "description": "The process tried to collect informations about the system reading some known registry keys"
+        }
+      ],
+      "T1081": [
+        {
+          "severity": "UNKNOWN",
+          "description": "Detected an attempt to access Browser data that may contain sensible informations (e.g. user credentials)"
+        },
+        {
+          "severity": "UNKNOWN",
+          "description": "The process attempted to collect credentials from installed FTP clients"
+        },
+        {
+          "severity": "UNKNOWN",
+          "description": "The process attempted to collect informations related to installed instant messaging clients"
+        }
+      ],
+      "T1119": [
+        {
+          "severity": "UNKNOWN",
+          "description": "Detected an attempt to access Browser data that may contain sensible informations (e.g. user credentials)"
+        },
+        {
+          "severity": "UNKNOWN",
+          "description": "The process attempted to collect credentials from installed FTP clients"
+        },
+        {
+          "severity": "UNKNOWN",
+          "description": "The process attempted to collect informations related to installed instant messaging clients"
+        }
+      ],
+      "T1012": [
+        {
+          "severity": "UNKNOWN",
+          "description": "The process tried to collect informations about the system reading some known registry keys"
+        }
+      ]
+    }
+  }
+}
